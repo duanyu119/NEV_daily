@@ -22,7 +22,7 @@ class TavilyMCPClient:
     """Tavily MCP数据获取客户端"""
     
     def __init__(self):
-        self.api_key = "demo_key_for_nev_daily_news"
+        self.api_key = os.environ.get("TAVILY_API_KEY", "demo_key_for_nev_daily_news")
         self.base_url = "https://api.tavily.com"
         self.cache_duration = 3600  # 1小时缓存
         self.api_base = os.environ.get("NEV_API_BASE", "")

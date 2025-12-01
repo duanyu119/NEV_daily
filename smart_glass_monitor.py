@@ -19,7 +19,7 @@ class SmartGlassMonitor:
         self.db_path = db_path
         self.config = self._load_config()
         self.db = self._load_db()
-        self.api_key = "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"
+        self.api_key = os.environ.get("TAVILY_API_KEY", "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")
         self.base_url = "https://api.tavily.com/search"
 
     def _load_config(self) -> Dict[str, Any]:
