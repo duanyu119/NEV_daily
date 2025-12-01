@@ -18,6 +18,8 @@ from typing import Dict, List, Any, Optional
 import hashlib
 from smart_glass_monitor import SmartGlassMonitor
 
+from deep_translator import GoogleTranslator
+
 class TavilyMCPClient:
     """Tavily MCP数据获取客户端"""
     
@@ -26,6 +28,7 @@ class TavilyMCPClient:
         self.base_url = "https://api.tavily.com"
         self.cache_duration = 3600  # 1小时缓存
         self.api_base = os.environ.get("NEV_API_BASE", "")
+        self.translator = GoogleTranslator(source='auto', target='zh-CN')
 
     def _fetch_api(self, path: str) -> Optional[Dict[str, Any]]:
         if not self.api_base:
@@ -40,8 +43,64 @@ class TavilyMCPClient:
         return None
         
     def get_sales_rankings(self) -> Dict[str, Any]:
-        """获取销量排行榜数据"""
-        api = self._fetch_api("sales")
+        """获取销量排行榜数据 (尝试搜索或使用最新预估)"""
+        # 尝试通过Tavily获取最新数据（仅当开启采集时）
+        if os.environ.get("RUN_TAVILY_COLLECTION") != "0":
+            try:
+                print("正在通过Tavily获取最新销量数据...")
+                # 针对8款热门车型进行定向搜索
+                target_models = [
+                    "比亚迪秦PLUS", "特斯拉Model Y", "理想L6", "问界M7", 
+                    "小鹏G6", "蔚来ES6", "海鸥", "元PLUS"
+                ]
+                collected_sales = []
+                api_key = os.environ.get("TAVILY_API_KEY", "")
+                
+                for model in target_models:
+                    query = f"{model} 2025年11月 销量"
+                    payload = {
+                        "api_key": api_key,
+                        "query": query,
+                        "search_depth": "basic",
+                        "topic": "news",
+                        "days": 30,
+                        "max_results": 1
+                    }
+                    r = requests.post("https://api.tavily.com/search", json=payload, timeout=10)
+                    if r.status_code == 200:
+                        results = r.json().get("results", [])
+                        content = results[0].get("content", "") if results else "暂无数据"
+                        # 简单的提取逻辑（仅作示例，实际需要NLP）
+                        collected_sales.append({
+                            "model": model,
+                            "sales_snippet": content[:100] + "...",
+                            "source": results[0].get("url", "") if results else ""
+                        })
+                    else:
+                        collected_sales.append({"model": model, "sales_snippet": "获取失败", "source": ""})
+                
+                # 更新weekly_data结构以包含采集到的信息
+                weekly_data = []
+                for i, item in enumerate(collected_sales):
+                    weekly_data.append({
+                        "rank": i + 1,
+                        "brand": item["model"][:3], # 简单截取
+                        "model": item["model"],
+                        "sales": "查询中...", # 无法准确解析数字，暂留白或显示摘要
+                        "change": item["sales_snippet"], # 显示摘要代替涨跌幅
+                        "segment": "热门车型"
+                    })
+                
+                return {
+                    "weekly": weekly_data,
+                    "monthly": [], # 保持为空或Mock
+                    "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                }
+
+            except Exception as e:
+                print(f"销量数据获取失败: {e}")
+
+        # Fallback Mock Data
         weekly_data = [
             {"rank": 1, "brand": "比亚迪", "model": "秦PLUS DM-i", "sales": 18542, "change": "+15.2%", "segment": "紧凑型轿车"},
             {"rank": 2, "brand": "特斯拉", "model": "Model Y", "sales": 16423, "change": "+8.7%", "segment": "中型SUV"},
@@ -452,53 +511,64 @@ class DailyNewsGenerator:
     def collect_new_car_launches(self, days: int = 30) -> List[Dict[str, Any]]:
         """采集新车发布信息"""
         api_key = os.environ.get("TAVILY_API_KEY", "")
-        end_time = datetime.now()
-        start_time = end_time - timedelta(days=days)
-        time_range = f"{start_time.strftime('%Y-%m-%d')} to {end_time.strftime('%Y-%m-%d')}"
-        
-        queries = [
-            "2025年11月 12月 新能源汽车 新车 上市 发布",
-            "2025年底重磅新能源新车",
-            "比亚迪 小米 理想 蔚来 2025 新车",
+        # Manufacturer Whitelist (Updated)
+        manufacturers = [
+            {"name": "比亚迪", "en_name": "BYD"},
+            {"name": "理想", "en_name": "Li Auto"},
+            {"name": "小鹏", "en_name": "Xpeng"},
+            {"name": "蔚来", "en_name": "NIO"},
+            {"name": "长安", "en_name": "Changan"},
+            {"name": "长城", "en_name": "Great Wall"},
+            {"name": "上汽", "en_name": "SAIC"},
+            {"name": "奥迪", "en_name": "Audi"}
         ]
         
         results = []
         seen_urls = set()
+        diagnostics = []
         
-        for q in queries:
+        for m in manufacturers:
+            query = f"{m['name']} 新车发布"
             payload = {
                 "api_key": api_key,
-                "query": q,
+                "query": query,
                 "search_depth": "advanced",
-                "max_results": 10,
-                "time_range": time_range
+                "topic": "news",
+                "days": days,
+                "max_results": 5
             }
             try:
                 r = requests.post("https://api.tavily.com/search", json=payload, timeout=30)
                 if r.status_code == 200:
                     items = r.json().get("results", [])
+                    if not items:
+                        # Diagnostic log if 0 results
+                        print(f"⚠️ No results for {query}. Days: {days}")
+                        diagnostics.append({
+                            "timestamp": datetime.now().isoformat(),
+                            "query": query,
+                            "days": days,
+                            "status": "0_results",
+                            "context": "new_car_launch"
+                        })
+                        
                     for item in items:
                         url = item.get("url")
                         if url in seen_urls:
                             continue
                         seen_urls.add(url)
                         
-                        # Simple parsing (Mocking structured data extraction)
                         title = item.get("title", "")
                         content = item.get("content", "")
                         
-                        # Heuristic to guess brand
-                        brand = "未知品牌"
-                        brands = ["比亚迪", "特斯拉", "理想", "蔚来", "小鹏", "小米", "极氪", "问界", "零跑", "吉利"]
-                        for b in brands:
-                            if b in title or b in content:
-                                brand = b
-                                break
-                                
+                        # Filter: Check if content seems relevant to new car launch
+                        if "发布" not in title and "上市" not in title and "Launch" not in title:
+                            continue
+
                         results.append({
                             "id": hashlib.md5(url.encode()).hexdigest(),
-                            "brand": brand,
-                            "model": title.split(" ")[0] if " " in title else title[:10], # Rough guess
+                            "brand": m['name'],
+                            "model": title.split(" ")[0] if " " in title else title[:10], 
                             "type": "全新发布" if "上市" in title else "改款",
                             "segment": "新能源",
                             "price_range": "待定",
@@ -507,72 +577,78 @@ class DailyNewsGenerator:
                             "target_audience": "大众",
                             "competitors": [],
                             "market_positioning": "主流",
-                            "image_url": "", # Will use generated one
+                            "image_url": "", 
                             "description": content[:100] + "...",
                             "source_url": url,
                             "media_channel": "行业媒体"
                         })
+                else:
+                    print(f"Tavily error {r.status_code} for {query}")
+                    diagnostics.append({
+                        "timestamp": datetime.now().isoformat(),
+                        "query": query,
+                        "status_code": r.status_code,
+                        "status": "http_error",
+                        "error": r.text[:200],
+                        "context": "new_car_launch"
+                    })
             except Exception as e:
-                print(f"Tavily search failed for {q}: {e}")
+                print(f"Tavily search failed for {query}: {e}")
+                diagnostics.append({
+                    "timestamp": datetime.now().isoformat(),
+                    "query": query,
+                    "error": str(e),
+                    "status": "error",
+                    "context": "new_car_launch"
+                })
+        
+        if diagnostics:
+            self._save_diagnostics(diagnostics)
                 
-        return results[:8] # Limit to 8
+        return results[:12] # Limit to 12 items
 
     def fetch_data(self):
         """获取所有数据"""
-        # 1. 获取基础数据 (Mock/API)
+        # 1. 获取基础数据 (Mock/API) - Sales Rankings
+        # This is now partially collected if Tavily enabled
         self.data = self.client.get_all_data()
         
-        # 2. 尝试获取真实的行业领袖数据 (Tavily)
-        # 只有当 RUN_TAVILY_COLLECTION=1 时才执行实际采集，避免测试时超时
+        # 2. 执行策略调整：先获取行业领袖数据，如果有更新才继续
         if os.environ.get("TAVILY_API_KEY") and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
             print("正在通过Tavily获取行业领袖数据...")
-            leader_data = self.collect_leader_statements(span_days=30, min_items=200)
+            leader_data = self.collect_kol_content(span_days=30, min_items=50)
+            
             if leader_data.get("results"):
                 # 转换Tavily数据格式以匹配UI
                 real_leaders = self._transform_leader_data(leader_data["results"])
                 self.data["industry_leaders"]["leaders"] = real_leaders
                 self.data["industry_leaders"]["total_statements"] = len(leader_data["results"])
+                print(f"✅ 获取到 {len(leader_data['results'])} 条领袖观点，继续执行...")
+                
+                # Continue to other collections
+                print("正在通过Tavily获取新车发布数据...")
+                new_cars = self.collect_new_car_launches(days=30)
+                if new_cars:
+                    self.data["new_car_launches"]["new_launches"] = new_cars
+                    self.data["new_car_launches"]["total_count"] = len(new_cars)
 
-            print("正在通过Tavily获取新车发布数据...")
-            new_cars = self.collect_new_car_launches()
-            if new_cars:
-                self.data["new_car_launches"]["new_launches"] = new_cars
-                self.data["new_car_launches"]["total_count"] = len(new_cars)
-
-        # 3. 获取智能调光行业数据 (新增)
-        # 同样只在非 dry-run 模式下执行
-        if os.environ.get("TAVILY_API_KEY") and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
-            print("正在通过Tavily获取智能调光行业情报...")
-            self.data["smart_glass_intel"] = self.collect_smart_glass_intel()
+                print("正在通过Tavily获取智能调光行业情报...")
+                self.data["smart_glass_intel"] = self.collect_smart_glass_intel()
+                
+            else:
+                print("⚠️ 未检测到领袖观点更新，暂停后续采集。")
+                # Diagnostic log for 'No Updates' pause
+                with open("logs/execution_paused.log", "a") as f:
+                    f.write(f"{datetime.now()}: Paused due to 0 leader updates.\n")
+                # Keep mock data for others or previous data? 
+                # For now we just skip *new* collection for others, keeping default/mock data in self.data
+                
         else:
             # Mock数据用于展示 (Dry Run 或无 Key 时的回退)
             print("使用Mock数据用于智能调光板块 (Dry Run Mode or No Key)...")
             self.data["smart_glass_intel"] = {
-                "competitors": [
-                    {
-                        "title": "Gentex发布第四代智能调光后视镜",
-                        "url": "https://www.gentex.com/news",
-                        "content": "Gentex Corporation (NASDAQ: GNTX) 今日宣布推出第四代全屏显示智能调光后视镜，集成了最新的生物识别技术。",
-                        "published_at": datetime.now().strftime("%Y-%m-%d"),
-                        "matched_competitors": ["gentex"]
-                    },
-                    {
-                        "title": "京东方展示最新车载调光玻璃方案",
-                        "url": "https://www.boe.com/news",
-                        "content": "在最新的科技展上，京东方(BOE)展示了其最新的快速响应电致变色玻璃，透过率调节范围可达0.1%-70%。",
-                        "published_at": datetime.now().strftime("%Y-%m-%d"),
-                        "matched_competitors": ["boe", "京东方"]
-                    }
-                ],
-                "news": [
-                    {
-                        "title": "2025年全球智能调光玻璃市场报告",
-                        "url": "#",
-                        "content": "最新研究报告显示，全球智能调光玻璃市场规模预计将在2025年达到80亿美元，年复合增长率超过12%。",
-                        "published_at": datetime.now().strftime("%Y-%m-%d"),
-                        "category": "industry"
-                    }
-                ]
+                "competitors": [],
+                "news": []
             }
 
         # 计算总数据点数
@@ -586,6 +662,31 @@ class DailyNewsGenerator:
             len(self.data["smart_glass_intel"].get("competitors", []))
         )
         self.data["metadata"]["total_data_points"] = total_points
+        
+        # Save Snapshot
+        self._save_data_snapshot()
+        
+        # Quality Control Check
+        if self.data["industry_leaders"]["total_statements"] == 0 and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
+            print("⚠️ [QC] Warning: Leader statements count is 0 after collection.")
+        if self.data["new_car_launches"]["total_count"] == 0 and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
+            print("⚠️ [QC] Warning: New car launches count is 0 after collection.")
+
+    def _save_data_snapshot(self):
+        """Save full data snapshot to JSON"""
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(base_dir, "data", "snapshots")
+        os.makedirs(data_dir, exist_ok=True)
+        
+        filename = f"daily_news_snapshot_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        filepath = os.path.join(data_dir, filename)
+        
+        try:
+            with open(filepath, "w", encoding="utf-8") as f:
+                json.dump(self.data, f, ensure_ascii=False, indent=2)
+            print(f"📸 Data snapshot saved to {filepath}")
+        except Exception as e:
+            print(f"⚠️ Failed to save data snapshot: {e}")
 
     def _transform_leader_data(self, raw_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """将Tavily原始数据转换为前端展示格式"""
@@ -626,97 +727,152 @@ class DailyNewsGenerator:
             })
         return list(leaders_map.values())
 
-    # Tavily 搜索采集（最近30天，至少200条）
-    def collect_leader_statements(self, span_days: int = 30, min_items: int = 200) -> Dict[str, Any]:
+    def collect_kol_content(self, span_days: int = 30, min_items: int = 50) -> Dict[str, Any]:
+        """
+        行业KOL内容监测
+        目标: 车企CEO/CTO, 分析师, 媒体主编
+        """
         api_key = os.environ.get("TAVILY_API_KEY", "")
-        leaders = [
-            "王传福 比亚迪 讲话", "雷军 小米 发言", "李想 理想汽车 公开演讲", "李斌 蔚来 采访",
-            "何小鹏 小鹏汽车 演讲", "李书福 吉利 发言", "魏建军 长城 汽车 讲话", "余承东 华为 汽车 采访",
-            "安聪慧 极氪 发言", "朱江明 零跑 发言"
+        
+        # 1. Define KOL Targets (Updated)
+        kols = [
+            # CEOs / Execs (Priority: Musk, Wei Jianjun, Wang Chuanfu, Li Xiang, Li Bin, Lei Jun)
+            {"name": "马斯克", "title": "Tesla CEO", "company": "Tesla", "query_name": "Elon Musk"},
+            {"name": "魏建军", "title": "长城汽车董事长", "company": "长城汽车"},
+            {"name": "王传福", "title": "比亚迪董事长", "company": "比亚迪"},
+            {"name": "李想", "title": "理想汽车CEO", "company": "理想汽车"},
+            {"name": "李斌", "title": "蔚来CEO", "company": "蔚来"},
+            {"name": "雷军", "title": "小米CEO", "company": "小米汽车"},
+            # Others
+            {"name": "何小鹏", "title": "小鹏汽车CEO", "company": "小鹏汽车"},
+            {"name": "余承东", "title": "华为常务董事", "company": "华为/问界"},
+            {"name": "朱江明", "title": "零跑CEO", "company": "零跑"},
+            {"name": "安聪慧", "title": "极氪CEO", "company": "极氪"},
+            {"name": "李书福", "title": "吉利控股董事长", "company": "吉利"},
         ]
 
-        end_time = datetime.now()
-        start_time = end_time - timedelta(days=span_days)
-        # Ensure coverage from Nov 1, 2025 if needed, but 30 days from Dec 1 is Nov 1.
-        time_range = f"{start_time.strftime('%Y-%m-%d')} to {end_time.strftime('%Y-%m-%d')}"
+        results = []
+        seen_urls = set()
+        run_logs = []
+        diagnostics = []
 
-        run_logs: List[str] = []
-        results: List[Dict[str, Any]] = []
-        seen = set()
+        print(f"🔎 Starting KOL Content Monitoring (Last {span_days} days)...")
 
-        def tavily(query: str) -> List[Dict[str, Any]]:
+        for kol in kols:
+            # Construct Query: Name + (Speech OR Interview OR Statement OR Viewpoint)
+            q_name = kol.get("query_name", kol["name"])
+            query = f'{q_name} ("演讲" OR "专访" OR "发言" OR "观点")'
+            
             payload = {
                 "api_key": api_key,
                 "query": query,
                 "search_depth": "advanced",
                 "topic": "news",
-                "max_results": 200,
+                "max_results": 5,
                 "include_answer": False,
                 "include_raw_content": True,
-                "time_range": time_range
+                "days": span_days
             }
+            
             try:
                 r = requests.post("https://api.tavily.com/search", json=payload, timeout=30)
                 if r.status_code == 200:
-                    return r.json().get("results", [])
-                else:
-                    run_logs.append(f"Tavily状态码{r.status_code} query={query}")
-            except Exception as e:
-                run_logs.append(f"Tavily异常: {e} query={query}")
-            return []
-
-        for q in leaders:
-            for item in tavily(q):
-                url = item.get("url") or item.get("source")
-                title = (item.get("title") or "").strip()
-                published = item.get("published_date") or item.get("date") or ""
-                # 时间过滤
-                try:
-                    if published:
-                        dt = datetime.fromisoformat(published.replace("Z", "+00:00").split(" ")[0])
-                        if dt < start_time or dt > end_time:
+                    items = r.json().get("results", [])
+                    
+                    # 4. Exception Handling for 0 results
+                    if not items:
+                        diag_info = {
+                            "timestamp": datetime.now().isoformat(),
+                            "query": query,
+                            "days": span_days,
+                            "status": "0_results",
+                            "api_response": r.text[:200]
+                        }
+                        diagnostics.append(diag_info)
+                        print(f"⚠️ [Suspended] No results for KOL: {kol['name']}. Logged to diagnostics.")
+                        # In a real system, we might pause here. For this script, we continue to next KOL but log it.
+                        continue
+                        
+                    for item in items:
+                        url = item.get("url")
+                        if url in seen_urls:
                             continue
-                except Exception:
-                    continue
-                key = f"{url}|{title}"
-                if key in seen:
-                    continue
-                seen.add(key)
-                results.append({
-                    "leader_query": q,
-                    "url": url,
-                    "title": title,
-                    "content_excerpt": (item.get("content") or "")[:600],
-                    "published_at": published,
-                    "collected_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        seen_urls.add(url)
+                        
+                        title = item.get("title", "")
+                        content = item.get("content", "")
+                        
+                        # Quality Check (Simple)
+                        if len(content) < 50:
+                            continue
+
+                        results.append({
+                            "leader_query": f"{kol['name']} {kol['company']}",
+                            "name": kol["name"],
+                            "title": kol["title"],
+                            "company": kol["company"],
+                            "url": url,
+                            "title": title,
+                            "content_excerpt": content[:600],
+                            "published_at": item.get("published_date", "Recent"),
+                            "collected_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        })
+                else:
+                    run_logs.append(f"Error {r.status_code} for {query}")
+                    diagnostics.append({
+                        "timestamp": datetime.now().isoformat(),
+                        "query": query,
+                        "status_code": r.status_code,
+                        "status": "http_error",
+                        "error": r.text[:200]
+                    })
+            except Exception as e:
+                run_logs.append(f"Exception for {query}: {e}")
+                diagnostics.append({
+                    "timestamp": datetime.now().isoformat(),
+                    "query": query,
+                    "status": "exception",
+                    "error": str(e)
                 })
+                
             if len(results) >= min_items:
                 break
+        
+        # Save Diagnostics if any
+        if diagnostics:
+            self._save_diagnostics(diagnostics)
 
-        out = {
-            "status": {
-                "min_required": min_items,
-                "collected": len(results),
-                "span_days": span_days,
-                "time_range": time_range,
-                "run_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                "logs": run_logs
-            },
-            "results": results
+        return {
+            "results": results,
+            "count": len(results),
+            "diagnostics": diagnostics
         }
 
-        # 存储结果与日志
+    def _save_diagnostics(self, diagnostics: List[Dict[str, Any]]):
+        """Save diagnostic report for 0-result queries"""
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        out_dir = os.path.join(base_dir, "reports")
-        os.makedirs(out_dir, exist_ok=True)
-        fname = f"leader_statements_{datetime.now().strftime('%Y-%m-%d_%H%M%S')}.json"
-        with open(os.path.join(out_dir, fname), "w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False, indent=2)
-        return out
+        log_dir = os.path.join(base_dir, "logs")
+        os.makedirs(log_dir, exist_ok=True)
+        
+        filename = f"tavily_zero_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        filepath = os.path.join(log_dir, filename)
+        
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(diagnostics, f, ensure_ascii=False, indent=2)
+        print(f"📄 Diagnostic report saved to {filepath}")
+
+    # Tavily 搜索采集（最近30天，至少200条） -> Renamed/Deprecated by collect_kol_content but kept if needed for fallback or different logic
+    # merging logic into collect_kol_content so we can remove or ignore this one if we replace calls.
+    # But to be safe, I will just replace the old method with the new one or update fetch_data to use the new one.
+    # I will replace the old `collect_leader_statements` with the new `collect_kol_content` logic but keep the name if convenient, 
+    # OR better, rename it in the class and update the caller.
+    
+    # Let's just use the new method name and update the caller in `fetch_data`.
+
         
     def _summarize_text(self, text: str) -> str:
         """
-        Summarize text into 3-5 core points.
+        Summarize text into 3 core points and translate if necessary.
         Returns HTML formatted list.
         """
         if not text:
@@ -724,62 +880,49 @@ class DailyNewsGenerator:
             
         # Clean up text first
         text = text.strip()
-        if len(text) < 100:
+        if len(text) < 10:
             return text
             
+        # Translate to Chinese if needed (Simple heuristic: count Chinese chars)
+        chinese_chars = len(list(filter(lambda x: '\u4e00' <= x <= '\u9fff', text)))
+        if chinese_chars < len(text) * 0.1: # If less than 10% Chinese, translate
+            try:
+                # Translate in chunks if too long (limit is usually 5000 chars)
+                if len(text) > 4000:
+                    text = text[:4000]
+                text = self.client.translator.translate(text)
+            except Exception as e:
+                print(f"Translation failed: {e}")
+
         import re
         # Split into sentences (support Chinese and English punctuation)
-        # Split by 。 ! ? . ! ? and newline
         sentences = re.split(r'(?<=[。！？.!?])\s+|\n+', text)
         sentences = [s.strip() for s in sentences if len(s.strip()) > 10]
         
-        # If few sentences, just return text or list of them
-        if len(sentences) <= 3:
-            # If it's a short paragraph, just return it
-            if len(text) < 200:
-                return text
-            # Otherwise make list
-            html = "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'>"
-            for s in sentences:
-                html += f"<li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>{s}</li>"
-            html += "</ul>"
-            return html
-
-        # Simple scoring to pick best 3-5
+        # Pick best 3 sentences based on keywords
+        keywords = ["市场", "增长", "营收", "发布", "推出", "销量", "利润", "同比", "环比", "技术", "专利", "投资"]
         scored = []
-        keywords = ["market", "growth", "revenue", "launch", "new", "sales", "profit",
-                   "市场", "增长", "营收", "发布", "推出", "销量", "利润", "同比", "环比"]
         
         for i, s in enumerate(sentences):
             score = 0
-            # Position bias
-            if i == 0: score += 5
-            if i == len(sentences)-1: score += 2
-            
-            # Keyword matching
+            if i == 0: score += 5 # First sentence usually important
             for k in keywords:
-                if k in s.lower():
+                if k in s:
                     score += 2
-            
-            # Length bias (prefer medium length)
             if 20 <= len(s) <= 100:
                 score += 1
-                
             scored.append((score, i, s))
             
-        # Sort by score
         scored.sort(key=lambda x: x[0], reverse=True)
-        
-        # Take top 3-5
-        count = min(5, max(3, len(sentences)//2))
-        top_items = scored[:count]
-        
-        # Restore original order
-        top_items.sort(key=lambda x: x[1])
+        top_items = scored[:3] # Top 3
+        top_items.sort(key=lambda x: x[1]) # Restore order
         
         # Generate HTML
         html = "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'>"
         for _, _, s in top_items:
+            # Ensure it ends with punctuation
+            if s and s[-1] not in "。！？.!?":
+                s += "。"
             html += f"<li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>{s}</li>"
         html += "</ul>"
         
@@ -1691,7 +1834,7 @@ class DailyNewsGenerator:
                             <div class="brand-name">{item["brand"]}</div>
                         </div>
                         <div class="sales-info">
-                            <div class="sales-number">{item["sales"]:,}</div>
+                            <div class="sales-number">{item["sales"]}</div>
                             <div class="sales-change">{item["change"]}</div>
                         </div>
                     </div>
@@ -1718,7 +1861,7 @@ class DailyNewsGenerator:
                             <div class="brand-name">{item["brand"]}</div>
                         </div>
                         <div class="sales-info">
-                            <div class="sales-number">{item["sales"]:,}</div>
+                            <div class="sales-number">{item["sales"]}</div>
                             <div class="sales-change">{item["change"]}</div>
                         </div>
                     </div>
@@ -2118,19 +2261,8 @@ def main():
     """主函数 - 生成Daily News页面"""
     print("🚀 开始生成新能源汽车Daily News页面...")
     
-    # 可选：运行Tavily采集（需要TAVILY_API_KEY）
-    # 默认开启采集，除非显式禁用
-    if os.environ.get("RUN_TAVILY_COLLECTION") != "0":
-        try:
-            collector = DailyNewsGenerator()
-            print("🔎 运行Tavily采集（最近30天，至少200条）...")
-            # Set span_days=30 to cover Nov 1 - Dec 1
-            out = collector.collect_leader_statements(span_days=30, min_items=200)
-            print(f"✅ 采集完成：{out['status']['collected']} 条，时间窗 {out['status']['time_range']}")
-        except Exception as e:
-            print(f"⚠️ Tavily采集失败: {e}")
-
     generator = DailyNewsGenerator()
+    # generate_daily_news handles fetch_data internally
     html_content = generator.generate_daily_news()
     
     # 保存HTML文件

@@ -1,0 +1,93 @@
+[
+  {
+    "timestamp": "2025-12-01T17:30:42.344202",
+    "query": "王传福 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:43.033701",
+    "query": "Elon Musk (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:43.779196",
+    "query": "李想 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:44.526144",
+    "query": "李斌 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:45.288749",
+    "query": "何小鹏 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:46.329329",
+    "query": "雷军 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:47.066865",
+    "query": "余承东 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:47.943555",
+    "query": "朱江明 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:48.701415",
+    "query": "安聪慧 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:49.455864",
+    "query": "魏建军 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:50.169813",
+    "query": "李书福 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:50.943958",
+    "query": "郭明錤 汽车 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:51.718943",
+    "query": "陈震 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}"
+  }
+]

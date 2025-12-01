@@ -1,0 +1,93 @@
+[
+  {
+    "timestamp": "2025-12-01T17:26:36.159353",
+    "query": "王传福 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:37.085075",
+    "query": "Elon Musk (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:37.815238",
+    "query": "李想 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:38.517403",
+    "query": "李斌 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:39.239690",
+    "query": "何小鹏 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:39.969645",
+    "query": "雷军 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:40.683767",
+    "query": "余承东 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:41.380003",
+    "query": "朱江明 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:42.177746",
+    "query": "安聪慧 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:42.915450",
+    "query": "魏建军 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:43.637522",
+    "query": "李书福 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:44.436146",
+    "query": "郭明錤 汽车 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:45.243221",
+    "query": "陈震 (\"演讲\" OR \"专访\" OR \"发言\" OR \"观点\")",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}"
+  }
+]

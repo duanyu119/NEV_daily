@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2025-12-01T17:26:29.457885",
+    "query": "比亚迪 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:30.233566",
+    "query": "特斯拉 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:31.010187",
+    "query": "蔚来 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:31.728741",
+    "query": "小鹏 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:32.488096",
+    "query": "理想 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:33.195368",
+    "query": "小米汽车 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:33.983134",
+    "query": "极氪 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:34.802184",
+    "query": "问界 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:35.585640",
+    "query": "零跑 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:26:36.425114",
+    "query": "吉利 新车发布",
+    "status_code": 400,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Invalid time range. Must be 'day', 'week', 'month', 'year' (or 'd', 'w', 'm', 'y').\"}}",
+    "context": "new_car_launch"
+  }
+]

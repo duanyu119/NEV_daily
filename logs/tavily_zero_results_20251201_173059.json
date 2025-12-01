@@ -1,0 +1,82 @@
+[
+  {
+    "timestamp": "2025-12-01T17:30:52.501129",
+    "query": "比亚迪 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:53.200870",
+    "query": "特斯拉 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:53.918168",
+    "query": "蔚来 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:54.648173",
+    "query": "小鹏 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:55.475461",
+    "query": "理想 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:56.217204",
+    "query": "小米汽车 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:57.051391",
+    "query": "极氪 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:57.863591",
+    "query": "问界 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:58.639331",
+    "query": "零跑 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  },
+  {
+    "timestamp": "2025-12-01T17:30:59.400193",
+    "query": "吉利 新车发布",
+    "status_code": 401,
+    "status": "http_error",
+    "error": "{\"detail\":{\"error\":\"Unauthorized: missing or invalid API key.\"}}",
+    "context": "new_car_launch"
+  }
+]

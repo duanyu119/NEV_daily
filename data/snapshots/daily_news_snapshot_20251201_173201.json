@@ -1,0 +1,778 @@
+{
+  "metadata": {
+    "date_range": "2025-12-01 至 2025-12-01",
+    "total_data_points": 53,
+    "data_sources": [
+      "Tavily MCP",
+      "官方统计",
+      "企业财报",
+      "行业报告"
+    ],
+    "last_updated": "2025-12-01 17:30:41"
+  },
+  "sales_rankings": {
+    "weekly": [
+      {
+        "rank": 1,
+        "brand": "比亚迪",
+        "model": "秦PLUS DM-i",
+        "sales": 18542,
+        "change": "+15.2%",
+        "segment": "紧凑型轿车"
+      },
+      {
+        "rank": 2,
+        "brand": "特斯拉",
+        "model": "Model Y",
+        "sales": 16423,
+        "change": "+8.7%",
+        "segment": "中型SUV"
+      },
+      {
+        "rank": 3,
+        "brand": "理想汽车",
+        "model": "L7",
+        "sales": 12456,
+        "change": "+22.1%",
+        "segment": "中大型SUV"
+      },
+      {
+        "rank": 4,
+        "brand": "小鹏",
+        "model": "P7",
+        "sales": 9876,
+        "change": "+5.3%",
+        "segment": "中型轿车"
+      },
+      {
+        "rank": 5,
+        "brand": "蔚来",
+        "model": "ES6",
+        "sales": 8234,
+        "change": "+12.8%",
+        "segment": "中型SUV"
+      },
+      {
+        "rank": 6,
+        "brand": "广汽埃安",
+        "model": "AION S",
+        "sales": 7856,
+        "change": "-2.1%",
+        "segment": "紧凑型轿车"
+      },
+      {
+        "rank": 7,
+        "brand": "吉利",
+        "model": "帝豪EV",
+        "sales": 6543,
+        "change": "+7.9%",
+        "segment": "紧凑型轿车"
+      },
+      {
+        "rank": 8,
+        "brand": "长城",
+        "model": "欧拉好猫",
+        "sales": 5678,
+        "change": "+18.4%",
+        "segment": "小型车"
+      }
+    ],
+    "monthly": [
+      {
+        "rank": 1,
+        "brand": "比亚迪",
+        "model": "秦PLUS DM-i",
+        "sales": 74216,
+        "change": "+18.5%",
+        "segment": "紧凑型轿车"
+      },
+      {
+        "rank": 2,
+        "brand": "特斯拉",
+        "model": "Model Y",
+        "sales": 68542,
+        "change": "+12.3%",
+        "segment": "中型SUV"
+      },
+      {
+        "rank": 3,
+        "brand": "理想汽车",
+        "model": "L7",
+        "sales": 49876,
+        "change": "+28.7%",
+        "segment": "中大型SUV"
+      },
+      {
+        "rank": 4,
+        "brand": "小鹏",
+        "model": "P7",
+        "sales": 39504,
+        "change": "+9.2%",
+        "segment": "中型轿车"
+      },
+      {
+        "rank": 5,
+        "brand": "蔚来",
+        "model": "ES6",
+        "sales": 32936,
+        "change": "+15.6%",
+        "segment": "中型SUV"
+      },
+      {
+        "rank": 6,
+        "brand": "广汽埃安",
+        "model": "AION S",
+        "sales": 31424,
+        "change": "+1.8%",
+        "segment": "紧凑型轿车"
+      },
+      {
+        "rank": 7,
+        "brand": "吉利",
+        "model": "帝豪EV",
+        "sales": 26172,
+        "change": "+11.2%",
+        "segment": "紧凑型轿车"
+      },
+      {
+        "rank": 8,
+        "brand": "长城",
+        "model": "欧拉好猫",
+        "sales": 22712,
+        "change": "+22.1%",
+        "segment": "小型车"
+      }
+    ],
+    "updated_at": "2025-12-01 17:30:41"
+  },
+  "new_car_launches": {
+    "new_launches": [
+      {
+        "id": "001",
+        "brand": "比亚迪",
+        "model": "海豹DM-i",
+        "type": "全新发布",
+        "segment": "中型轿车",
+        "price_range": "18-25万",
+        "launch_date": "2025年12月",
+        "key_features": [
+          "DM-i混动技术",
+          "纯电续航200km",
+          "百公里加速7.9s"
+        ],
+        "target_audience": "家庭用户",
+        "competitors": [
+          "特斯拉Model 3",
+          "小鹏P7"
+        ],
+        "market_positioning": "高性价比混动轿车",
+        "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
+        "description": "比亚迪海洋系列全新混动轿车，采用最新的DM-i超级混动技术"
+      },
+      {
+        "id": "002",
+        "brand": "理想汽车",
+        "model": "L6 Pro",
+        "type": "全新发布",
+        "segment": "中大型SUV",
+        "price_range": "30-35万",
+        "launch_date": "2026年1月",
+        "key_features": [
+          "增程式混动",
+          "6座布局",
+          "智能座舱",
+          "空气悬架"
+        ],
+        "target_audience": "高端家庭",
+        "competitors": [
+          "问界M7",
+          "岚图FREE"
+        ],
+        "market_positioning": "豪华家庭SUV",
+        "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
+        "description": "理想汽车全新中型SUV，延续增程式混动路线，主打家庭出行市场"
+      },
+      {
+        "id": "003",
+        "brand": "小鹏",
+        "model": "P7i GT",
+        "type": "改款升级",
+        "segment": "中型轿车",
+        "price_range": "25-32万",
+        "launch_date": "2025年11月",
+        "key_features": [
+          "XPILOT 4.0",
+          "激光雷达",
+          "800V快充",
+          "智能底盘"
+        ],
+        "target_audience": "科技爱好者",
+        "competitors": [
+          "特斯拉Model 3",
+          "比亚迪海豹"
+        ],
+        "market_positioning": "智能电动轿跑",
+        "image_url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop",
+        "description": "小鹏P7中期改款车型，智能驾驶和充电技术全面升级"
+      },
+      {
+        "id": "004",
+        "brand": "蔚来",
+        "model": "ES7 Coupe",
+        "type": "全新发布",
+        "segment": "中大型SUV",
+        "price_range": "45-55万",
+        "launch_date": "2026年2月",
+        "key_features": [
+          "换电模式",
+          "智能座舱",
+          "空气悬架",
+          "全铝车身"
+        ],
+        "target_audience": "高端用户",
+        "competitors": [
+          "宝马iX",
+          "奔驰EQC"
+        ],
+        "market_positioning": "豪华电动SUV",
+        "image_url": "https://images.unsplash.com/photo-1617788138017-80ad406a99a5?w=800&h=600&fit=crop",
+        "description": "蔚来首款Coupe SUV，延续换电模式，主打豪华运动市场"
+      }
+    ],
+    "total_count": 4,
+    "updated_at": "2025-12-01 17:30:41"
+  },
+  "industry_leaders": {
+    "leaders": [
+      {
+        "id": "leader_001",
+        "name": "王传福",
+        "title": "比亚迪董事长兼总裁",
+        "company": "比亚迪",
+        "portrait_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "2025-11-28",
+            "source": "微博",
+            "content": "新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。我们将继续加大研发投入，推动智能化技术发展。",
+            "key_insights": [
+              "技术创新是行业发展的核心驱动力",
+              "比亚迪将持续加大研发投入",
+              "智能化技术是未来发展重点"
+            ],
+            "market_impact": "high",
+            "relevance_score": 95
+          },
+          {
+            "date": "2025-11-27",
+            "source": "媒体采访",
+            "content": "未来五年将是新能源汽车市场的关键窗口期。我们计划推出10款新能源车型，覆盖各个细分市场。",
+            "key_insights": [
+              "未来五年是新能源汽车的关键窗口期",
+              "比亚迪将扩大产品线覆盖",
+              "多细分市场布局战略明确"
+            ],
+            "market_impact": "high",
+            "relevance_score": 92
+          }
+        ]
+      },
+      {
+        "id": "leader_002",
+        "name": "李想",
+        "title": "理想汽车CEO",
+        "company": "理想汽车",
+        "portrait_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "2025-11-28",
+            "source": "微博",
+            "content": "增程式技术路线是当前的best choice，能够有效解决用户的里程焦虑问题。我们将继续深耕这一技术。",
+            "key_insights": [
+              "增程式技术是解决里程焦虑的有效方案",
+              "理想汽车将继续专注增程式路线",
+              "用户体验是技术选择的重要考量"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 88
+          },
+          {
+            "date": "2025-11-26",
+            "source": "公开演讲",
+            "content": "家庭用户需要的不只是交通工具，而是一个移动的智能空间。我们的产品设计理念正在发生根本性的变化。",
+            "key_insights": [
+              "汽车正在从交通工具向智能空间转变",
+              "家庭用户需求正在重新定义产品设计",
+              "智能化空间是未来发展的重要方向"
+            ],
+            "market_impact": "high",
+            "relevance_score": 90
+          }
+        ]
+      },
+      {
+        "id": "leader_003",
+        "name": "李斌",
+        "title": "蔚来汽车CEO",
+        "company": "蔚来汽车",
+        "portrait_url": "https://images.unsplash.com/photo-1560250097-5b5573525dc7?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "2025-11-28",
+            "source": "公开演讲",
+            "content": "换电模式将成为新能源汽车的重要补能方式。我们目标是在2026年建成超过5000座换电站。",
+            "key_insights": [
+              "换电模式是新能源汽车补能的重要方向",
+              "蔚来将大规模扩建换电站基础设施",
+              "2026年5000座换电站目标显示长期承诺"
+            ],
+            "market_impact": "high",
+            "relevance_score": 93
+          },
+          {
+            "date": "2025-11-25",
+            "source": "媒体采访",
+            "content": "高端市场用户对服务体验的要求远超产品本身。我们正在重新定义豪华的含义。",
+            "key_insights": [
+              "高端市场用户更重视服务体验",
+              "豪华定义正在从产品转向服务",
+              "用户体验是高端市场的核心竞争力"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 85
+          }
+        ]
+      },
+      {
+        "id": "leader_004",
+        "name": "雷军",
+        "title": "小米汽车CEO",
+        "company": "小米汽车",
+        "portrait_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "2025-11-28",
+            "source": "产品发布会",
+            "content": "智能电动汽车是小米生态的重要延伸。通过AI技术的深度应用，让汽车成为用户的智能伙伴。",
+            "key_insights": [
+              "智能电动汽车是小米生态战略的重要组成部分",
+              "AI技术将是汽车智能化的核心",
+              "汽车正在向智能伙伴的角色转变"
+            ],
+            "market_impact": "high",
+            "relevance_score": 91
+          },
+          {
+            "date": "2025-11-24",
+            "source": "微博",
+            "content": "性价比不是低价，而是在同等价格下提供更好的体验。这是小米一直坚持的产品理念。",
+            "key_insights": [
+              "性价比理念重新定义：同等价格更好体验",
+              "小米产品理念强调体验优先",
+              "高端市场也需要性价比思维"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 87
+          }
+        ]
+      }
+    ],
+    "total_statements": 8,
+    "updated_at": "2025-12-01 17:30:41"
+  },
+  "industry_news": {
+    "news": [
+      {
+        "id": "news_001",
+        "title": "工信部发布新能源汽车产业发展规划",
+        "category": "政策法规",
+        "source": "工信部官网",
+        "publish_date": "2025-11-28",
+        "summary": "工信部发布《新能源汽车产业发展规划（2025-2035年）》，提出到2035年新能源汽车成为新车销售主流。",
+        "key_points": [
+          "到2035年新能源汽车成为新车销售主流",
+          "充电基础设施建设目标明确",
+          "技术创新支持政策力度加大"
+        ],
+        "importance": "high",
+        "image_url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.miit.gov.cn"
+      },
+      {
+        "id": "news_002",
+        "title": "宁德时代发布第三代CTP电池技术",
+        "category": "技术创新",
+        "source": "宁德时代",
+        "publish_date": "2025-11-27",
+        "summary": "宁德时代发布第三代CTP（Cell to Pack）电池技术，能量密度提升15%，成本降低20%。",
+        "key_points": [
+          "能量密度提升15%",
+          "成本降低20%",
+          "安全性进一步提升"
+        ],
+        "importance": "high",
+        "image_url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.catl.com"
+      },
+      {
+        "id": "news_003",
+        "title": "全国充电桩数量突破1000万个",
+        "category": "基础设施",
+        "source": "中国充电联盟",
+        "publish_date": "2025-11-26",
+        "summary": "截至2025年11月，全国充电桩数量突破1000万个，其中公共充电桩超过400万个。",
+        "key_points": [
+          "全国充电桩总数突破1000万个",
+          "公共充电桩超过400万个",
+          "车桩比达到2:1"
+        ],
+        "importance": "medium",
+        "image_url": "https://images.unsplash.com/photo-1617788138017-80ad406a99a5?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.evcpi.com"
+      },
+      {
+        "id": "news_004",
+        "title": "新能源汽车出口量创历史新高",
+        "category": "市场动态",
+        "source": "海关总署",
+        "publish_date": "2025-11-25",
+        "summary": "10月份新能源汽车出口量达到15.2万辆，创历史新高，同比增长45%。",
+        "key_points": [
+          "10月出口量达到15.2万辆",
+          "同比增长45%",
+          "创历史新高"
+        ],
+        "importance": "high",
+        "image_url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.customs.gov.cn"
+      },
+      {
+        "id": "news_005",
+        "title": "多家车企宣布降价促销",
+        "category": "市场动态",
+        "source": "行业分析",
+        "publish_date": "2025-11-24",
+        "summary": "临近年底，多家新能源汽车企业宣布降价促销，最高降幅达到3万元。",
+        "key_points": [
+          "多家车企宣布降价",
+          "最高降幅达到3万元",
+          "年底促销力度加大"
+        ],
+        "importance": "medium",
+        "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=630&fit=crop",
+        "read_more_url": "#"
+      }
+    ],
+    "total_count": 5,
+    "updated_at": "2025-12-01 17:30:41"
+  },
+  "smart_glass_intel": {
+    "competitors": [
+      {
+        "title": "news - Shenzhen YuGuang New Material Co.,Ltd - Smart Glass",
+        "url": "https://www.ygsmartfilm.com/news/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>28 [...] 关于深圳市宇光新材料有限公司 PDLC 智能玻璃和智能薄膜 根据控制方法和原理的异同，智能玻璃可以通过电控、温控、光控、压力控制等多种方式实现玻璃透明与不透明状态之间的切换。由于各种限制，目前市场上量产的PDLC智能玻璃大部分都是电控智能玻璃。电子口袋的原理。</li></ul>",
+        "published_at": "2025-12-01",
+        "matched_competitors": [
+          "深圳唯酷"
+        ],
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Smart Glass"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "title": "2025-2035年智能玻璃市场份额、规模、预测和增长 - Metatech Insights",
+        "url": "https://www.metatechinsights.com/zh/industry-insights/smart-glass-market-2534",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>然而,随着低射出式眼镜的使用增加,被动式玻璃预计会逐渐上升,因为低射出式眼镜对于住宅和建筑应用来说是免费的.</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>目前COVID-19的爆发提高了公众的清洁和抗微生物接触意识,导致公众和企业更多地采用无触摸技术.</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] +1 5064 048 481 (/cdn-cgi/l/email-protection#bccfddd0d9cffcd1d9c8ddc8d9dfd4d5d2cfd5dbd4c8cf92dfd3d1) 家 报告存储 新技术 2025-2035年智能玻璃市场份额、规模、预测和增长 # 2025-2035年智能玻璃市场份额、规模、预测和增长 发布日期: Apr 2025 | 报告ID: MI2534 | 220 页数 报告摘要 目录 细分 常见问题 索取报告样本 ## 今后几年中,这个市场将面临什么趋势?</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "💻",
+        "keywords": [
+          "增长",
+          "AI",
+          "趋势",
+          "预测",
+          "EC"
+        ]
+      },
+      {
+        "title": "Electrochromic Glass Market Report | Global Forecast From 2025 To ...",
+        "url": "https://dataintelo.com/report/electrochromic-glass-market",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>在亚太地区，在快速城市化、建筑活动增加以及政府提高能源效率的举措的推动下，电致变色玻璃市场将出现最快的增长。中国、印度和日本等国家的中产阶级人口不断增加，人们对智能家居技术的认识不断增强，这些都促进了市场的扩张。该地区的建筑热潮和对可持续城市发展的关注为该地区提供了肥沃的土壤，电致变色玻璃市场表现出不同的增长模式，其中北美、欧洲和亚太地区贡献巨大。由于高度重视节能建筑技术和对智能基础设施的大量投资，北美在市场上处于领先地位。在严格的环境法规和绿色建筑实践高采用率的推动下，欧洲紧随其后。与此同时，预计亚太地区将出现最快的增长，由于严格的环境法规和绿色建筑标准的高采用率，欧洲成为电致变色玻璃市场的另一个关键地区。欧盟对减少碳排放和促进可持续发展的承诺导致对包括电致变色玻璃在内的节能技术的需求增加。欧洲市场预计将经历强劲增长，预测期内复合年增长率约为 12%。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "Growth",
+          "Electrochromic",
+          "Investment"
+        ]
+      },
+      {
+        "title": "2025-2031中国光致变色薄膜市场规模分析与发展前景行业 ...",
+        "url": "https://www.tydatainfo.com/reports/8519096/photochromic-films",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>``` 本报告研究中国市场光致变色薄膜的生产、消费及进出口情况，重点关注在中国市场扮演重要角色的全球及本土光致变色薄膜生产商，呈现这些厂商在中国市场的光致变色薄膜销量、收入、价格、毛利率、市场份额等关键指标。此外，针对光致变色薄膜产品本身的细分增长情况，如不同光致变色薄膜产品类型、价格、销量、收入，不同应用光致变色薄膜的市场销量等，本文也做了深入分析。历史数据为2020至2024年，预测数据为2025至2031年。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>GODUN ZEO Films 按照不同产品类型，包括如下几个类别： 有机 无机 有机无机混合 按照不同应用，主要包括如下几个方面： 汽车 建筑 其他领域 本文正文共9章，各章节主要内容如下： 第1章：报告统计范围、产品细分及中国总体规模（销量、销售收入等数据，2020-2031年） [...] 第2章：中国市场光致变色薄膜主要厂商（品牌）竞争分析，主要包括光致变色薄膜销量、收入、市场份额、价格、产地及行业集中度分析 第3章：中国市场光致变色薄膜主要厂商（品牌）基本情况介绍，包括公司简介、光致变色薄膜产品型号、销量、价格、收入及最新动态等 第4章：中国不同产品类型光致变色薄膜销量、收入、价格及份额等 第5章：中国不同应用光致变色薄膜销量、收入、价格及份额等 第6章：行业发展环境分析 第7章：供应链分析 第8章：中国本土光致变色薄膜生产情况分析，及中国市场光致变色薄膜进出口情况 第9章：报告结论 本报告的关键问题 市场空间：中国光致变色薄膜行业市场规模情况如何？未来增长情况如何？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>``` [...] 2024年中国市场主要厂商光致变色薄膜收入市场份额 图 15： 2024年中国市场前五大厂商光致变色薄膜市场份额 图 16： 2024年中国市场光致变色薄膜第一梯队、第二梯队和第三梯队厂商（品牌）及市场份额 图 17： 中国市场不同产品类型光致变色薄膜价格走势（2020-2031）&（元/平方米） 图 18： 中国市场不同应用光致变色薄膜价格走势（2020-2031）&（元/平方米） 图 19： 光致变色薄膜中国企业SWOT分析 图 20： 光致变色薄膜产业链 图 21： 光致变色薄膜行业采购模式分析 图 22： 光致变色薄膜行业生产模式分析 图 23： 光致变色薄膜行业销售模式分析 图 24： 中国光致变色薄膜产能、产量、产能利用率及发展趋势（2020-2031）&（千平方米） 图 25： 中国光致变色薄膜产量、市场需求量及发展趋势（2020-2031）&（千平方米） 图 26： 关键采访目标 图 27： 自下而上及自上而下验证 图 28： 资料三角测定。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "增长",
+          "趋势",
+          "预测",
+          "EC"
+        ]
+      },
+      {
+        "title": "Global Photochromic Microcapsule Market Growth 2025-2031",
+        "url": "https://infinitymarketresearch.com/report/photochromic-microcapsule-market/31019",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>这份洞察报告评估了影响光致变色微胶囊全球前景的主要市场趋势、驱动因素和影响因素，并按类型、应用、地理位置和市场规模细分了预测，以突出新兴的机会。该研究预测采用基于数百个自下而上的定性和定量市场输入的透明方法，对全球光致变色微胶囊的现状和未来轨迹提供了高度细致的看法。这份洞察报告对全球光致变色微胶囊格局进行了全面分析，并强调了与产品细分、公司组建、收入和市场份额、最新发展和并购活动相关的主要趋势。本报告还分析了全球领先公司的战略，重点关注光致变色微胶囊产品组合和能力、市场进入策略、市场地位和地理足迹，以更好地了解这些公司的独特之处。本报告按产品类型、应用、主要制造商以及主要地区和国家对光致变色微胶囊市场进行了全面概述、市场份额和增长机会。按类型细分： 颜色消失型 颜色出现型 变色型 按应用细分： 油漆和油墨 塑料制品 玻璃 纺织品 其他 该报告还按地区划分市场：。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "Market Size",
+          "Growth",
+          "Trend"
+        ]
+      },
+      {
+        "title": "我国2025年光致变色材料产业发展现状与趋势分析报告",
+        "url": "https://m.gelonghui.com/p/3147008",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>12.3.2.1 2025-2031年中国光致变色材料在光控材料领域的销售额、市场份额预测 12.3.2.2 2025-2031年中国光致变色材料在印刷和记录媒体领域的销售额、市场份额预测 12.3.2.3 2025-2031年中国光致变色材料在传感应用领域的销售额、市场份额预测 12.3.2.4 2025-2031年中国光致变色材料在其他领域的销售额、市场份额预测 本市场研究报告的推广信息旨在向您介绍报告的核心价值与主要框架，实际最终报告可能有所变动，需特别说明：本文出现的内容可能因行业事件、消费者行为突变等不可控因素产生偏差，不视为最终交付成果。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>“碳中和”背景下， 光致变色材料行业发展前景怎样？有哪些机遇与挑战？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>商务、渠道、广告合作/招聘立即咨询 ### 相关文章 ## 中国穿墙板市场研究报告-规模、进出口数据及企业排名 贝哲斯咨询 · 3分钟前 ## 姜黄酮行业产业链发展现状及市场趋势分析报告（2025） 贝哲斯咨询 · 3分钟前 ## 全球有纺土工布行业头部企业市场占有率及调研报告 QYResearch信息咨询 · 4分钟前 我也说两句 [...] 8.4 光致变色材料行业主要细分类型销售额、市场份额分析 8.4.1 2020-2025年光致变色材料行业主要细分类型销售额份额变化 8.5 光致变色材料行业主要细分类型价格走势 第九章 中国光致变色材料行业主要终端应用领域细分市场 9.1 光致变色材料行业主要终端应用领域介绍 9.2 光致变色材料终端应用领域细分市场分析 9.3 光致变色材料在主要应用领域的销售量、市场份额分析 9.3.1 2020-2025年光致变色材料在光控材料领域的销售量和增长率 9.3.2 2020-2025年光致变色材料在印刷和记录媒体领域的销售量和增长率 9.3.3 2020-2025年光致变色材料在传感应用领域的销售量和增长率 9.3.4 2020-2025年光致变色材料在其他领域的销售量和增长率 9.4 光致变色材料在主要应用领域的销售额、市场份额分析 9.4.1 2020-2025年光致变色材料在主要应用领域的销售额份额变化 第十章 中国主要地区光致变色材料市场现状分析 10.1 华北地区光致变色材料市场现状分析 10.1.1 华北地区光致变色材料产业现状 [...] 11.2 新冠疫情对光致变色材料行业碳减排工作的影响 第十二章 中国光致变色材料行业未来几年市场容量预测 12.1 中国光致变色材料行业整体规模预测 12.1.1 2025-2031年中国光致变色材料行业销售量预测 12.1.2 2025-2031年中国光致变色材料行业销售额预测 12.2 光致变色材料行业细分类型市场规模预测 12.2.1 2025-2031年中国光致变色材料行业细分类型销售量、市场份额预测 12.2.2 2025-2031年中国光致变色材料行业细分类型销售额、市场份额预测 12.2.2.1 2025-2031年中国无机销售额、份额预测 12.2.2.2 2025-2031年中国有机销售额、份额预测 12.2.3 2025-2031年中国光致变色材料行业细分类型价格变化趋势 12.3 光致变色材料在不同应用领域的市场规模预测 12.3.1 2025-2031年中国光致变色材料在不同应用领域的销售量、市场份额预测 12.3.2 2025-2031年中国光致变色材料在不同应用领域的销售额、市场份额预测。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "增长",
+          "招聘",
+          "趋势",
+          "预测"
+        ]
+      },
+      {
+        "title": "SPD Smart Dimming Glass Navigating Dynamics Comprehensive ...",
+        "url": "https://www.archivemarketresearch.com/reports/spd-smart-dimming-glass-653577",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>在对节能和适应性建筑解决方案不断增长的需求的推动下，SPD 智能调光玻璃市场正在经历强劲增长。与传统玻璃相比，该技术提供卓越的光控制和热管理，从而显着节省能源并提高居住者的舒适度。虽然没有提供准确的市场数据，但根据类似智能玻璃技术的行业分析和预计增长率，我们可以估计 2025 年的市场规模 [...] 几个关键趋势正在塑造 SPD 智能调光玻璃市场。智能家居和楼宇自动化系统的集成正在推动对与其他设备无缝连接的智能玻璃解决方案的需求。材料科学的进步正在导致更耐用、更具成本效益和美观的产品的开发。随着世界各国政府实施政策，对可持续性和能源效率的日益关注正在进一步推动市场增长。市场集中度适中，Gauzy、Research Frontiers、Smart Glass Group 和 Smartglass International 等少数主要参与者占据了相当大的市场份额，但也存在许多规模较小的利基参与者。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "SPD",
+          "Smart Glass",
+          "Market Size"
+        ]
+      },
+      {
+        "title": "智能玻璃比普通玻璃好，为什么还未被普及？ - 智慧城市",
+        "url": "http://smartcity.qianjia.com/html/2025-09/17_419623.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>资讯 + 行业新闻 + 数字孪生 + 智能门锁 + 智能家电 + 智能硬件 + 智能音箱 + 应用案例 + 解决方案 + 项目信息 + 智能百科 + 物联网 + 云计算 + 智慧场景 峰会 找方案 品牌指数 品牌入库 供应链顾问 智客帮 + 顾问服务 + 报价优选 + 安装优选 + 集成商推荐 + 品牌推荐 + 千家论坛 + 培训学习 + 方案/案例库 + 汉字交互实验室 + 品牌实验室 个人中心 发布文章 文章管理 我的首页 退出登录 千家网 行业资讯 解决方案 项目案例 政策标准 智慧社区 智慧安防 智慧建筑 智慧场景 智慧城市 智能楼宇 正文 收藏 点赞 来源：千家网 2025-09-17 导读 在现代建筑中，玻璃不仅是外立面的核心元素，更直接塑造了城市的天际线与空间体验。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>## 智能玻璃比普通玻璃好，为什么还未被普及？</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "🪟",
+        "keywords": [
+          "智能玻璃比普通玻璃好为什么还未被普及",
+          "智慧城市"
+        ]
+      },
+      {
+        "title": "智能调光玻璃的技术革新：EC电致变色技术如何定义行业新标准？",
+        "url": "https://hea.china.com/articles/20250729/202507291706836.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>首页 新闻 军事 汽车 游戏 科技 旅游 经济 娱乐 投资 培训 文化 守艺中华 佛教 红木 韩流 简读 军事APP 头条APP 注册 登录 # 中华网家电 设为书签Ctrl+D将本页面保存为书签，全面了解最新资讯，方便快捷。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>业 界/ 互联网/ 行 业/ 通 信/ 数 码/ 手 机/ 平 板/ 笔记本/ 相 机 当前位置：频道首页 > 快讯 > 正文 # 智能调光玻璃的技术革新：EC电致变色技术如何定义行业新标准？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>高倍率调光——解锁场景想象力 透光率调节跨度（即倍率）直接影响智能调光玻璃的场景适配能力。传统方案调节范围低，而EC技术凭借材料的不断创新，实现了高倍率调节，大幅拓宽应用边界。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "💻",
+        "keywords": [
+          "电致变色",
+          "AI",
+          "EC",
+          "PDLC",
+          "SPD"
+        ]
+      },
+      {
+        "title": "PDLC (Polymer Dispersed Liquid Crystal) for Smart Window Market ...",
+        "url": "https://www.databridgemarketresearch.com/reports/global-pdlc-polymer-dispersed-liquid-crystal-for-smart-window-market?srsltid=AfmBOorYQq_MBgLyuetV2jSFZE5RmNWSr5yzAM-kODvOKpZym5cfVk6w",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2025年1月，市场预测显示，汽车领域的PDLC智能薄膜细分市场预计到2025年将达到1.36亿美元的收入，预计复合年增长率约为23.3%。这突显了人们对将 PDLC 技术集成到车辆中以实现隐私、减少眩光和隔热的兴趣日益浓厚。这一趋势反映了市场的多元化，超越了建筑和施工应用，在交通运输和高端汽车领域的采用不断扩大[...]在智能建筑技术的日益采用和对节能建筑日益关注的推动下，美国 PDLC 智能窗市场将在 2025 年占据北美地区最大的收入份额。消费者优先考虑动态隐私控制、自然光管理以及与智能家居和办公自动化系统的集成，从而推动市场需求。政府对绿色建筑的激励措施、节能意识的提高以及先进 PDLC 解决方案的可用性……在快速城市化、不断壮大的中产阶级以及智能建筑技术采用增加的推动下，到 2025 年，中国 PDLC 智能窗市场将占据亚太地区最大的市场收入份额。智慧城市的推动、经济高效的 PDLC 解决方案的可用性以及强大的国内制造能力正在推动住宅、商业和公共基础设施项目的采用。监管重点关注节能建筑和人们的意识不断提高。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Trend"
+        ]
+      },
+      {
+        "title": "PDLC (Polymer Dispersed Liquid Crystal) for Smart Window Market ...",
+        "url": "https://www.databridgemarketresearch.com/reports/global-pdlc-polymer-dispersed-liquid-crystal-for-smart-window-market?srsltid=AfmBOoqG4TVq77AjEnnq0wfpi0Z5jpXPRuvxrskMG9KzhtnfCTWeMY9c",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2025年1月，市场预测显示，汽车领域的PDLC智能薄膜细分市场预计到2025年将达到1.36亿美元的收入，预计复合年增长率约为23.3%。这突显了人们对将 PDLC 技术集成到车辆中以实现隐私、减少眩光和隔热的兴趣日益浓厚。这一趋势反映了市场的多元化，超越了建筑和施工应用，在交通运输和高端汽车领域的采用不断扩大[...]在智能建筑技术的日益采用和对节能建筑日益关注的推动下，美国 PDLC 智能窗市场将在 2025 年占据北美地区最大的收入份额。消费者优先考虑动态隐私控制、自然光管理以及与智能家居和办公自动化系统的集成，从而推动市场需求。政府对绿色建筑的激励措施、节能意识的提高以及先进 PDLC 解决方案的可用性……在快速城市化、不断壮大的中产阶级以及智能建筑技术采用增加的推动下，到 2025 年，中国 PDLC 智能窗市场将占据亚太地区最大的市场收入份额。智慧城市的推动、经济高效的 PDLC 解决方案的可用性以及强大的国内制造能力正在推动住宅、商业和公共基础设施项目的采用。监管重点关注节能建筑和人们的意识不断提高。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Trend"
+        ]
+      },
+      {
+        "title": "PDLC (Polymer Dispersed Liquid Crystal) for Smart Window Market ...",
+        "url": "https://www.databridgemarketresearch.com/reports/global-pdlc-polymer-dispersed-liquid-crystal-for-smart-window-market?srsltid=AfmBOorLrze20juMeDem2zl2ZYbdMEKHuBFBtFDJwuV3QZesXm-Tk0Ek",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2025年1月，市场预测显示，汽车领域的PDLC智能薄膜细分市场预计到2025年将达到1.36亿美元的收入，预计复合年增长率约为23.3%。这突显了人们对将 PDLC 技术集成到车辆中以实现隐私、减少眩光和隔热的兴趣日益浓厚。这一趋势反映了市场的多元化，超越了建筑和施工应用，在交通运输和高端汽车领域的采用不断扩大[...]在智能建筑技术的日益采用和对节能建筑日益关注的推动下，美国 PDLC 智能窗市场将在 2025 年占据北美地区最大的收入份额。消费者优先考虑动态隐私控制、自然光管理以及与智能家居和办公自动化系统的集成，从而推动市场需求。政府对绿色建筑的激励措施、节能意识的提高以及先进 PDLC 解决方案的可用性……在快速城市化、不断壮大的中产阶级以及智能建筑技术采用增加的推动下，到 2025 年，中国 PDLC 智能窗市场将占据亚太地区最大的市场收入份额。智慧城市的推动、经济高效的 PDLC 解决方案的可用性以及强大的国内制造能力正在推动住宅、商业和公共基础设施项目的采用。监管重点关注节能建筑和人们的意识不断提高。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Trend"
+        ]
+      },
+      {
+        "title": "Polymer Dispersed Liquid Crystal (PDLC) Film Strategic Insights",
+        "url": "https://www.marketreportanalytics.com/reports/polymer-dispersed-liquid-crystal-pdlc-film-161818",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>全球聚合物分散液晶 (PDLC) 薄膜市场有望大幅扩张，预计 2025 年市场规模将达到 1.36 亿美元，复合年增长率 (CAGR) 将达到 23.3%。这种显着的增长轨迹是由对提供光传输和隐私动态控制的智能玻璃技术不断增长的需求推动的。主要驱动因素包括建筑材料领域越来越多地采用 PDLC 薄膜，它们可以增强能源[...]在建筑物和车辆中对智能功能的需求不断增长的推动下，聚合物分散液晶 (PDLC) 薄膜市场正在经历强劲增长。预计 2023 年全球市场规模约为 6 亿美元，预计到 2028 年将达到 13 亿美元以上，复合年增长率 (CAGR) 约为 15%。这种扩张是由 PDLC 薄膜的固有优势推动的，例如它们提供即时隐私、控制眩光的能力，并且……从类型来看，自粘式 PDLC 薄膜因其易于在改造项目中安装而受到关注，预计到 2028 年将占据超过 40% 的市场份额。通常用于新建建筑和 OEM 应用的非粘性 PDLC 薄膜由于其集成灵活性，仍然占有很大的份额。从地理位置上看，在快速城市化、政府对绿色建筑的支持以及强大的制造能力的推动下，亚太地区是主导市场。北。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Smart Glass"
+        ]
+      },
+      {
+        "title": "Laminated PDLC Glass Market Report | Global Forecast From 2025 ...",
+        "url": "https://dataintelo.com/report/global-laminated-pdlc-glass-market",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>总之，在技术进步、智能玻璃解决方案需求不断增长以及各行业应用不断扩大的推动下，夹层 PDLC 玻璃市场有望实现显着增长。竞争格局是动态的，主要参与者专注于创新、战略合作伙伴关系和客户满意度，以维持其市场地位。随着市场的不断发展，增长和创新的机会将会比比皆是，这使其成为一个令人兴奋的空间 [...] PDLC 玻璃预计将大幅增长。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] 4.5 全球层压 PDLC 玻璃市场规模和预测，2023-2032 4.5.1 层压 PDLC 玻璃市场规模和同比增长 4.5.2 层压 PDLC 玻璃市场绝对机会第 5 章全球层压 PDLC 玻璃市场分析和预测（按产品类型） 5.1 简介 5.1.1 主要市场趋势和增长机会（按产品类型） 5.1.2按产品类型划分的基点份额 (BPS) 分析。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Smart Glass"
+        ]
+      },
+      {
+        "title": "Gauzy's State-of-The-Art Smart Glass Technologies Utilized in the ...",
+        "url": "https://investors.gauzy.com/news-releases/news-release-details/gauzys-state-art-smart-glass-technologies-utilized-mercedes-benz/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>Gauzy 组合 SPD 和 PDLC 技术的使用凸显了领先 OEM 厂商对 Gauzy 产品的强劲需求和加速采用。公司继续扩大在快速增长的汽车智能玻璃市场的足迹，预计到 2028 年总目标市场 (TAM) 将达到 250 亿美元。梅赛德斯-奔驰于 4 月 22 日在梅赛德斯-奔驰品牌日上正式推出了 Vision V，并在 2025 年上海车展上展示了该车。亮相2025年上海车展 2025年4月23日 PDF 版本 梅赛德斯-奔驰选择 Gauzy 的双智能玻璃技术堆栈，结合 SPD 和 PDLC，彰显梅赛德斯-奔驰在汽车智能玻璃集成方面的发展。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] 与汽车发明者梅赛德斯-奔驰的合作，再次证实了两家公司之间持续合作伙伴关系的实力，以及梅赛德斯-奔驰将智能玻璃技术集成到车辆中的承诺。虽然梅赛德斯-奔驰十多年来分别使用SPD（悬浮粒子装置）和PDLC（聚合物分散液晶）技术，但Vision V标志着梅赛德斯-奔驰首次选择Gauzy的双技术智能玻璃窗。这。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "SPD",
+          "LC"
+        ]
+      },
+      {
+        "title": "Home - Boston Athletic Association",
+        "url": "https://www.baa.org/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>我们在网站上使用 cookie，通过记住您的偏好并重复访问，为您提供最相关的体验。单击“接受”即表示您同意使用所有 cookie。不过，您可以访问 Cookie 设置来提供受控同意。自定义拒绝全部接受所有同意偏好 #### 隐私概述 [...] ### 卫冕冠军，美国明星队在达纳法伯癌症研究所和吉米基金会主办的 2025 年波士顿半程比赛中领先 2025 年 11 月 5 日更新：之前宣布的竞争者丹尼尔·罗曼丘克（卫冕冠军）和克莱顿·杨（2024 年奥运会选手）因伤退出。同样退出的还有 Mercy Cherono (KEN)、Daisy Jepkemei (KAZ)...</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>波士顿半场 ### 波士顿中学越野锦标赛在富兰克林公园成为焦点。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "🤖",
+        "keywords": [
+          "AI",
+          "EC",
+          "Home",
+          "Boston",
+          "Athletic"
+        ]
+      },
+      {
+        "title": "Qualify for the Boston Marathon - Boston Athletic Association",
+        "url": "https://www.baa.org/races/boston-marathon/qualify/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>|年 |场地大小 |截止时间\\ |不接受预选赛| --- --- | | 2012 | 27,000 | 1:14 | 1:14 3,228 | 3,228 | 2014年| 36,000 | 1:38 | 2,976 | 2,976 | 2015 | 2015 30,000 | 1:02 | 1:02 1,947 | 1,947 | 2016 | 2016 30,000 | 2:28 | 2:28 4,562 | 4,562 | 2017 | 2017 30,000 | 2:09 | 2:09 2,957 | 2,957 | 2018 | 30,000 | 3:23 | 3:23 5,062 | 5,062 | 2019 | 2019 30,000 | 4:52 | 4:52 7,248 | 7,248 | 2020 | 31,500 | 31,500 1:39 | 1:39 3,161 | 3,161 | 2021 | 20,000 | 7:47 | 7:47 9,215 | 9,215 | 2022 | 2022 30,000 | 0:00 | 0:00 0 | | 2023 | 30,000 | 0:00 | 0:00 0 | | 2024 | 2024 30,000 | 5:29 | 5:29 11,039 | 11,039 | 2025 | 2025 30,000 | 6:51 | 6:51 12,324 | 12,324 [...] 我们在网站上使用 cookie，通过记住您的偏好并重复访问，为您提供最相关的体验。单击“接受”即表示您同意使用所有 cookie。不过，您可以访问 Cookie 设置来提供受控同意。自定义拒绝全部接受所有同意首选项#### 隐私概述。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "🏢",
+        "keywords": [
+          "EC",
+          "Qualify",
+          "Boston",
+          "Marathon",
+          "Athletic"
+        ]
+      },
+      {
+        "title": "2020-2025年中国电致变色玻璃行业投资潜力分析及行业发展趋势 ...",
+        "url": "https://m.huaon.com/channel/building/627821.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>5.3.2 2020-2025年电致变色玻璃行业领域需求量预测 （1）2020-2025年电致变色玻璃行业领域需求产品/服务功能预测 （2）2020-2025年电致变色玻璃行业领域需求产品/服务市场格局预测 5.3.3 重点行业电致变色玻璃产品/服务需求分析预测 #### 第六章电致变色玻璃行业产业结构分析 6.1 电致变色玻璃产业结构分析 6.1.1 市场细分充分程度分析 6.1.2 各细分市场领先企业排名 6.1.3 各细分市场占总市场的结构比例 6.1.4 领先企业的结构分析（所有制结构） 6.2 产业价值链条的结构分析及产业链条的整体竞争优势分析 6.2.1 产业价值链条的构成 6.2.2 产业链条的竞争优势与劣势分析 6.3 产业结构发展预测 6.3.1 产业结构调整指导政策分析 6.3.2 产业结构调整中消费者需求的引导因素 6.3.3 中国电致变色玻璃行业参与国际竞争的战略市场定位 6.3.4 产业结构调整方向分析 #### 第七章我国电致变色玻璃行业产业链分析 7.1 电致变色玻璃行业产业链分析 7.1.1 产业链结构分析 [...] 4.2.1 我国电致变色玻璃所属行业工业总产值 4.2.2 我国电致变色玻璃所属行业工业销售产值 4.2.3 我国电致变色玻璃所属行业产销率 4.3 2015-2019年中国电致变色玻璃所属行业财务指标总体分析 4.3.1 所属行业盈利能力分析 4.3.2 所属行业偿债能力分析 4.3.3 行业营运能力分析 4.3.4 行业发展能力分析 #### 第五章我国电致变色玻璃行业供需形势分析 5.1 电致变色玻璃行业供给分析 5.1.1 2015-2019年电致变色玻璃行业供给分析 5.1.2 2020-2025年电致变色玻璃行业供给变化趋势 5.1.3 电致变色玻璃所属行业区域供给分析 5.2 2015-2019年我国电致变色玻璃行业需求情况 5.2.1 电致变色玻璃行业需求市场 5.2.2 电致变色玻璃行业客户结构 5.2.3 电致变色玻璃行业需求的地区差异 5.3 电致变色玻璃市场应用及需求预测 5.3.1 电致变色玻璃应用市场总体需求分析 （1）电致变色玻璃应用市场需求特征 （2）电致变色玻璃应用市场需求总规模 [...] 11.2.2 2020-2025年电致变色玻璃市场规模预测 11.2.3 2020-2025年电致变色玻璃行业应用趋势预测 11.2.4 2020-2025年细分市场发展趋势预测 11.3 2020-2025年中国电致变色玻璃行业供需预测 11.3.1 2020-2025年中国电致变色玻璃行业供给预测 11.3.2 2020-2025年中国电致变色玻璃行业需求预测 11.3.3 2020-2025年中国电致变色玻璃供需平衡预测 11.4 影响企业生产与经营的关键趋势 11.4.1 市场整合成长趋势 11.4.2 需求变化趋势及新的商业机遇预测 11.4.3 企业区域市场拓展的趋势 11.4.4 科研开发趋势及替代技术进展 11.4.5 影响企业销售与服务方式的关键趋势 #### 第十二章2020-2025年电致变色玻璃行业投资机会与风险 12.1 电致变色玻璃行业投融资情况 12.1.1 行业资金渠道分析 12.1.2 固定资产投资分析 12.1.3 兼并重组情况分析 12.2 2020-2025年电致变色玻璃行业投资机会。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "电致变色",
+          "投融资",
+          "趋势",
+          "预测"
+        ]
+      },
+      {
+        "title": "2025年液晶调光玻璃的现状和发展趋势- 全球与中国液晶调光玻璃行业 ...",
+        "url": "https://www.cir.cn/1/38/YeJingDiaoGuangBoLiDeXianZhuangH.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>名 称：全球与中国液晶调光玻璃行业现状调研与发展趋势分析报告（2025-2031年） 编 号：2017381 市场价：电子版8000元 纸质+电子版8200元 优惠价：电子版7200元 纸质+电子版7500元 热 线：400 612 8668、010-6618 1099、66182099、66183099 邮 箱：KF@Cir.cn 下载《订购协议》 提 示：如需英文版、日文版等其他语言版本，请向客服咨询。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>《全球与中国液晶调光玻璃行业现状调研与发展趋势分析报告（2025-2031年）》依托国家统计局、相关行业协会的详实数据资料，系统解析了液晶调光玻璃行业的产业链结构、市场规模及需求现状，并对价格动态进行了解读。报告客观呈现了液晶调光玻璃行业发展状况，科学预测了市场前景与未来趋势，同时聚焦液晶调光玻璃重点企业，分析了市场竞争格局、集中度及品牌影响力。此外，报告通过细分市场领域，挖掘了液晶调光玻璃各细分领域的增长潜力与投资机遇，并提示了可能面临的风险。为投资者、企业决策者及行业从业者提供了专业、实用的参考依据，助力科学决策与战略优化。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>## 第一章 液晶调光玻璃行业概述 ### 第一节 液晶调光玻璃定义 ### 第二节 液晶调光玻璃分类 [...] ### 第二节 中国主要液晶调光玻璃厂商产品种类 ### 第三节 2020-2025年中国液晶调光玻璃行业产能、产量统计 ### 第四节 2020-2025年中国液晶调光玻璃行业需求情况分析 ### 第五节 2025-2031年中国液晶调光玻璃行业产能、产量预测分析 ### 第六节 2025-2031年中国液晶调光玻璃行业需求情况预测分析 ## 第五章 液晶调光玻璃细分市场深度分析 ### 第一节 液晶调光玻璃细分市场（一）发展研究 一、市场发展现状分析 1、市场规模与增长趋势 2、产品创新与技术发展 二、市场前景与投资机会 1、市场前景预测分析 2、投资机会分析 ### 第二节 液晶调光玻璃细分市场（二）发展研究 一、市场发展现状分析 1、市场规模与增长趋势 2、产品创新与技术发展 二、市场前景与投资机会 1、市场前景预测分析 2、投资机会分析 …… ## 第六章 中国液晶调光玻璃行业进出口情况分析、预测。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "增长",
+          "趋势",
+          "预测",
+          "PDLC"
+        ]
+      },
+      {
+        "title": "从2025上海车展看，调光技术如何成为车厂必争之地？ - 腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20250515A02FSC00",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2024年国内乘用车全景天幕标配装配率达到14.4%，较上年同期增加7.7个百分点，其中新能源汽车标配装配率为28.6%，增幅达11.6个百分点。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] Published Time: 2025-05-15 09:31:25 从2025上海车展看，调光技术如何成为车厂必争之地？_腾讯新闻 从2025上海车展看，调光技术如何成为车厂必争之地？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>新能源汽车带动天幕渗透率提升，让调光技术备受关注 过去几年，调光玻璃技术取得了实质性进化，从亮眼配置走向核心卖点。推动这场变化的，是用户需求的挖掘，更是顺应智能汽车发展。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "趋势",
+          "EC",
+          "从2025上海车展看调光技术如何成为车厂必争之地",
+          "腾讯新闻"
+        ]
+      }
+    ],
+    "stats": {
+      "total_tracked": 967,
+      "last_update": "2025-12-01 17:31:48"
+    },
+    "updated_at": "2025-12-01 17:32:01"
+  }
+}

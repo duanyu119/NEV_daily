@@ -1,0 +1,1153 @@
+{
+  "metadata": {
+    "date_range": "2025-12-01 至 2025-12-01",
+    "total_data_points": 80,
+    "data_sources": [
+      "Tavily MCP",
+      "官方统计",
+      "企业财报",
+      "行业报告"
+    ],
+    "last_updated": "2025-12-01 17:57:25"
+  },
+  "sales_rankings": {
+    "weekly": [
+      {
+        "rank": 1,
+        "brand": "比亚迪",
+        "model": "比亚迪秦PLUS",
+        "sales": "查询中...",
+        "change": "# BYD aims to sell up to 1.6 million vehicles abroad in 2026, Citi says Reuters News November 11, 20...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 2,
+        "brand": "特斯拉",
+        "model": "特斯拉Model Y",
+        "sales": "查询中...",
+        "change": "Despite Tesla’s sliding sales in 2025, the Model Y and Model 3 are routinely the best-selling EVs in...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 3,
+        "brand": "理想L",
+        "model": "理想L6",
+        "sales": "查询中...",
+        "change": "* SPORTS & TEAMS 185.7  PASS YARDS  169.9 203.8  OPP PASS YARDS  181.1 PASS YARDS | 11/1 | vs | PUR ...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 4,
+        "brand": "问界M",
+        "model": "问界M7",
+        "sales": "查询中...",
+        "change": "### SERES Net Profit for First Three Quarters Hits 5.312 Billion RMB, to Be the First Luxury NEV Mak...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 5,
+        "brand": "小鹏G",
+        "model": "小鹏G6",
+        "sales": "查询中...",
+        "change": "**Looking at the 2025 ranking**, the little Geely Xingyuan seems poised to succeed the aging BYD Son...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 6,
+        "brand": "蔚来E",
+        "model": "蔚来ES6",
+        "sales": "查询中...",
+        "change": "Home › News › Nio introduces new ET9 variants in China # Nio introduces new ET9 variants in China Ni...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 7,
+        "brand": "海鸥",
+        "model": "海鸥",
+        "sales": "查询中...",
+        "change": "**Tuesday, November 25, 2025**   Today's Paper NEWS SPECIAL FEATURES SPECIAL SECTIONS VIDEOS PODCAST...",
+        "segment": "热门车型"
+      },
+      {
+        "rank": 8,
+        "brand": "元PL",
+        "model": "元PLUS",
+        "sales": "查询中...",
+        "change": "# Xiaomi hikes 2025 EV sales target after breaking even Bloomberg November 20, 2025 09:54 AM EST ## ...",
+        "segment": "热门车型"
+      }
+    ],
+    "monthly": [],
+    "updated_at": "2025-12-01 17:57:34"
+  },
+  "new_car_launches": {
+    "new_launches": [
+      {
+        "id": "001",
+        "brand": "比亚迪",
+        "model": "海豹DM-i",
+        "type": "全新发布",
+        "segment": "中型轿车",
+        "price_range": "18-25万",
+        "launch_date": "2025年12月",
+        "key_features": [
+          "DM-i混动技术",
+          "纯电续航200km",
+          "百公里加速7.9s"
+        ],
+        "target_audience": "家庭用户",
+        "competitors": [
+          "特斯拉Model 3",
+          "小鹏P7"
+        ],
+        "market_positioning": "高性价比混动轿车",
+        "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop",
+        "description": "比亚迪海洋系列全新混动轿车，采用最新的DM-i超级混动技术"
+      },
+      {
+        "id": "002",
+        "brand": "理想汽车",
+        "model": "L6 Pro",
+        "type": "全新发布",
+        "segment": "中大型SUV",
+        "price_range": "30-35万",
+        "launch_date": "2026年1月",
+        "key_features": [
+          "增程式混动",
+          "6座布局",
+          "智能座舱",
+          "空气悬架"
+        ],
+        "target_audience": "高端家庭",
+        "competitors": [
+          "问界M7",
+          "岚图FREE"
+        ],
+        "market_positioning": "豪华家庭SUV",
+        "image_url": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop",
+        "description": "理想汽车全新中型SUV，延续增程式混动路线，主打家庭出行市场"
+      },
+      {
+        "id": "003",
+        "brand": "小鹏",
+        "model": "P7i GT",
+        "type": "改款升级",
+        "segment": "中型轿车",
+        "price_range": "25-32万",
+        "launch_date": "2025年11月",
+        "key_features": [
+          "XPILOT 4.0",
+          "激光雷达",
+          "800V快充",
+          "智能底盘"
+        ],
+        "target_audience": "科技爱好者",
+        "competitors": [
+          "特斯拉Model 3",
+          "比亚迪海豹"
+        ],
+        "market_positioning": "智能电动轿跑",
+        "image_url": "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&h=600&fit=crop",
+        "description": "小鹏P7中期改款车型，智能驾驶和充电技术全面升级"
+      },
+      {
+        "id": "004",
+        "brand": "蔚来",
+        "model": "ES7 Coupe",
+        "type": "全新发布",
+        "segment": "中大型SUV",
+        "price_range": "45-55万",
+        "launch_date": "2026年2月",
+        "key_features": [
+          "换电模式",
+          "智能座舱",
+          "空气悬架",
+          "全铝车身"
+        ],
+        "target_audience": "高端用户",
+        "competitors": [
+          "宝马iX",
+          "奔驰EQC"
+        ],
+        "market_positioning": "豪华电动SUV",
+        "image_url": "https://images.unsplash.com/photo-1617788138017-80ad406a99a5?w=800&h=600&fit=crop",
+        "description": "蔚来首款Coupe SUV，延续换电模式，主打豪华运动市场"
+      }
+    ],
+    "total_count": 4,
+    "updated_at": "2025-12-01 17:57:34"
+  },
+  "industry_leaders": {
+    "leaders": [
+      {
+        "id": "leader_3499004443116413772",
+        "name": "马斯克",
+        "title": "Tesla 高管",
+        "company": "Tesla",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Sun, 30 No",
+            "source": "https://www.hindustantimes.com/india-news/us-benefitted-immensely-from-talented-indians-elon-musk-on-immigration-h-1b-visa-on-nikhil-kamath-wtf-podcast-101764511894143.html",
+            "content": "'US benefitted immensely from talented Indians': Elon Musk on H-1B, immigration | India News - Hindustan Times - Updated on: Nov 30, 2025 09:18 pm IST\n\n## Elon Musk said, “I’m not in the school of thought that we ...",
+            "key_insights": [
+              "'US benefitted immensely from talented Indians': Elon Musk on H-1B, immigration | India News - Hindustan Times"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.hindustantimes.com/india-news/us-benefitted-immensely-from-talented-indians-elon-musk-on-immigration-h-1b-visa-on-nikhil-kamath-wtf-podcast-101764511894143.html"
+          },
+          {
+            "date": "Sun, 02 No",
+            "source": "https://www.teslarati.com/elon-musk-roaster-sam-altman-tesla-roadster-cancellation/",
+            "content": "Elon Musk just roasted Sam Altman’s Tesla Roadster cancellation - Teslarati - The problem is, there is a flaw in his logic, and his justification for the reasoning is an opinion....",
+            "key_insights": [
+              "Elon Musk just roasted Sam Altman’s Tesla Roadster cancellation - Teslarati"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.teslarati.com/elon-musk-roaster-sam-altman-tesla-roadster-cancellation/"
+          },
+          {
+            "date": "Sat, 29 No",
+            "source": "https://glassalmanac.com/elon-musk-says-weve-run-out-of-human-data-to-train-ai-is-he-right/",
+            "content": "Elon Musk says we’ve run out of human data to train AI—is he right? - Glass Almanac - Elon Musk claims AI is now limited by a lack of human data\n “We’ve hit the limit”: Elon Musk says th...",
+            "key_insights": [
+              "Elon Musk says we’ve run out of human data to train AI—is he right? - Glass Almanac"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://glassalmanac.com/elon-musk-says-weve-run-out-of-human-data-to-train-ai-is-he-right/"
+          },
+          {
+            "date": "Tue, 04 No",
+            "source": "https://nypost.com/2025/11/03/us-news/elon-musk-backs-andrew-cuomo-in-nyc-mayoral-race/",
+            "content": "Elon Musk backs Andrew Cuomo in NYC mayoral race - New York Post - Previously, Musk had criticized Mamdani and labeled him a “charismatic swindler.”\n\nIn an interview o...",
+            "key_insights": [
+              "Elon Musk backs Andrew Cuomo in NYC mayoral race - New York Post"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://nypost.com/2025/11/03/us-news/elon-musk-backs-andrew-cuomo-in-nyc-mayoral-race/"
+          },
+          {
+            "date": "Tue, 18 No",
+            "source": "https://www.forbes.com/sites/maryroeloffs/2025/11/18/elon-musk-says-billie-eilish-isnt-the-sharpest-as-feud-erupts-online/",
+            "content": "Elon Musk Hits At Billie Eilish After She Criticized Billionaires For Hoarding Wealth - Forbes - Elon Musk, the world’s richest person, took a stab at musician Billie Eilish’s intelligence after sh...",
+            "key_insights": [
+              "Elon Musk Hits At Billie Eilish After She Criticized Billionaires For Hoarding Wealth - Forbes"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.forbes.com/sites/maryroeloffs/2025/11/18/elon-musk-says-billie-eilish-isnt-the-sharpest-as-feud-erupts-online/"
+          }
+        ]
+      },
+      {
+        "id": "leader_4894067929446622171",
+        "name": "魏建军",
+        "title": "长城汽车 高管",
+        "company": "长城汽车",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Mon, 24 No",
+            "source": "https://www.chosun.com/english/national-en/2025/11/24/Q24UXWFKSRDITC2S3UO67E7SEI/",
+            "content": "Hwawoo Law Firm, Federation Host Seminar on CVC Policy Adjustments - 조선일보 - and Resources Park Jin-gyu (Hwawoo advisor) and Kim Chi-yeol, a specialist in regulations for holdin...",
+            "key_insights": [
+              "Hwawoo Law Firm, Federation Host Seminar on CVC Policy Adjustments - 조선일보"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.chosun.com/english/national-en/2025/11/24/Q24UXWFKSRDITC2S3UO67E7SEI/"
+          },
+          {
+            "date": "Wed, 19 No",
+            "source": "https://www.mk.co.kr/en/society/11471927",
+            "content": "The law firm Sejong announced on the 19th that it has recruited lawyer Kim Young-hoon (37th Judicial.. - 매일경제 - In particular, he participated in the planning and development of the \"Artificial Intelligence (AI)-...",
+            "key_insights": [
+              "The law firm Sejong announced on the 19th that it has recruited lawyer Kim Young-hoon (37th Judicial.. - 매일경제"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.mk.co.kr/en/society/11471927"
+          },
+          {
+            "date": "Tue, 25 No",
+            "source": "https://www.washingtonpost.com/opinions/2025/11/25/taiwan-president-defense-spending-china/",
+            "content": "Opinion | Taiwan’s president: I will boost defense spending to protect our democracy - The Washington Post - For more than four decades, the enduring foundations laid by the 1979 Taiwan Relations Act and reinf...",
+            "key_insights": [
+              "Opinion | Taiwan’s president: I will boost defense spending to protect our democracy - The Washington Post"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.washingtonpost.com/opinions/2025/11/25/taiwan-president-defense-spending-china/"
+          },
+          {
+            "date": "Sat, 15 No",
+            "source": "https://www.newsweek.com/sports/nba/spurs-victor-wembanyama-sends-clear-message-about-warriors-draymond-green-11053537",
+            "content": "Spurs’ Victor Wembanyama Sends Clear Message About Warriors’ Draymond Green - Newsweek - OpinionFrom Pariah to Partner, MBS Returns to Washington | Opinion\n\n5 min read\n\nOpinionA ‘Golden Age...",
+            "key_insights": [
+              "Spurs’ Victor Wembanyama Sends Clear Message About Warriors’ Draymond Green - Newsweek"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.newsweek.com/sports/nba/spurs-victor-wembanyama-sends-clear-message-about-warriors-draymond-green-11053537"
+          },
+          {
+            "date": "Thu, 27 No",
+            "source": "https://www.skynews.com.au/world-news/china/unfinished-business-china-ramps-up-taiwan-rhetoric-with-consistent-messaging/video/d1b3294e7607f0ecba605d6962dbc32a",
+            "content": "‘Unfinished business’: China ramps up Taiwan rhetoric with ‘consistent’ messaging - Sky News Australia - MOST POPULAR'Tone-deaf': Princess Beatrice’s 'eyebrow-raising' Saudi Arabia move amid her parents' s...",
+            "key_insights": [
+              "‘Unfinished business’: China ramps up Taiwan rhetoric with ‘consistent’ messaging - Sky News Australia"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.skynews.com.au/world-news/china/unfinished-business-china-ramps-up-taiwan-rhetoric-with-consistent-messaging/video/d1b3294e7607f0ecba605d6962dbc32a"
+          }
+        ]
+      },
+      {
+        "id": "leader_5131956953011524585",
+        "name": "王传福",
+        "title": "比亚迪 高管",
+        "company": "比亚迪",
+        "portrait_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "Mon, 03 No",
+            "source": "https://www.forbes.com/sites/karlmoore/2025/11/03/this-psychoanalyst-writes-daily-to-stop-history-repeating-itself/",
+            "content": "This Psychoanalyst Writes Daily To Stop History Repeating Itself - Forbes - He's not being merely cynical. Years before recent political upheavals made headlines, he wrote Lead...",
+            "key_insights": [
+              "This Psychoanalyst Writes Daily To Stop History Repeating Itself - Forbes"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.forbes.com/sites/karlmoore/2025/11/03/this-psychoanalyst-writes-daily-to-stop-history-repeating-itself/"
+          },
+          {
+            "date": "Mon, 03 No",
+            "source": "https://www.chronicle.com/newsletter/the-review/2025-11-03",
+            "content": "Subject: The Review: UT-Austin's provost talks academic freedom and the Trump administration. - The Chronicle of Higher Education - In the meantime, check out the interview: “‘We as Universities Have Lost Our Way.'\" [...] interview,...",
+            "key_insights": [
+              "Subject: The Review: UT-Austin's provost talks academic freedom and the Trump administration. - The Chronicle of Higher Education"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.chronicle.com/newsletter/the-review/2025-11-03"
+          },
+          {
+            "date": "Fri, 21 No",
+            "source": "https://www.agriculture.com/how-farmers-can-stay-profitable-and-resilient-after-a-tough-2025-11854481",
+            "content": "How Farmers Can Stay Profitable and Resilient After a Tough 2025 - Successful Farming - He emphasized getting creative and looking for strategic partnerships. “My neighbor is my competitio...",
+            "key_insights": [
+              "How Farmers Can Stay Profitable and Resilient After a Tough 2025 - Successful Farming"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.agriculture.com/how-farmers-can-stay-profitable-and-resilient-after-a-tough-2025-11854481"
+          }
+        ]
+      },
+      {
+        "id": "leader_-345069346785076364",
+        "name": "李想",
+        "title": "理想汽车 高管",
+        "company": "理想汽车",
+        "portrait_url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "Recent",
+            "source": "https://finance.sina.com.cn/tech/2024-12-27/doc-ineccwtt4449919.shtml",
+            "content": "与李想的3小时对谈（完整版） - 新浪财经 - 我们2022年才开始招校招，很晚。早期很不成功，经常网上很多负面，因为不太会。2023年开始的校招人才，规模和质量非常好，因为很多大厂不招校招，给了我们更多机会。我说，正常我们把他招进来放在这，像普通...",
+            "key_insights": [
+              "与李想的3小时对谈（完整版） - 新浪财经"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://finance.sina.com.cn/tech/2024-12-27/doc-ineccwtt4449919.shtml"
+          },
+          {
+            "date": "Recent",
+            "source": "https://www.qbitai.com/2025/08/324424.html",
+            "content": "20个要点，看完李想4小时超长访谈 - 量子位 - 2013年汽车之家上市后，我就开始在外面找机会。因为我当时觉得汽车之家做的太垂直，各个方面又都很强，2009年以后就太容易了，没有遇到任何竞争。\n\n所以下一次创业，要找一个更大更难的（赛道）。\n\n最终...",
+            "key_insights": [
+              "20个要点，看完李想4小时超长访谈 - 量子位"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.qbitai.com/2025/08/324424.html"
+          },
+          {
+            "date": "Recent",
+            "source": "https://wallstreetcn.com/articles/3760188",
+            "content": "李想宣布回归创业模式押注具身智能，2026年交付自研M100芯片AI系统 - > AI推理芯片是这个系统的计算引擎。我们使用自主设计的芯片构建的控制器和100（M100）目前正在进行大规模系统测试。我们预计明年将进行商业化开发。与我们的基础模型编译器和软件系统协同设计，我们预计...",
+            "key_insights": [
+              "李想宣布回归创业模式押注具身智能，2026年交付自研M100芯片AI系统"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://wallstreetcn.com/articles/3760188"
+          },
+          {
+            "date": "Recent",
+            "source": "https://flowlet.net/2024/01/02/xiangli-how-to-become-a-professional-ceo/",
+            "content": "如何成为一个专业的CEO [李想] | 张帅的博客 - ZhangShuai's Blog - XiangLi   Mogul\n\n# 如何成为一个专业的 CEO [李想]\n\n## 如何成为一个专业的 CEO\n\n Posted by 张帅 on Tuesday, January 2, 2024\n\n...",
+            "key_insights": [
+              "如何成为一个专业的CEO [李想] | 张帅的博客 - ZhangShuai's Blog"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://flowlet.net/2024/01/02/xiangli-how-to-become-a-professional-ceo/"
+          },
+          {
+            "date": "Recent",
+            "source": "https://www.youtube.com/watch?v=4ZWJj0D_FSA",
+            "content": "【李想2024唯一深度对谈（纯享版）】张小珺对话李想 - YouTube - # 【李想2024唯一深度对谈（纯享版）】张小珺对话李想\n## 張小珺 Xiaojùn\n4290 subscribers\n121 likes\n\n### Description\n9499 views\nP...",
+            "key_insights": [
+              "【李想2024唯一深度对谈（纯享版）】张小珺对话李想 - YouTube"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.youtube.com/watch?v=4ZWJj0D_FSA"
+          }
+        ]
+      },
+      {
+        "id": "leader_7388380175915297866",
+        "name": "李斌",
+        "title": "蔚来 高管",
+        "company": "蔚来",
+        "portrait_url": "https://images.unsplash.com/photo-1560250097-5b5573525dc7?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "Fri, 14 No",
+            "source": "https://www.washingtonpost.com/opinions/2025/11/14/warning-speech-america-south-korea/",
+            "content": "Opinion | A South Korean warning for America on free speech - The Washington Post - No serious politician in a democracy would openly admit to opposing free speech, and even some autho...",
+            "key_insights": [
+              "Opinion | A South Korean warning for America on free speech - The Washington Post"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.washingtonpost.com/opinions/2025/11/14/warning-speech-america-south-korea/"
+          },
+          {
+            "date": "Thu, 13 No",
+            "source": "https://www.newsweek.com/south-korea-police-social-media-hate-speech-china-11038257",
+            "content": "South Korean Police Told to Tackle Social Media Hate Speech: What We Know - Newsweek - Lee’s remarks come during a wave of anti-foreigner sentiment. Chinese nationals, in particular, were...",
+            "key_insights": [
+              "South Korean Police Told to Tackle Social Media Hate Speech: What We Know - Newsweek"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.newsweek.com/south-korea-police-social-media-hate-speech-china-11038257"
+          },
+          {
+            "date": "Tue, 25 No",
+            "source": "https://www.cnbc.com/video/2025/11/25/on-taiwan-trump-far-more-reluctant-to-sacrifice-blood-treasure.html",
+            "content": "Alice Han: Trump unlikely to sacrifice \"blood or treasure\" to protect Taiwan - CNBC - Cybersecurity\n AI\n Enterprise\n Internet\n Media\n Mobile\n Social Media\n CNBC Disruptor 50\n Tech Guide\n...",
+            "key_insights": [
+              "Alice Han: Trump unlikely to sacrifice \"blood or treasure\" to protect Taiwan - CNBC"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.cnbc.com/video/2025/11/25/on-taiwan-trump-far-more-reluctant-to-sacrifice-blood-treasure.html"
+          },
+          {
+            "date": "Tue, 18 No",
+            "source": "https://www.developingtelecoms.com/telecom-business/vendor-news/19359-huawei-forum-tackles-the-benefits-and-challenges-of-balancing-openness-with-ip-protection.html",
+            "content": "Huawei forum tackles the benefits and challenges of balancing openness with IP protection - Developing Telecoms - “Open innovation drives society and technology forward, and it's in our DNA,” said Song. “Huawei res...",
+            "key_insights": [
+              "Huawei forum tackles the benefits and challenges of balancing openness with IP protection - Developing Telecoms"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.developingtelecoms.com/telecom-business/vendor-news/19359-huawei-forum-tackles-the-benefits-and-challenges-of-balancing-openness-with-ip-protection.html"
+          },
+          {
+            "date": "Tue, 25 No",
+            "source": "https://www.forbes.com/sites/amirhusain/2025/11/25/trillion-parameter-models-tiny-software-kernels-and-the-future-of-ai/",
+            "content": "Trillion Parameter Models, Tiny Software Kernels, And The Future Of AI - Forbes - In my own work across AI, autonomy and industrial systems, I see how crucial this is. We already exp...",
+            "key_insights": [
+              "Trillion Parameter Models, Tiny Software Kernels, And The Future Of AI - Forbes"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.forbes.com/sites/amirhusain/2025/11/25/trillion-parameter-models-tiny-software-kernels-and-the-future-of-ai/"
+          }
+        ]
+      },
+      {
+        "id": "leader_9109846523730163209",
+        "name": "雷军",
+        "title": "小米汽车 高管",
+        "company": "小米汽车",
+        "portrait_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+        "recent_statements": [
+          {
+            "date": "Wed, 19 No",
+            "source": "https://www.forbes.com/sites/steveforbes/2025/11/19/the-us-economy-is-ready-to-grow-again-if-washington-lets-it/",
+            "content": "The U.S. Economy Is Ready To Grow Again—If Washington Lets It - Forbes - In both 1996 and 2000, Steve campaigned vigorously for the Republican nomination for the Presidency....",
+            "key_insights": [
+              "The U.S. Economy Is Ready To Grow Again—If Washington Lets It - Forbes"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.forbes.com/sites/steveforbes/2025/11/19/the-us-economy-is-ready-to-grow-again-if-washington-lets-it/"
+          },
+          {
+            "date": "Thu, 13 No",
+            "source": "https://www.developingtelecoms.com/telecom-business/vendor-news/19333-huawei-touts-ip-openness-and-protection-as-crucial-to-innovation.html",
+            "content": "Huawei touts IP openness and protection as crucial to innovation - Developing Telecoms - “In today's challenging world with severe geopolitical tensions, LESI and LESI China will continue t...",
+            "key_insights": [
+              "Huawei touts IP openness and protection as crucial to innovation - Developing Telecoms"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.developingtelecoms.com/telecom-business/vendor-news/19333-huawei-touts-ip-openness-and-protection-as-crucial-to-innovation.html"
+          },
+          {
+            "date": "Mon, 24 No",
+            "source": "https://www.businessinsider.com/vc-max-altman-tech-too-focused-on-mission-career-advice-2025-11",
+            "content": "VC Max Altman's career advice for people who want to work in tech - Business Insider - \"I say, don't care about the product. Don't care about anything, just go work at the fastest growing...",
+            "key_insights": [
+              "VC Max Altman's career advice for people who want to work in tech - Business Insider"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.businessinsider.com/vc-max-altman-tech-too-focused-on-mission-career-advice-2025-11"
+          },
+          {
+            "date": "Wed, 19 No",
+            "source": "https://www.linkedin.com/posts/businessinsider_a-2011-cartoon-depicted-microsofts-divisions-activity-7396893543128002560-wwrT",
+            "content": "\"That cartoon is a great example of someone else defining what became the cultural narrative more so than reality,\" said Microsoft's CEO. - LinkedIn - ## More from this author\n\n ### After Blackstone's darkest day\n\n  Business Insider   22h\n ### Compani...",
+            "key_insights": [
+              "\"That cartoon is a great example of someone else defining what became the cultural narrative more so than reality,\" said Microsoft's CEO. - LinkedIn"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.linkedin.com/posts/businessinsider_a-2011-cartoon-depicted-microsofts-divisions-activity-7396893543128002560-wwrT"
+          }
+        ]
+      },
+      {
+        "id": "leader_1587751377051605906",
+        "name": "何小鹏",
+        "title": "小鹏汽车 高管",
+        "company": "小鹏汽车",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Fri, 14 No",
+            "source": "https://www.govtech.com/education/k-12/opinion-teaching-ai-effectively-means-learning-from-past-mistakes",
+            "content": "Opinion: Teaching AI Effectively Means Learning from Past Mistakes - GovTech - But we can learn from our mistakes. For example, so-called whole language — versus phonics — is inef...",
+            "key_insights": [
+              "Opinion: Teaching AI Effectively Means Learning from Past Mistakes - GovTech"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.govtech.com/education/k-12/opinion-teaching-ai-effectively-means-learning-from-past-mistakes"
+          },
+          {
+            "date": "Tue, 25 No",
+            "source": "https://www.wsj.com/opinion/gen-zs-2025-thanksgiving-thank-yous-cc02b183?gaa_at=eafs&gaa_n=AWEtsqfZp5eyZRZrTsP2Nj4AsoqAPio6upojoHUjmp1QSsAklXwffmnmu8_r&gaa_ts=6926c5e1&gaa_sig=vpgGxFxvSa0_As8pcjhp4GTilBRZeQ_P-MpDGWrdCurtgs35__JomU4Oh0QcbgAaCVK246mfKl80s76Q8LvhMg%3D%3D",
+            "content": "Opinion | Gen Z’s 2025 Thanksgiving Thank Yous - The Wall Street Journal - Opinion\n\n Use Alt + Down Arrow to expand.\n Print Edition\n Video\n Audio\n Latest Headlines\n Puzzles\n\nA...",
+            "key_insights": [
+              "Opinion | Gen Z’s 2025 Thanksgiving Thank Yous - The Wall Street Journal"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.wsj.com/opinion/gen-zs-2025-thanksgiving-thank-yous-cc02b183?gaa_at=eafs&gaa_n=AWEtsqfZp5eyZRZrTsP2Nj4AsoqAPio6upojoHUjmp1QSsAklXwffmnmu8_r&gaa_ts=6926c5e1&gaa_sig=vpgGxFxvSa0_As8pcjhp4GTilBRZeQ_P-MpDGWrdCurtgs35__JomU4Oh0QcbgAaCVK246mfKl80s76Q8LvhMg%3D%3D"
+          },
+          {
+            "date": "Tue, 25 No",
+            "source": "https://completecolorado.com/2025/11/25/romanticized-lessons-democracy-disservice/",
+            "content": "Romanticized lessons in democracy a disservice to Colorado kids - Complete Colorado - YouTube Video UEwyN1JnNDNac3N0QXZNazFrZmZpRUJNWFV0cXNHLTJhSC45QzgzRjYzM0NGOEI2MzdG\n\n18:47\n\nPowerGab ...",
+            "key_insights": [
+              "Romanticized lessons in democracy a disservice to Colorado kids - Complete Colorado"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://completecolorado.com/2025/11/25/romanticized-lessons-democracy-disservice/"
+          },
+          {
+            "date": "Wed, 26 No",
+            "source": "https://nypost.com/2025/11/26/us-news/nikki-haleys-son-nalin-says-he-is-voice-of-gen-z-frustration/",
+            "content": "Nikki Haley's son, Nalin, says he is voice of Gen Z frustration - New York Post - He calls himself a Christian, a populist and a nationalist — and believes his views are typical of G...",
+            "key_insights": [
+              "Nikki Haley's son, Nalin, says he is voice of Gen Z frustration - New York Post"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://nypost.com/2025/11/26/us-news/nikki-haleys-son-nalin-says-he-is-voice-of-gen-z-frustration/"
+          }
+        ]
+      },
+      {
+        "id": "leader_-1484442159885655111",
+        "name": "余承东",
+        "title": "华为/问界 高管",
+        "company": "华为/问界",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Thu, 06 No",
+            "source": "https://www.aol.com/articles/worked-baidu-bytedance-microsoft-now-001401666.html",
+            "content": "I worked at Baidu, ByteDance, and Microsoft. Now, I've raised millions to build robotic pets. - AOL.com - I've realized I'm not suited for big companies. I prefer working in a small team that innovates quic...",
+            "key_insights": [
+              "I worked at Baidu, ByteDance, and Microsoft. Now, I've raised millions to build robotic pets. - AOL.com"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.aol.com/articles/worked-baidu-bytedance-microsoft-now-001401666.html"
+          },
+          {
+            "date": "Thu, 06 No",
+            "source": "https://www.businessinsider.com/quit-big-tech-build-robotic-pets-china-baidu-bytedance-microsoft-2025-11",
+            "content": "I worked at Baidu, ByteDance, and Microsoft. Now, I've raised millions to build robotic pets. - Business Insider - I've realized I'm not suited for big companies. I prefer working in a small team that innovates quic...",
+            "key_insights": [
+              "I worked at Baidu, ByteDance, and Microsoft. Now, I've raised millions to build robotic pets. - Business Insider"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.businessinsider.com/quit-big-tech-build-robotic-pets-china-baidu-bytedance-microsoft-2025-11"
+          },
+          {
+            "date": "Tue, 11 No",
+            "source": "https://www.themanufacturer.com/articles/manufacturing-leaders-summit-2025-day-1-key-takeaways/",
+            "content": "Manufacturing Leaders’ Summit 2025 – Day 1 key takeaways - The Manufacturer - The results underscored the importance of people engagement: when the team is motivated and involved...",
+            "key_insights": [
+              "Manufacturing Leaders’ Summit 2025 – Day 1 key takeaways - The Manufacturer"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.themanufacturer.com/articles/manufacturing-leaders-summit-2025-day-1-key-takeaways/"
+          },
+          {
+            "date": "Fri, 07 No",
+            "source": "https://breakingdefense.com/2025/11/hegseth-presses-defense-execs-to-move-faster-in-speech-laying-out-sweeping-acquisition-changes/",
+            "content": "Hegseth presses defense execs to move faster in speech laying out sweeping acquisition changes - Breaking Defense - Hegseth’s speech heavily referenced changes from a draft Pentagon memo laying out its acquisition re...",
+            "key_insights": [
+              "Hegseth presses defense execs to move faster in speech laying out sweeping acquisition changes - Breaking Defense"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://breakingdefense.com/2025/11/hegseth-presses-defense-execs-to-move-faster-in-speech-laying-out-sweeping-acquisition-changes/"
+          }
+        ]
+      },
+      {
+        "id": "leader_3363108642425701571",
+        "name": "朱江明",
+        "title": "零跑 高管",
+        "company": "零跑",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Tue, 18 No",
+            "source": "https://www.cbsnews.com/sanfrancisco/video/oakland-police-seek-expanded-use-of-automated-surveillance-camera-network/",
+            "content": "Oakland police seek expanded use of automated surveillance camera network - CBS News - 04:51May 27, 2024### Drowning deaths on the rise post-pandemic\n\n02:57May 20, 2024### Stanford treats...",
+            "key_insights": [
+              "Oakland police seek expanded use of automated surveillance camera network - CBS News"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.cbsnews.com/sanfrancisco/video/oakland-police-seek-expanded-use-of-automated-surveillance-camera-network/"
+          },
+          {
+            "date": "Fri, 21 No",
+            "source": "https://global.chinadaily.com.cn/a/202511/21/WS691f3c24a310d6866eb2a95f.html",
+            "content": "Ministry urges Japan to 'maintain self-respect' - China Daily - Global Edition - Global Edition\n\n China Edition\n ASIA\n 中文\n 双语\n Français\n\nNov 20, 2025\n\nGlobal Edition\n\nNov 20, 2025\n\n...",
+            "key_insights": [
+              "Ministry urges Japan to 'maintain self-respect' - China Daily - Global Edition"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://global.chinadaily.com.cn/a/202511/21/WS691f3c24a310d6866eb2a95f.html"
+          },
+          {
+            "date": "Sun, 30 No",
+            "source": "https://news.cgtn.com/news/2025-11-30/Domestic-international-backlash-grows-over-Takaichi-s-Taiwan-remarks-1IItu0gqQhy/p.html",
+            "content": "Domestic, international backlash grows over Takaichi's Taiwan remarks - news.cgtn.com - DOWNLOAD OUR APP\n\n Terms of use\n Copyright\n Privacy policy\n About us\n\nCopyright © 2024 CGTN.\n\n京ICP备2...",
+            "key_insights": [
+              "Domestic, international backlash grows over Takaichi's Taiwan remarks - news.cgtn.com"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://news.cgtn.com/news/2025-11-30/Domestic-international-backlash-grows-over-Takaichi-s-Taiwan-remarks-1IItu0gqQhy/p.html"
+          }
+        ]
+      },
+      {
+        "id": "leader_6059922535029098309",
+        "name": "安聪慧",
+        "title": "极氪 高管",
+        "company": "极氪",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Fri, 14 No",
+            "source": "https://www.digitimes.com/news/a20251114PD201/taiwan-chairman-pegatron-manufacturing-technology.html",
+            "content": "Pegatron chairman urges Taiwan to adopt AI beyond manufacturing - digitimes - Baidu outlines five-year AI chip and supernode roadmap amid AI bubble concerns\n\nNov 13, 19:03)\n\nSens...",
+            "key_insights": [
+              "Pegatron chairman urges Taiwan to adopt AI beyond manufacturing - digitimes"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.digitimes.com/news/a20251114PD201/taiwan-chairman-pegatron-manufacturing-technology.html"
+          },
+          {
+            "date": "Fri, 28 No",
+            "source": "https://www.newsweek.com/nw-ai/ai-to-eliminate-fear-not-teachers-from-language-learning-11113728",
+            "content": "AI to Eliminate ‘Fear’, Not Teachers, From Language Learning - Newsweek - Add Newsweek as a preferred source on Google to see more of our trusted coverage when you search.\n\n#...",
+            "key_insights": [
+              "AI to Eliminate ‘Fear’, Not Teachers, From Language Learning - Newsweek"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.newsweek.com/nw-ai/ai-to-eliminate-fear-not-teachers-from-language-learning-11113728"
+          }
+        ]
+      },
+      {
+        "id": "leader_-8342570245730760324",
+        "name": "李书福",
+        "title": "吉利 高管",
+        "company": "吉利",
+        "portrait_url": "",
+        "recent_statements": [
+          {
+            "date": "Wed, 26 No",
+            "source": "https://www.newsweek.com/irs-treasury-considering-plans-new-tax-credit-for-millions-elementary-secondary-students-11110358",
+            "content": "IRS Considers Plans For Major New Tax Credit For Millions - Newsweek - National Weather Service\n\nWinter Storm Alert Issued as 12 Inches of Snow Set To Hit\n\n3 min read\n\n## ...",
+            "key_insights": [
+              "IRS Considers Plans For Major New Tax Credit For Millions - Newsweek"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.newsweek.com/irs-treasury-considering-plans-new-tax-credit-for-millions-elementary-secondary-students-11110358"
+          },
+          {
+            "date": "Tue, 11 No",
+            "source": "https://timesofindia.indiatimes.com/education/careers/news/former-coach-ceo-lew-frankfort-believes-in-immersive-interview-strategy-why-self-awareness-beats-experience-in-todays-job-market/articleshow/125239157.cms",
+            "content": "Former Coach CEO Lew Frankfort believes in immersive interview strategy: Why self-awareness beats experie - The Times of India - Against Military Aggression | WATCHBig Gains For Putin As Russia Claims Capture Of Three More Ukrain...",
+            "key_insights": [
+              "Former Coach CEO Lew Frankfort believes in immersive interview strategy: Why self-awareness beats experie - The Times of India"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://timesofindia.indiatimes.com/education/careers/news/former-coach-ceo-lew-frankfort-believes-in-immersive-interview-strategy-why-self-awareness-beats-experience-in-todays-job-market/articleshow/125239157.cms"
+          },
+          {
+            "date": "Tue, 11 No",
+            "source": "https://www.foxnews.com/politics/trump-doubles-down-plan-600000-chinese-student-visas-despite-maga-backlash",
+            "content": "Trump doubles down on plan for 600,000 Chinese student visas despite MAGA backlash - Fox News - This material may not be published, broadcast, rewritten, or redistributed. ©2025 FOX News Network, ...",
+            "key_insights": [
+              "Trump doubles down on plan for 600,000 Chinese student visas despite MAGA backlash - Fox News"
+            ],
+            "market_impact": "medium",
+            "relevance_score": 90,
+            "url": "https://www.foxnews.com/politics/trump-doubles-down-plan-600000-chinese-student-visas-despite-maga-backlash"
+          }
+        ]
+      }
+    ],
+    "total_statements": 43,
+    "updated_at": "2025-12-01 17:57:34"
+  },
+  "industry_news": {
+    "news": [
+      {
+        "id": "news_001",
+        "title": "工信部发布新能源汽车产业发展规划",
+        "category": "政策法规",
+        "source": "工信部官网",
+        "publish_date": "2025-11-28",
+        "summary": "工信部发布《新能源汽车产业发展规划（2025-2035年）》，提出到2035年新能源汽车成为新车销售主流。",
+        "key_points": [
+          "到2035年新能源汽车成为新车销售主流",
+          "充电基础设施建设目标明确",
+          "技术创新支持政策力度加大"
+        ],
+        "importance": "high",
+        "image_url": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.miit.gov.cn"
+      },
+      {
+        "id": "news_002",
+        "title": "宁德时代发布第三代CTP电池技术",
+        "category": "技术创新",
+        "source": "宁德时代",
+        "publish_date": "2025-11-27",
+        "summary": "宁德时代发布第三代CTP（Cell to Pack）电池技术，能量密度提升15%，成本降低20%。",
+        "key_points": [
+          "能量密度提升15%",
+          "成本降低20%",
+          "安全性进一步提升"
+        ],
+        "importance": "high",
+        "image_url": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.catl.com"
+      },
+      {
+        "id": "news_003",
+        "title": "全国充电桩数量突破1000万个",
+        "category": "基础设施",
+        "source": "中国充电联盟",
+        "publish_date": "2025-11-26",
+        "summary": "截至2025年11月，全国充电桩数量突破1000万个，其中公共充电桩超过400万个。",
+        "key_points": [
+          "全国充电桩总数突破1000万个",
+          "公共充电桩超过400万个",
+          "车桩比达到2:1"
+        ],
+        "importance": "medium",
+        "image_url": "https://images.unsplash.com/photo-1617788138017-80ad406a99a5?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.evcpi.com"
+      },
+      {
+        "id": "news_004",
+        "title": "新能源汽车出口量创历史新高",
+        "category": "市场动态",
+        "source": "海关总署",
+        "publish_date": "2025-11-25",
+        "summary": "10月份新能源汽车出口量达到15.2万辆，创历史新高，同比增长45%。",
+        "key_points": [
+          "10月出口量达到15.2万辆",
+          "同比增长45%",
+          "创历史新高"
+        ],
+        "importance": "high",
+        "image_url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=630&fit=crop",
+        "read_more_url": "https://www.customs.gov.cn"
+      },
+      {
+        "id": "news_005",
+        "title": "多家车企宣布降价促销",
+        "category": "市场动态",
+        "source": "行业分析",
+        "publish_date": "2025-11-24",
+        "summary": "临近年底，多家新能源汽车企业宣布降价促销，最高降幅达到3万元。",
+        "key_points": [
+          "多家车企宣布降价",
+          "最高降幅达到3万元",
+          "年底促销力度加大"
+        ],
+        "importance": "medium",
+        "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=630&fit=crop",
+        "read_more_url": "#"
+      }
+    ],
+    "total_count": 5,
+    "updated_at": "2025-12-01 17:57:34"
+  },
+  "smart_glass_intel": {
+    "competitors": [
+      {
+        "title": "news - Shenzhen YuGuang New Material Co.,Ltd - Smart Glass",
+        "url": "https://www.ygsmartfilm.com/news/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>28 [...] 关于深圳市宇光新材料有限公司 PDLC 智能玻璃和智能薄膜 根据控制方法和原理的异同，智能玻璃可以通过电控、温控、光控、压力控制等多种方式实现玻璃透明与不透明状态之间的切换。由于各种限制，目前市场上量产的PDLC智能玻璃大部分都是电控智能玻璃。电子口袋的原理。</li></ul>",
+        "published_at": "2025-12-01",
+        "matched_competitors": [
+          "深圳唯酷"
+        ],
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Smart Glass"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "title": "2025-2035年智能玻璃市场份额、规模、预测和增长 - Metatech Insights",
+        "url": "https://www.metatechinsights.com/zh/industry-insights/smart-glass-market-2534",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>然而,随着低射出式眼镜的使用增加,被动式玻璃预计会逐渐上升,因为低射出式眼镜对于住宅和建筑应用来说是免费的.</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>目前COVID-19的爆发提高了公众的清洁和抗微生物接触意识,导致公众和企业更多地采用无触摸技术.</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] +1 5064 048 481 (/cdn-cgi/l/email-protection#bccfddd0d9cffcd1d9c8ddc8d9dfd4d5d2cfd5dbd4c8cf92dfd3d1) 家 报告存储 新技术 2025-2035年智能玻璃市场份额、规模、预测和增长 # 2025-2035年智能玻璃市场份额、规模、预测和增长 发布日期: Apr 2025 | 报告ID: MI2534 | 220 页数 报告摘要 目录 细分 常见问题 索取报告样本 ## 今后几年中,这个市场将面临什么趋势?</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "💻",
+        "keywords": [
+          "增长",
+          "AI",
+          "趋势",
+          "预测",
+          "EC"
+        ]
+      },
+      {
+        "title": "Electrochromic Glass Market Report | Global Forecast From 2025 To ...",
+        "url": "https://dataintelo.com/report/electrochromic-glass-market",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>在亚太地区，在快速城市化、建筑活动增加以及政府提高能源效率的举措的推动下，电致变色玻璃市场将出现最快的增长。中国、印度和日本等国家的中产阶级人口不断增加，人们对智能家居技术的认识不断增强，这些都促进了市场的扩张。该地区的建筑热潮和对可持续城市发展的关注为该地区提供了肥沃的土壤，电致变色玻璃市场表现出不同的增长模式，其中北美、欧洲和亚太地区贡献巨大。由于高度重视节能建筑技术和对智能基础设施的大量投资，北美在市场上处于领先地位。在严格的环境法规和绿色建筑实践高采用率的推动下，欧洲紧随其后。与此同时，预计亚太地区将出现最快的增长，由于严格的环境法规和绿色建筑标准的高采用率，欧洲成为电致变色玻璃市场的另一个关键地区。欧盟对减少碳排放和促进可持续发展的承诺导致对包括电致变色玻璃在内的节能技术的需求增加。欧洲市场预计将经历强劲增长，预测期内复合年增长率约为 12%。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "Growth",
+          "Electrochromic",
+          "Investment"
+        ]
+      },
+      {
+        "title": "2025-2031中国光致变色薄膜市场规模分析与发展前景行业 ...",
+        "url": "https://www.tydatainfo.com/reports/8519096/photochromic-films",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>``` 本报告研究中国市场光致变色薄膜的生产、消费及进出口情况，重点关注在中国市场扮演重要角色的全球及本土光致变色薄膜生产商，呈现这些厂商在中国市场的光致变色薄膜销量、收入、价格、毛利率、市场份额等关键指标。此外，针对光致变色薄膜产品本身的细分增长情况，如不同光致变色薄膜产品类型、价格、销量、收入，不同应用光致变色薄膜的市场销量等，本文也做了深入分析。历史数据为2020至2024年，预测数据为2025至2031年。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>GODUN ZEO Films 按照不同产品类型，包括如下几个类别： 有机 无机 有机无机混合 按照不同应用，主要包括如下几个方面： 汽车 建筑 其他领域 本文正文共9章，各章节主要内容如下： 第1章：报告统计范围、产品细分及中国总体规模（销量、销售收入等数据，2020-2031年） [...] 第2章：中国市场光致变色薄膜主要厂商（品牌）竞争分析，主要包括光致变色薄膜销量、收入、市场份额、价格、产地及行业集中度分析 第3章：中国市场光致变色薄膜主要厂商（品牌）基本情况介绍，包括公司简介、光致变色薄膜产品型号、销量、价格、收入及最新动态等 第4章：中国不同产品类型光致变色薄膜销量、收入、价格及份额等 第5章：中国不同应用光致变色薄膜销量、收入、价格及份额等 第6章：行业发展环境分析 第7章：供应链分析 第8章：中国本土光致变色薄膜生产情况分析，及中国市场光致变色薄膜进出口情况 第9章：报告结论 本报告的关键问题 市场空间：中国光致变色薄膜行业市场规模情况如何？未来增长情况如何？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>``` [...] 2024年中国市场主要厂商光致变色薄膜收入市场份额 图 15： 2024年中国市场前五大厂商光致变色薄膜市场份额 图 16： 2024年中国市场光致变色薄膜第一梯队、第二梯队和第三梯队厂商（品牌）及市场份额 图 17： 中国市场不同产品类型光致变色薄膜价格走势（2020-2031）&（元/平方米） 图 18： 中国市场不同应用光致变色薄膜价格走势（2020-2031）&（元/平方米） 图 19： 光致变色薄膜中国企业SWOT分析 图 20： 光致变色薄膜产业链 图 21： 光致变色薄膜行业采购模式分析 图 22： 光致变色薄膜行业生产模式分析 图 23： 光致变色薄膜行业销售模式分析 图 24： 中国光致变色薄膜产能、产量、产能利用率及发展趋势（2020-2031）&（千平方米） 图 25： 中国光致变色薄膜产量、市场需求量及发展趋势（2020-2031）&（千平方米） 图 26： 关键采访目标 图 27： 自下而上及自上而下验证 图 28： 资料三角测定。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "增长",
+          "趋势",
+          "预测",
+          "EC"
+        ]
+      },
+      {
+        "title": "Global Photochromic Microcapsule Market Growth 2025-2031",
+        "url": "https://infinitymarketresearch.com/report/photochromic-microcapsule-market/31019",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>这份洞察报告评估了影响光致变色微胶囊全球前景的主要市场趋势、驱动因素和影响因素，并按类型、应用、地理位置和市场规模细分了预测，以突出新兴的机会。该研究预测采用基于数百个自下而上的定性和定量市场输入的透明方法，对全球光致变色微胶囊的现状和未来轨迹提供了高度细致的看法。这份洞察报告对全球光致变色微胶囊格局进行了全面分析，并强调了与产品细分、公司组建、收入和市场份额、最新发展和并购活动相关的主要趋势。本报告还分析了全球领先公司的战略，重点关注光致变色微胶囊产品组合和能力、市场进入策略、市场地位和地理足迹，以更好地了解这些公司的独特之处。本报告按产品类型、应用、主要制造商以及主要地区和国家对光致变色微胶囊市场进行了全面概述、市场份额和增长机会。按类型细分： 颜色消失型 颜色出现型 变色型 按应用细分： 油漆和油墨 塑料制品 玻璃 纺织品 其他 该报告还按地区划分市场：。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "Market Size",
+          "Growth",
+          "Trend"
+        ]
+      },
+      {
+        "title": "我国2025年光致变色材料产业发展现状与趋势分析报告",
+        "url": "https://m.gelonghui.com/p/3147008",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>12.3.2.1 2025-2031年中国光致变色材料在光控材料领域的销售额、市场份额预测 12.3.2.2 2025-2031年中国光致变色材料在印刷和记录媒体领域的销售额、市场份额预测 12.3.2.3 2025-2031年中国光致变色材料在传感应用领域的销售额、市场份额预测 12.3.2.4 2025-2031年中国光致变色材料在其他领域的销售额、市场份额预测 本市场研究报告的推广信息旨在向您介绍报告的核心价值与主要框架，实际最终报告可能有所变动，需特别说明：本文出现的内容可能因行业事件、消费者行为突变等不可控因素产生偏差，不视为最终交付成果。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>“碳中和”背景下， 光致变色材料行业发展前景怎样？有哪些机遇与挑战？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>商务、渠道、广告合作/招聘立即咨询 ### 相关文章 ## 中国穿墙板市场研究报告-规模、进出口数据及企业排名 贝哲斯咨询 · 3分钟前 ## 姜黄酮行业产业链发展现状及市场趋势分析报告（2025） 贝哲斯咨询 · 3分钟前 ## 全球有纺土工布行业头部企业市场占有率及调研报告 QYResearch信息咨询 · 4分钟前 我也说两句 [...] 8.4 光致变色材料行业主要细分类型销售额、市场份额分析 8.4.1 2020-2025年光致变色材料行业主要细分类型销售额份额变化 8.5 光致变色材料行业主要细分类型价格走势 第九章 中国光致变色材料行业主要终端应用领域细分市场 9.1 光致变色材料行业主要终端应用领域介绍 9.2 光致变色材料终端应用领域细分市场分析 9.3 光致变色材料在主要应用领域的销售量、市场份额分析 9.3.1 2020-2025年光致变色材料在光控材料领域的销售量和增长率 9.3.2 2020-2025年光致变色材料在印刷和记录媒体领域的销售量和增长率 9.3.3 2020-2025年光致变色材料在传感应用领域的销售量和增长率 9.3.4 2020-2025年光致变色材料在其他领域的销售量和增长率 9.4 光致变色材料在主要应用领域的销售额、市场份额分析 9.4.1 2020-2025年光致变色材料在主要应用领域的销售额份额变化 第十章 中国主要地区光致变色材料市场现状分析 10.1 华北地区光致变色材料市场现状分析 10.1.1 华北地区光致变色材料产业现状 [...] 11.2 新冠疫情对光致变色材料行业碳减排工作的影响 第十二章 中国光致变色材料行业未来几年市场容量预测 12.1 中国光致变色材料行业整体规模预测 12.1.1 2025-2031年中国光致变色材料行业销售量预测 12.1.2 2025-2031年中国光致变色材料行业销售额预测 12.2 光致变色材料行业细分类型市场规模预测 12.2.1 2025-2031年中国光致变色材料行业细分类型销售量、市场份额预测 12.2.2 2025-2031年中国光致变色材料行业细分类型销售额、市场份额预测 12.2.2.1 2025-2031年中国无机销售额、份额预测 12.2.2.2 2025-2031年中国有机销售额、份额预测 12.2.3 2025-2031年中国光致变色材料行业细分类型价格变化趋势 12.3 光致变色材料在不同应用领域的市场规模预测 12.3.1 2025-2031年中国光致变色材料在不同应用领域的销售量、市场份额预测 12.3.2 2025-2031年中国光致变色材料在不同应用领域的销售额、市场份额预测。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "增长",
+          "招聘",
+          "趋势",
+          "预测"
+        ]
+      },
+      {
+        "title": "SPD Smart Dimming Glass Navigating Dynamics Comprehensive ...",
+        "url": "https://www.archivemarketresearch.com/reports/spd-smart-dimming-glass-653577",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>在对节能和适应性建筑解决方案不断增长的需求的推动下，SPD 智能调光玻璃市场正在经历强劲增长。与传统玻璃相比，该技术提供卓越的光控制和热管理，从而显着节省能源并提高居住者的舒适度。虽然没有提供准确的市场数据，但根据类似智能玻璃技术的行业分析和预计增长率，我们可以估计 2025 年的市场规模 [...] 几个关键趋势正在塑造 SPD 智能调光玻璃市场。智能家居和楼宇自动化系统的集成正在推动对与其他设备无缝连接的智能玻璃解决方案的需求。材料科学的进步正在导致更耐用、更具成本效益和美观的产品的开发。随着世界各国政府实施政策，对可持续性和能源效率的日益关注正在进一步推动市场增长。市场集中度适中，Gauzy、Research Frontiers、Smart Glass Group 和 Smartglass International 等少数主要参与者占据了相当大的市场份额，但也存在许多规模较小的利基参与者。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "SPD",
+          "Smart Glass",
+          "Market Size"
+        ]
+      },
+      {
+        "title": "智能玻璃比普通玻璃好，为什么还未被普及？ - 智慧城市",
+        "url": "http://smartcity.qianjia.com/html/2025-09/17_419623.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>资讯 + 行业新闻 + 数字孪生 + 智能门锁 + 智能家电 + 智能硬件 + 智能音箱 + 应用案例 + 解决方案 + 项目信息 + 智能百科 + 物联网 + 云计算 + 智慧场景 峰会 找方案 品牌指数 品牌入库 供应链顾问 智客帮 + 顾问服务 + 报价优选 + 安装优选 + 集成商推荐 + 品牌推荐 + 千家论坛 + 培训学习 + 方案/案例库 + 汉字交互实验室 + 品牌实验室 个人中心 发布文章 文章管理 我的首页 退出登录 千家网 行业资讯 解决方案 项目案例 政策标准 智慧社区 智慧安防 智慧建筑 智慧场景 智慧城市 智能楼宇 正文 收藏 点赞 来源：千家网 2025-09-17 导读 在现代建筑中，玻璃不仅是外立面的核心元素，更直接塑造了城市的天际线与空间体验。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>## 智能玻璃比普通玻璃好，为什么还未被普及？</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "🪟",
+        "keywords": [
+          "智能玻璃比普通玻璃好为什么还未被普及",
+          "智慧城市"
+        ]
+      },
+      {
+        "title": "智能调光玻璃的技术革新：EC电致变色技术如何定义行业新标准？",
+        "url": "https://hea.china.com/articles/20250729/202507291706836.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>首页 新闻 军事 汽车 游戏 科技 旅游 经济 娱乐 投资 培训 文化 守艺中华 佛教 红木 韩流 简读 军事APP 头条APP 注册 登录 # 中华网家电 设为书签Ctrl+D将本页面保存为书签，全面了解最新资讯，方便快捷。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>业 界/ 互联网/ 行 业/ 通 信/ 数 码/ 手 机/ 平 板/ 笔记本/ 相 机 当前位置：频道首页 > 快讯 > 正文 # 智能调光玻璃的技术革新：EC电致变色技术如何定义行业新标准？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>高倍率调光——解锁场景想象力 透光率调节跨度（即倍率）直接影响智能调光玻璃的场景适配能力。传统方案调节范围低，而EC技术凭借材料的不断创新，实现了高倍率调节，大幅拓宽应用边界。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "💻",
+        "keywords": [
+          "电致变色",
+          "AI",
+          "EC",
+          "PDLC",
+          "SPD"
+        ]
+      },
+      {
+        "title": "PDLC (Polymer Dispersed Liquid Crystal) for Smart Window Market ...",
+        "url": "https://www.databridgemarketresearch.com/reports/global-pdlc-polymer-dispersed-liquid-crystal-for-smart-window-market?srsltid=AfmBOorYQq_MBgLyuetV2jSFZE5RmNWSr5yzAM-kODvOKpZym5cfVk6w",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2025年1月，市场预测显示，汽车领域的PDLC智能薄膜细分市场预计到2025年将达到1.36亿美元的收入，预计复合年增长率约为23.3%。这突显了人们对将 PDLC 技术集成到车辆中以实现隐私、减少眩光和隔热的兴趣日益浓厚。这一趋势反映了市场的多元化，超越了建筑和施工应用，在交通运输和高端汽车领域的采用不断扩大[...]在智能建筑技术的日益采用和对节能建筑日益关注的推动下，美国 PDLC 智能窗市场将在 2025 年占据北美地区最大的收入份额。消费者优先考虑动态隐私控制、自然光管理以及与智能家居和办公自动化系统的集成，从而推动市场需求。政府对绿色建筑的激励措施、节能意识的提高以及先进 PDLC 解决方案的可用性……在快速城市化、不断壮大的中产阶级以及智能建筑技术采用增加的推动下，到 2025 年，中国 PDLC 智能窗市场将占据亚太地区最大的市场收入份额。智慧城市的推动、经济高效的 PDLC 解决方案的可用性以及强大的国内制造能力正在推动住宅、商业和公共基础设施项目的采用。监管重点关注节能建筑和人们的意识不断提高。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Trend"
+        ]
+      },
+      {
+        "title": "PDLC (Polymer Dispersed Liquid Crystal) for Smart Window Market ...",
+        "url": "https://www.databridgemarketresearch.com/reports/global-pdlc-polymer-dispersed-liquid-crystal-for-smart-window-market?srsltid=AfmBOoqG4TVq77AjEnnq0wfpi0Z5jpXPRuvxrskMG9KzhtnfCTWeMY9c",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2025年1月，市场预测显示，汽车领域的PDLC智能薄膜细分市场预计到2025年将达到1.36亿美元的收入，预计复合年增长率约为23.3%。这突显了人们对将 PDLC 技术集成到车辆中以实现隐私、减少眩光和隔热的兴趣日益浓厚。这一趋势反映了市场的多元化，超越了建筑和施工应用，在交通运输和高端汽车领域的采用不断扩大[...]在智能建筑技术的日益采用和对节能建筑日益关注的推动下，美国 PDLC 智能窗市场将在 2025 年占据北美地区最大的收入份额。消费者优先考虑动态隐私控制、自然光管理以及与智能家居和办公自动化系统的集成，从而推动市场需求。政府对绿色建筑的激励措施、节能意识的提高以及先进 PDLC 解决方案的可用性……在快速城市化、不断壮大的中产阶级以及智能建筑技术采用增加的推动下，到 2025 年，中国 PDLC 智能窗市场将占据亚太地区最大的市场收入份额。智慧城市的推动、经济高效的 PDLC 解决方案的可用性以及强大的国内制造能力正在推动住宅、商业和公共基础设施项目的采用。监管重点关注节能建筑和人们的意识不断提高。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Trend"
+        ]
+      },
+      {
+        "title": "PDLC (Polymer Dispersed Liquid Crystal) for Smart Window Market ...",
+        "url": "https://www.databridgemarketresearch.com/reports/global-pdlc-polymer-dispersed-liquid-crystal-for-smart-window-market?srsltid=AfmBOorLrze20juMeDem2zl2ZYbdMEKHuBFBtFDJwuV3QZesXm-Tk0Ek",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2025年1月，市场预测显示，汽车领域的PDLC智能薄膜细分市场预计到2025年将达到1.36亿美元的收入，预计复合年增长率约为23.3%。这突显了人们对将 PDLC 技术集成到车辆中以实现隐私、减少眩光和隔热的兴趣日益浓厚。这一趋势反映了市场的多元化，超越了建筑和施工应用，在交通运输和高端汽车领域的采用不断扩大[...]在智能建筑技术的日益采用和对节能建筑日益关注的推动下，美国 PDLC 智能窗市场将在 2025 年占据北美地区最大的收入份额。消费者优先考虑动态隐私控制、自然光管理以及与智能家居和办公自动化系统的集成，从而推动市场需求。政府对绿色建筑的激励措施、节能意识的提高以及先进 PDLC 解决方案的可用性……在快速城市化、不断壮大的中产阶级以及智能建筑技术采用增加的推动下，到 2025 年，中国 PDLC 智能窗市场将占据亚太地区最大的市场收入份额。智慧城市的推动、经济高效的 PDLC 解决方案的可用性以及强大的国内制造能力正在推动住宅、商业和公共基础设施项目的采用。监管重点关注节能建筑和人们的意识不断提高。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Trend"
+        ]
+      },
+      {
+        "title": "Polymer Dispersed Liquid Crystal (PDLC) Film Strategic Insights",
+        "url": "https://www.marketreportanalytics.com/reports/polymer-dispersed-liquid-crystal-pdlc-film-161818",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>全球聚合物分散液晶 (PDLC) 薄膜市场有望大幅扩张，预计 2025 年市场规模将达到 1.36 亿美元，复合年增长率 (CAGR) 将达到 23.3%。这种显着的增长轨迹是由对提供光传输和隐私动态控制的智能玻璃技术不断增长的需求推动的。主要驱动因素包括建筑材料领域越来越多地采用 PDLC 薄膜，它们可以增强能源[...]在建筑物和车辆中对智能功能的需求不断增长的推动下，聚合物分散液晶 (PDLC) 薄膜市场正在经历强劲增长。预计 2023 年全球市场规模约为 6 亿美元，预计到 2028 年将达到 13 亿美元以上，复合年增长率 (CAGR) 约为 15%。这种扩张是由 PDLC 薄膜的固有优势推动的，例如它们提供即时隐私、控制眩光的能力，并且……从类型来看，自粘式 PDLC 薄膜因其易于在改造项目中安装而受到关注，预计到 2028 年将占据超过 40% 的市场份额。通常用于新建建筑和 OEM 应用的非粘性 PDLC 薄膜由于其集成灵活性，仍然占有很大的份额。从地理位置上看，在快速城市化、政府对绿色建筑的支持以及强大的制造能力的推动下，亚太地区是主导市场。北。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Smart Glass"
+        ]
+      },
+      {
+        "title": "Laminated PDLC Glass Market Report | Global Forecast From 2025 ...",
+        "url": "https://dataintelo.com/report/global-laminated-pdlc-glass-market",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>总之，在技术进步、智能玻璃解决方案需求不断增长以及各行业应用不断扩大的推动下，夹层 PDLC 玻璃市场有望实现显着增长。竞争格局是动态的，主要参与者专注于创新、战略合作伙伴关系和客户满意度，以维持其市场地位。随着市场的不断发展，增长和创新的机会将会比比皆是，这使其成为一个令人兴奋的空间 [...] PDLC 玻璃预计将大幅增长。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] 4.5 全球层压 PDLC 玻璃市场规模和预测，2023-2032 4.5.1 层压 PDLC 玻璃市场规模和同比增长 4.5.2 层压 PDLC 玻璃市场绝对机会第 5 章全球层压 PDLC 玻璃市场分析和预测（按产品类型） 5.1 简介 5.1.1 主要市场趋势和增长机会（按产品类型） 5.1.2按产品类型划分的基点份额 (BPS) 分析。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "LC",
+          "Smart Glass"
+        ]
+      },
+      {
+        "title": "Gauzy's State-of-The-Art Smart Glass Technologies Utilized in the ...",
+        "url": "https://investors.gauzy.com/news-releases/news-release-details/gauzys-state-art-smart-glass-technologies-utilized-mercedes-benz/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>Gauzy 组合 SPD 和 PDLC 技术的使用凸显了领先 OEM 厂商对 Gauzy 产品的强劲需求和加速采用。公司继续扩大在快速增长的汽车智能玻璃市场的足迹，预计到 2028 年总目标市场 (TAM) 将达到 250 亿美元。梅赛德斯-奔驰于 4 月 22 日在梅赛德斯-奔驰品牌日上正式推出了 Vision V，并在 2025 年上海车展上展示了该车。亮相2025年上海车展 2025年4月23日 PDF 版本 梅赛德斯-奔驰选择 Gauzy 的双智能玻璃技术堆栈，结合 SPD 和 PDLC，彰显梅赛德斯-奔驰在汽车智能玻璃集成方面的发展。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] 与汽车发明者梅赛德斯-奔驰的合作，再次证实了两家公司之间持续合作伙伴关系的实力，以及梅赛德斯-奔驰将智能玻璃技术集成到车辆中的承诺。虽然梅赛德斯-奔驰十多年来分别使用SPD（悬浮粒子装置）和PDLC（聚合物分散液晶）技术，但Vision V标志着梅赛德斯-奔驰首次选择Gauzy的双技术智能玻璃窗。这。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "AI",
+          "EC",
+          "PDLC",
+          "SPD",
+          "LC"
+        ]
+      },
+      {
+        "title": "Home - Boston Athletic Association",
+        "url": "https://www.baa.org/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>我们在网站上使用 cookie，通过记住您的偏好并重复访问，为您提供最相关的体验。单击“接受”即表示您同意使用所有 cookie。不过，您可以访问 Cookie 设置来提供受控同意。自定义拒绝全部接受所有同意偏好 #### 隐私概述 [...] ### 卫冕冠军，美国明星队在达纳法伯癌症研究所和吉米基金会主办的 2025 年波士顿半程比赛中领先 2025 年 11 月 5 日更新：之前宣布的竞争者丹尼尔·罗曼丘克（卫冕冠军）和克莱顿·杨（2024 年奥运会选手）因伤退出。同样退出的还有 Mercy Cherono (KEN)、Daisy Jepkemei (KAZ)...</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>波士顿半场 ### 波士顿中学越野锦标赛在富兰克林公园成为焦点。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "🤖",
+        "keywords": [
+          "AI",
+          "EC",
+          "Home",
+          "Boston",
+          "Athletic"
+        ]
+      },
+      {
+        "title": "Qualify for the Boston Marathon - Boston Athletic Association",
+        "url": "https://www.baa.org/races/boston-marathon/qualify/",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>|年 |场地大小 |截止时间\\ |不接受预选赛| --- --- | | 2012 | 27,000 | 1:14 | 1:14 3,228 | 3,228 | 2014年| 36,000 | 1:38 | 2,976 | 2,976 | 2015 | 2015 30,000 | 1:02 | 1:02 1,947 | 1,947 | 2016 | 2016 30,000 | 2:28 | 2:28 4,562 | 4,562 | 2017 | 2017 30,000 | 2:09 | 2:09 2,957 | 2,957 | 2018 | 30,000 | 3:23 | 3:23 5,062 | 5,062 | 2019 | 2019 30,000 | 4:52 | 4:52 7,248 | 7,248 | 2020 | 31,500 | 31,500 1:39 | 1:39 3,161 | 3,161 | 2021 | 20,000 | 7:47 | 7:47 9,215 | 9,215 | 2022 | 2022 30,000 | 0:00 | 0:00 0 | | 2023 | 30,000 | 0:00 | 0:00 0 | | 2024 | 2024 30,000 | 5:29 | 5:29 11,039 | 11,039 | 2025 | 2025 30,000 | 6:51 | 6:51 12,324 | 12,324 [...] 我们在网站上使用 cookie，通过记住您的偏好并重复访问，为您提供最相关的体验。单击“接受”即表示您同意使用所有 cookie。不过，您可以访问 Cookie 设置来提供受控同意。自定义拒绝全部接受所有同意首选项#### 隐私概述。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "🏢",
+        "keywords": [
+          "EC",
+          "Qualify",
+          "Boston",
+          "Marathon",
+          "Athletic"
+        ]
+      },
+      {
+        "title": "2020-2025年中国电致变色玻璃行业投资潜力分析及行业发展趋势 ...",
+        "url": "https://m.huaon.com/channel/building/627821.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>5.3.2 2020-2025年电致变色玻璃行业领域需求量预测 （1）2020-2025年电致变色玻璃行业领域需求产品/服务功能预测 （2）2020-2025年电致变色玻璃行业领域需求产品/服务市场格局预测 5.3.3 重点行业电致变色玻璃产品/服务需求分析预测 #### 第六章电致变色玻璃行业产业结构分析 6.1 电致变色玻璃产业结构分析 6.1.1 市场细分充分程度分析 6.1.2 各细分市场领先企业排名 6.1.3 各细分市场占总市场的结构比例 6.1.4 领先企业的结构分析（所有制结构） 6.2 产业价值链条的结构分析及产业链条的整体竞争优势分析 6.2.1 产业价值链条的构成 6.2.2 产业链条的竞争优势与劣势分析 6.3 产业结构发展预测 6.3.1 产业结构调整指导政策分析 6.3.2 产业结构调整中消费者需求的引导因素 6.3.3 中国电致变色玻璃行业参与国际竞争的战略市场定位 6.3.4 产业结构调整方向分析 #### 第七章我国电致变色玻璃行业产业链分析 7.1 电致变色玻璃行业产业链分析 7.1.1 产业链结构分析 [...] 4.2.1 我国电致变色玻璃所属行业工业总产值 4.2.2 我国电致变色玻璃所属行业工业销售产值 4.2.3 我国电致变色玻璃所属行业产销率 4.3 2015-2019年中国电致变色玻璃所属行业财务指标总体分析 4.3.1 所属行业盈利能力分析 4.3.2 所属行业偿债能力分析 4.3.3 行业营运能力分析 4.3.4 行业发展能力分析 #### 第五章我国电致变色玻璃行业供需形势分析 5.1 电致变色玻璃行业供给分析 5.1.1 2015-2019年电致变色玻璃行业供给分析 5.1.2 2020-2025年电致变色玻璃行业供给变化趋势 5.1.3 电致变色玻璃所属行业区域供给分析 5.2 2015-2019年我国电致变色玻璃行业需求情况 5.2.1 电致变色玻璃行业需求市场 5.2.2 电致变色玻璃行业客户结构 5.2.3 电致变色玻璃行业需求的地区差异 5.3 电致变色玻璃市场应用及需求预测 5.3.1 电致变色玻璃应用市场总体需求分析 （1）电致变色玻璃应用市场需求特征 （2）电致变色玻璃应用市场需求总规模 [...] 11.2.2 2020-2025年电致变色玻璃市场规模预测 11.2.3 2020-2025年电致变色玻璃行业应用趋势预测 11.2.4 2020-2025年细分市场发展趋势预测 11.3 2020-2025年中国电致变色玻璃行业供需预测 11.3.1 2020-2025年中国电致变色玻璃行业供给预测 11.3.2 2020-2025年中国电致变色玻璃行业需求预测 11.3.3 2020-2025年中国电致变色玻璃供需平衡预测 11.4 影响企业生产与经营的关键趋势 11.4.1 市场整合成长趋势 11.4.2 需求变化趋势及新的商业机遇预测 11.4.3 企业区域市场拓展的趋势 11.4.4 科研开发趋势及替代技术进展 11.4.5 影响企业销售与服务方式的关键趋势 #### 第十二章2020-2025年电致变色玻璃行业投资机会与风险 12.1 电致变色玻璃行业投融资情况 12.1.1 行业资金渠道分析 12.1.2 固定资产投资分析 12.1.3 兼并重组情况分析 12.2 2020-2025年电致变色玻璃行业投资机会。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "电致变色",
+          "投融资",
+          "趋势",
+          "预测"
+        ]
+      },
+      {
+        "title": "2025年液晶调光玻璃的现状和发展趋势- 全球与中国液晶调光玻璃行业 ...",
+        "url": "https://www.cir.cn/1/38/YeJingDiaoGuangBoLiDeXianZhuangH.html",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>名 称：全球与中国液晶调光玻璃行业现状调研与发展趋势分析报告（2025-2031年） 编 号：2017381 市场价：电子版8000元 纸质+电子版8200元 优惠价：电子版7200元 纸质+电子版7500元 热 线：400 612 8668、010-6618 1099、66182099、66183099 邮 箱：KF@Cir.cn 下载《订购协议》 提 示：如需英文版、日文版等其他语言版本，请向客服咨询。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>《全球与中国液晶调光玻璃行业现状调研与发展趋势分析报告（2025-2031年）》依托国家统计局、相关行业协会的详实数据资料，系统解析了液晶调光玻璃行业的产业链结构、市场规模及需求现状，并对价格动态进行了解读。报告客观呈现了液晶调光玻璃行业发展状况，科学预测了市场前景与未来趋势，同时聚焦液晶调光玻璃重点企业，分析了市场竞争格局、集中度及品牌影响力。此外，报告通过细分市场领域，挖掘了液晶调光玻璃各细分领域的增长潜力与投资机遇，并提示了可能面临的风险。为投资者、企业决策者及行业从业者提供了专业、实用的参考依据，助力科学决策与战略优化。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>## 第一章 液晶调光玻璃行业概述 ### 第一节 液晶调光玻璃定义 ### 第二节 液晶调光玻璃分类 [...] ### 第二节 中国主要液晶调光玻璃厂商产品种类 ### 第三节 2020-2025年中国液晶调光玻璃行业产能、产量统计 ### 第四节 2020-2025年中国液晶调光玻璃行业需求情况分析 ### 第五节 2025-2031年中国液晶调光玻璃行业产能、产量预测分析 ### 第六节 2025-2031年中国液晶调光玻璃行业需求情况预测分析 ## 第五章 液晶调光玻璃细分市场深度分析 ### 第一节 液晶调光玻璃细分市场（一）发展研究 一、市场发展现状分析 1、市场规模与增长趋势 2、产品创新与技术发展 二、市场前景与投资机会 1、市场前景预测分析 2、投资机会分析 ### 第二节 液晶调光玻璃细分市场（二）发展研究 一、市场发展现状分析 1、市场规模与增长趋势 2、产品创新与技术发展 二、市场前景与投资机会 1、市场前景预测分析 2、投资机会分析 …… ## 第六章 中国液晶调光玻璃行业进出口情况分析、预测。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "市场规模",
+          "增长",
+          "趋势",
+          "预测",
+          "PDLC"
+        ]
+      },
+      {
+        "title": "从2025上海车展看，调光技术如何成为车厂必争之地？ - 腾讯新闻",
+        "url": "https://news.qq.com/rain/a/20250515A02FSC00",
+        "content": "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>2024年国内乘用车全景天幕标配装配率达到14.4%，较上年同期增加7.7个百分点，其中新能源汽车标配装配率为28.6%，增幅达11.6个百分点。</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>[...] Published Time: 2025-05-15 09:31:25 从2025上海车展看，调光技术如何成为车厂必争之地？_腾讯新闻 从2025上海车展看，调光技术如何成为车厂必争之地？</li><li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>新能源汽车带动天幕渗透率提升，让调光技术备受关注 过去几年，调光玻璃技术取得了实质性进化，从亮眼配置走向核心卖点。推动这场变化的，是用户需求的挖掘，更是顺应智能汽车发展。</li></ul>",
+        "published_at": "2025-12-01",
+        "category": "industry",
+        "emoji": "📊",
+        "keywords": [
+          "趋势",
+          "EC",
+          "从2025上海车展看调光技术如何成为车厂必争之地",
+          "腾讯新闻"
+        ]
+      }
+    ],
+    "stats": {
+      "total_tracked": 967,
+      "last_update": "2025-12-01 17:58:53"
+    },
+    "updated_at": "2025-12-01 17:59:02"
+  }
+}
