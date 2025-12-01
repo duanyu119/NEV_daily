@@ -45,8 +45,10 @@ jobs:
       - name: Verify Python Generation Logic
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          PYTHONIOENCODING: utf-8
         run: |
           # Dry run to ensure script compiles and runs
+          # Set RUN_TAVILY_COLLECTION=0 to skip actual API calls and use mock data
           export RUN_TAVILY_COLLECTION=0
           python3 generate_daily_news.py
 

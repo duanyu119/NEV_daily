@@ -15,8 +15,11 @@ class SmartGlassMonitor:
     """
     
     def __init__(self, config_path: str = "smart_glass_config.json", db_path: str = "smart_glass_db.json"):
-        self.config_path = config_path
-        self.db_path = db_path
+        # Resolve absolute paths relative to this script file
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        self.config_path = os.path.join(base_dir, config_path)
+        self.db_path = os.path.join(base_dir, db_path)
+        
         self.config = self._load_config()
         self.db = self._load_db()
         self.api_key = os.environ.get("TAVILY_API_KEY", "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")

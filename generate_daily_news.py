@@ -455,7 +455,8 @@ class DailyNewsGenerator:
         self.data = self.client.get_all_data()
         
         # 2. 尝试获取真实的行业领袖数据 (Tavily)
-        if os.environ.get("TAVILY_API_KEY"):
+        # 只有当 RUN_TAVILY_COLLECTION=1 时才执行实际采集，避免测试时超时
+        if os.environ.get("TAVILY_API_KEY") and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
             print("正在通过Tavily获取行业领袖数据...")
             leader_data = self.collect_leader_statements()
             if leader_data.get("results"):
@@ -465,11 +466,13 @@ class DailyNewsGenerator:
                 self.data["industry_leaders"]["total_statements"] = len(leader_data["results"])
 
         # 3. 获取智能调光行业数据 (新增)
-        if os.environ.get("TAVILY_API_KEY"):
+        # 同样只在非 dry-run 模式下执行
+        if os.environ.get("TAVILY_API_KEY") and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
             print("正在通过Tavily获取智能调光行业情报...")
             self.data["smart_glass_intel"] = self.collect_smart_glass_intel()
         else:
-            # Mock数据用于展示
+            # Mock数据用于展示 (Dry Run 或无 Key 时的回退)
+            print("使用Mock数据用于智能调光板块 (Dry Run Mode or No Key)...")
             self.data["smart_glass_intel"] = {
                 "competitors": [
                     {
