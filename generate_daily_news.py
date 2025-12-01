@@ -1746,6 +1746,11 @@ class DailyNewsGenerator:
         
         # Add new car launches
         for car in self.data["new_car_launches"]["new_launches"]:
+            # Check if newly fetched (last 24h) - Mock check for now as we don't store fetch time in DB yet
+            # In real implementation, compare car['fetched_at'] with now
+            is_new = True 
+            new_badge = '<span style="background:var(--accent-red); color:white; padding:2px 6px; border-radius:4px; font-size:0.7rem; margin-left:8px; vertical-align:middle;">🆕 NEW</span>' if is_new else ''
+            
             type_class = 'new' if car.get("type") == "全新发布" else 'update'
             media_badge = ''
             if not car.get("launch_date") or car.get("type") != "全新发布":
@@ -1767,7 +1772,7 @@ class DailyNewsGenerator:
                     <div class="car-content">
                         <div class="car-header">
                             <div class="car-brand">{car["brand"]}</div>
-                            <div class="car-model">{car["model"]}</div>
+                            <div class="car-model">{car["model"]} {new_badge}</div>
                             <div class="car-price">{car["price_range"]}</div>
                         </div>
                         <div class="car-features">
@@ -2012,6 +2017,16 @@ class DailyNewsGenerator:
     </div>
 
     <script>
+        // Injected Build Logs for Validation
+        console.group("🚀 NEV Daily Build Logs");
+        console.log("Build Time:", "{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}");
+        console.log("Total Data Points:", {self.data["metadata"]["total_data_points"]});
+        console.log("New Car Launches:", {len(self.data["new_car_launches"]["new_launches"])});
+        console.log("Industry Leaders:", {len(self.data["industry_leaders"]["leaders"])});
+        console.log("Smart Glass Competitors:", {len(self.data.get("smart_glass_intel", {}).get("competitors", []))});
+        console.log("Smart Glass News:", {len(self.data.get("smart_glass_intel", {}).get("news", []))});
+        console.groupEnd();
+
         // Progressive image loading
         document.addEventListener('DOMContentLoaded', function() {
             // 图片懒加载与占位符
