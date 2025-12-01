@@ -417,7 +417,8 @@ class DailyNewsGenerator:
 
     def _img_url(self, prompt: str, size: str = "landscape_4_3") -> str:
         # Ensure assets directory exists
-        assets_dir = "/Users/mac/Documents/BEV Daily/reports/assets/images"
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        assets_dir = os.path.join(base_dir, "reports", "assets", "images")
         os.makedirs(assets_dir, exist_ok=True)
         
         # Generate hash for filename
@@ -627,7 +628,8 @@ class DailyNewsGenerator:
         }
 
         # 存储结果与日志
-        out_dir = "/Users/mac/Documents/BEV Daily/reports"
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(base_dir, "reports")
         os.makedirs(out_dir, exist_ok=True)
         fname = f"leader_statements_{datetime.now().strftime('%Y-%m-%d_%H%M%S')}.json"
         with open(os.path.join(out_dir, fname), "w", encoding="utf-8") as f:
@@ -2038,7 +2040,10 @@ def main():
     
     # 保存HTML文件
     filename = f"nev_daily_news_{datetime.now().strftime('%Y-%m-%d')}.html"
-    filepath = f"/Users/mac/Documents/BEV Daily/reports/{filename}"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    reports_dir = os.path.join(base_dir, "reports")
+    os.makedirs(reports_dir, exist_ok=True)
+    filepath = os.path.join(reports_dir, filename)
     
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(html_content)
