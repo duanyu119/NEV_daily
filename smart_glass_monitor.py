@@ -8,6 +8,8 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 import requests
 
+from deep_translator import GoogleTranslator
+
 class SmartGlassMonitor:
     """
     智能调光行业监测系统
@@ -24,6 +26,7 @@ class SmartGlassMonitor:
         self.db = self._load_db()
         self.api_key = os.environ.get("TAVILY_API_KEY", "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")
         self.base_url = "https://api.tavily.com/search"
+        self.translator = GoogleTranslator(source='auto', target='zh-CN')
 
     def _load_config(self) -> Dict[str, Any]:
         if os.path.exists(self.config_path):
@@ -182,6 +185,64 @@ class SmartGlassMonitor:
         }
         self.db["items"].append(new_entry)
         return True
+
+    def _summarize_text(self, text: str) -> str:
+        """
+        Summarize text into 3 core points and translate if necessary.
+        Returns HTML formatted list.
+        """
+        if not text:
+            return ""
+            
+        # Clean up text first
+        text = text.strip()
+        if len(text) < 10:
+            return text
+            
+        # Translate to Chinese if needed (Simple heuristic: count Chinese chars)
+        chinese_chars = len(list(filter(lambda x: '\u4e00' <= x <= '\u9fff', text)))
+        if chinese_chars < len(text) * 0.1: # If less than 10% Chinese, translate
+            try:
+                # Translate in chunks if too long (limit is usually 5000 chars)
+                if len(text) > 4000:
+                    text = text[:4000]
+                text = self.translator.translate(text)
+            except Exception as e:
+                print(f"Translation failed: {e}")
+
+        import re
+        # Split into sentences (support Chinese and English punctuation)
+        sentences = re.split(r'(?<=[。！？.!?])\s+|\n+', text)
+        sentences = [s.strip() for s in sentences if len(s.strip()) > 10]
+        
+        # Pick best 3 sentences based on keywords
+        keywords = ["市场", "增长", "营收", "发布", "推出", "销量", "利润", "同比", "环比", "技术", "专利", "投资"]
+        scored = []
+        
+        for i, s in enumerate(sentences):
+            score = 0
+            if i == 0: score += 5 # First sentence usually important
+            for k in keywords:
+                if k in s:
+                    score += 2
+            if 20 <= len(s) <= 100:
+                score += 1
+            scored.append((score, i, s))
+            
+        scored.sort(key=lambda x: x[0], reverse=True)
+        top_items = scored[:3] # Top 3
+        top_items.sort(key=lambda x: x[1]) # Restore order
+        
+        # Generate HTML
+        html = "<ul style='margin:0.5rem 0 0.5rem 1.2rem; padding:0; list-style-type: disc;'>"
+        for _, _, s in top_items:
+            # Ensure it ends with punctuation
+            if s and s[-1] not in "。！？.!?":
+                s += "。"
+            html += f"<li style='margin-bottom:0.25rem; color:var(--text-secondary); font-size:0.85rem;'>{s}</li>"
+        html += "</ul>"
+        
+        return html
 
     def get_report_data(self) -> Dict[str, Any]:
         """Get data formatted for the report generation"""

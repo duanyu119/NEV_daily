@@ -449,6 +449,74 @@ class DailyNewsGenerator:
         # Fallback to URL if save failed (or return placeholder)
         return url
         
+    def collect_new_car_launches(self, days: int = 30) -> List[Dict[str, Any]]:
+        """采集新车发布信息"""
+        api_key = os.environ.get("TAVILY_API_KEY", "")
+        end_time = datetime.now()
+        start_time = end_time - timedelta(days=days)
+        time_range = f"{start_time.strftime('%Y-%m-%d')} to {end_time.strftime('%Y-%m-%d')}"
+        
+        queries = [
+            "2025年11月 12月 新能源汽车 新车 上市 发布",
+            "2025年底重磅新能源新车",
+            "比亚迪 小米 理想 蔚来 2025 新车",
+        ]
+        
+        results = []
+        seen_urls = set()
+        
+        for q in queries:
+            payload = {
+                "api_key": api_key,
+                "query": q,
+                "search_depth": "advanced",
+                "max_results": 10,
+                "time_range": time_range
+            }
+            try:
+                r = requests.post("https://api.tavily.com/search", json=payload, timeout=30)
+                if r.status_code == 200:
+                    items = r.json().get("results", [])
+                    for item in items:
+                        url = item.get("url")
+                        if url in seen_urls:
+                            continue
+                        seen_urls.add(url)
+                        
+                        # Simple parsing (Mocking structured data extraction)
+                        title = item.get("title", "")
+                        content = item.get("content", "")
+                        
+                        # Heuristic to guess brand
+                        brand = "未知品牌"
+                        brands = ["比亚迪", "特斯拉", "理想", "蔚来", "小鹏", "小米", "极氪", "问界", "零跑", "吉利"]
+                        for b in brands:
+                            if b in title or b in content:
+                                brand = b
+                                break
+                                
+                        results.append({
+                            "id": hashlib.md5(url.encode()).hexdigest(),
+                            "brand": brand,
+                            "model": title.split(" ")[0] if " " in title else title[:10], # Rough guess
+                            "type": "全新发布" if "上市" in title else "改款",
+                            "segment": "新能源",
+                            "price_range": "待定",
+                            "launch_date": item.get("published_date", "近期"),
+                            "key_features": [content[:20] + "..."],
+                            "target_audience": "大众",
+                            "competitors": [],
+                            "market_positioning": "主流",
+                            "image_url": "", # Will use generated one
+                            "description": content[:100] + "...",
+                            "source_url": url,
+                            "media_channel": "行业媒体"
+                        })
+            except Exception as e:
+                print(f"Tavily search failed for {q}: {e}")
+                
+        return results[:8] # Limit to 8
+
     def fetch_data(self):
         """获取所有数据"""
         # 1. 获取基础数据 (Mock/API)
@@ -458,12 +526,18 @@ class DailyNewsGenerator:
         # 只有当 RUN_TAVILY_COLLECTION=1 时才执行实际采集，避免测试时超时
         if os.environ.get("TAVILY_API_KEY") and os.environ.get("RUN_TAVILY_COLLECTION") != "0":
             print("正在通过Tavily获取行业领袖数据...")
-            leader_data = self.collect_leader_statements()
+            leader_data = self.collect_leader_statements(span_days=30, min_items=200)
             if leader_data.get("results"):
                 # 转换Tavily数据格式以匹配UI
                 real_leaders = self._transform_leader_data(leader_data["results"])
                 self.data["industry_leaders"]["leaders"] = real_leaders
                 self.data["industry_leaders"]["total_statements"] = len(leader_data["results"])
+
+            print("正在通过Tavily获取新车发布数据...")
+            new_cars = self.collect_new_car_launches()
+            if new_cars:
+                self.data["new_car_launches"]["new_launches"] = new_cars
+                self.data["new_car_launches"]["total_count"] = len(new_cars)
 
         # 3. 获取智能调光行业数据 (新增)
         # 同样只在非 dry-run 模式下执行
