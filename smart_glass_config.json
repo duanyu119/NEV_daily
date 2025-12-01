@@ -1,0 +1,182 @@
+{
+  "keywords": [
+    "EC", "PDLC", "SPD", "LC",
+    "调光玻璃", "智能调光", "电致变色",
+    "变色薄膜", "智能薄膜", "Smart Glass",
+    "Electrochromic", "Switchable Glass"
+  ],
+  "channels": [
+    "竞对官网", "竞对公众号", "招聘网站", "企查查",
+    "智慧芽", "Pitch book", "Crunchbase",
+    "行业研报", "资本市场动态", "社媒",
+    "巨潮资讯网", "SEC"
+  ],
+  "competitors": [
+    {
+      "id": 1,
+      "category": "EC",
+      "name": "Gentex",
+      "url": "https://www.gentex.com/",
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "category": "EC",
+      "name": "View",
+      "url": "https://view.com/",
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "category": "EC",
+      "name": "Sage",
+      "url": "https://www.sageglass.com/",
+      "priority": "high"
+    },
+    {
+      "id": 4,
+      "category": "EC",
+      "name": "Chromogenics",
+      "url": "https://chromogenics.com/",
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "category": "EC",
+      "name": "Agril",
+      "url": "",
+      "priority": "medium"
+    },
+    {
+      "id": 6,
+      "category": "EC",
+      "name": "揽锐",
+      "url": "https://www.lannray.com/about-us/",
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "category": "EC",
+      "name": "江苏集萃",
+      "url": "https://www.ioptee.com/",
+      "priority": "medium"
+    },
+    {
+      "id": 8,
+      "category": "EC",
+      "name": "苏州伯宇",
+      "url": "http://www.boyu-tech.cn/",
+      "priority": "medium"
+    },
+    {
+      "id": 9,
+      "category": "EC",
+      "name": "合肥威迪",
+      "url": "https://www.vdiglass.com/",
+      "priority": "medium"
+    },
+    {
+      "id": 10,
+      "category": "EC",
+      "name": "常州雅谱",
+      "url": "http://www.yapuglass.com/about/?67.html",
+      "priority": "medium"
+    },
+    {
+      "id": 11,
+      "category": "EC",
+      "name": "宁波祢若",
+      "url": "https://www.nbmrkj.com/",
+      "priority": "medium"
+    },
+    {
+      "id": 12,
+      "category": "EC",
+      "name": "苏州光昛",
+      "url": "https://www.suntint.cn/",
+      "priority": "medium"
+    },
+    {
+      "id": 13,
+      "category": "EC",
+      "name": "半人马科技",
+      "url": "",
+      "priority": "medium"
+    },
+    {
+      "id": 14,
+      "category": "EC",
+      "name": "立光兴",
+      "url": "",
+      "priority": "medium"
+    },
+    {
+      "id": 15,
+      "category": "EC",
+      "name": "苏州创欣",
+      "url": "",
+      "priority": "medium"
+    },
+    {
+      "id": 16,
+      "category": "EC",
+      "name": "上方电子",
+      "url": "",
+      "priority": "medium"
+    },
+    {
+      "id": 17,
+      "category": "PDLC",
+      "name": "上海海优威",
+      "url": "http://www.hiuv.net/index.html",
+      "priority": "medium"
+    },
+    {
+      "id": 18,
+      "category": "PDLC",
+      "name": "上海隆昇",
+      "url": "http://www.lsoptronics.cn/",
+      "priority": "medium"
+    },
+    {
+      "id": 19,
+      "category": "SPD",
+      "name": "Gauzy",
+      "url": "https://www.gauzy.com/",
+      "priority": "high"
+    },
+    {
+      "id": 20,
+      "category": "SPD",
+      "name": "精一",
+      "url": "https://j1ai.com/guanyuwomen/",
+      "priority": "medium"
+    },
+    {
+      "id": 21,
+      "category": "LC",
+      "name": "DNP",
+      "url": "https://www.global.dnp/zh-CHS/index.html",
+      "priority": "high"
+    },
+    {
+      "id": 22,
+      "category": "LC",
+      "name": "京东方晟视",
+      "url": "https://boe.com/",
+      "priority": "high"
+    },
+    {
+      "id": 23,
+      "category": "LC",
+      "name": "深圳唯酷",
+      "url": "https://www.wicue.com/index.html",
+      "priority": "high"
+    }
+  ],
+  "monitoring_rules": {
+    "frequency": "daily",
+    "depth": "basic",
+    "notify_on": ["news", "product_update", "recruitment", "capital_market"]
+  }
+}

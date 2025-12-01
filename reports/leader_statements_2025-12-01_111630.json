@@ -1,0 +1,22 @@
+{
+  "status": {
+    "min_required": 20,
+    "collected": 0,
+    "span_days": 7,
+    "time_range": "2025-11-24 to 2025-12-01",
+    "run_at": "2025-12-01 11:16:30",
+    "logs": [
+      "Tavily状态码400 query=王传福 比亚迪 讲话",
+      "Tavily状态码400 query=雷军 小米 发言",
+      "Tavily状态码400 query=李想 理想汽车 公开演讲",
+      "Tavily状态码400 query=李斌 蔚来 采访",
+      "Tavily状态码400 query=何小鹏 小鹏汽车 演讲",
+      "Tavily状态码400 query=李书福 吉利 发言",
+      "Tavily状态码400 query=魏建军 长城 汽车 讲话",
+      "Tavily状态码400 query=余承东 华为 汽车 采访",
+      "Tavily状态码400 query=安聪慧 极氪 发言",
+      "Tavily状态码400 query=朱江明 零跑 发言"
+    ]
+  },
+  "results": []
+}

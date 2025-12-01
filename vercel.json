@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "nev-daily-news",
+  "description": "新能源汽车Daily News系统",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/reports/nev_daily_news_2025-11-28.html"
+    },
+    {
+      "source": "/apple-style",
+      "destination": "/reports/nev_daily_news_2025-11-28.html"
+    },
+    {
+      "source": "/enhanced",
+      "destination": "/reports/nev_daily_2025-11-28_enhanced_v2.html"
+    },
+    {
+      "source": "/classic",
+      "destination": "/reports/nev_daily_2025-11-28.html"
+    }
+  ]
+}

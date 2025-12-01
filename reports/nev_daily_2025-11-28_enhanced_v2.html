@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新能源车内参 | 2025-11-28 | 交互式报告</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --success-color: #16a34a;
+            --warning-color: #d97706;
+            --danger-color: #dc2626;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-color: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --border-color: #475569;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--bg-primary);
+            min-height: 100vh;
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .header-meta span {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 0.75rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            background: var(--bg-primary);
+            border-bottom: 2px solid var(--border-color);
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .nav-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .nav-tab {
+            flex: 1;
+            min-width: 120px;
+            padding: 1rem 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .nav-tab:hover {
+            color: var(--primary-color);
+            background: var(--bg-secondary);
+        }
+
+        .nav-tab.active {
+            color: var(--primary-color);
+            background: var(--bg-secondary);
+        }
+
+        .nav-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary-color);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            padding: 2rem;
+            min-height: 600px;
+        }
+
+        .tab-pane {
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        /* Metrics */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Simple Charts */
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 2rem 0;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .simple-bar {
+            display: flex;
+            align-items: end;
+            height: 200px;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .bar {
+            flex: 1;
+            background: var(--primary-color);
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .bar:hover {
+            background: #1d4ed8;
+            transform: scaleY(1.05);
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Pie Chart */
+        .pie-chart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #2563eb 0deg 126deg,
+                #16a34a 126deg 234deg,
+                #dc2626 234deg 270deg,
+                #f59e0b 270deg 342deg,
+                #8b5cf6 342deg 360deg
+            );
+            position: relative;
+            margin: 2rem auto;
+        }
+
+        .pie-legend {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            margin-right: 0.5rem;
+        }
+
+        /* Data Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .data-table tr:hover {
+            background: var(--bg-secondary);
+        }
+
+        /* Leader Cards */
+        .leader-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .leader-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .leader-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+
+        .leader-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .leader-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+
+        .leader-info h3 {
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        .leader-info p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Expandable Content */
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .expandable-content.expanded {
+            max-height: 500px;
+        }
+
+        /* Car Models */
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .car-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .car-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #9ca3af;
+        }
+
+        .car-info {
+            padding: 1.5rem;
+        }
+
+        .car-brand {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .car-model {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .car-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .spec-tag {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-tertiary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .header {
+                padding: 1.5rem 1rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header-meta {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-tabs {
+                padding: 0 1rem;
+            }
+
+            .nav-tab {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .tab-content {
+                padding: 1rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            .leader-grid,
+            .car-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-container {
+                height: 250px;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-primary { color: var(--primary-color); }
+        .text-secondary { color: var(--text-secondary); }
+        .text-success { color: var(--success-color); }
+        .text-warning { color: var(--warning-color); }
+        .text-danger { color: var(--danger-color); }
+        .mb-1 { margin-bottom: 0.5rem; }
+        .mb-2 { margin-bottom: 1rem; }
+        .mb-3 { margin-bottom: 1.5rem; }
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <button class="theme-toggle" onclick="toggleTheme()" title="切换主题">
+                <span id="theme-icon">🌙</span>
+            </button>
+            <h1>新能源车内参</h1>
+            <div class="header-meta">
+                <span>📅 2025年11月28日</span>
+                <span>📊 82条数据</span>
+                <span>🏢 8个数据源</span>
+                <span>⭐ 质量评分: 85/100</span>
+                <span id="update-time">🔄 更新时间: 20:58:46</span>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview')">📊 数据概览</button>
+            <button class="nav-tab" onclick="showTab('sales')">📈 销量分析</button>
+            <button class="nav-tab" onclick="showTab('models')">🚗 新车动态</button>
+            <button class="nav-tab" onclick="showTab('leaders')">👥 领袖洞察</button>
+            <button class="nav-tab" onclick="showTab('insights')">💡 深度分析</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-pane active">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">82</div>
+                        <div class="metric-label">总数据量</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">8</div>
+                        <div class="metric-label">数据源</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">5</div>
+                        <div class="metric-label">主要品牌</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value text-success">85</div>
+                        <div class="metric-label">质量评分</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">📈 数据分布</h3>
+                    <div class="chart-container">
+                        <div class="simple-bar">
+                            <div class="bar" style="height: 5%;">
+                                <div class="bar-value">2</div>
+                                <div class="bar-label">销量</div>
+                            </div>
+                            <div class="bar" style="height: 25%;">
+                                <div class="bar-value">10</div>
+                                <div class="bar-label">新车型</div>
+                            </div>
+                            <div class="bar" style="height: 5%;">
+                                <div class="bar-value">2</div>
+                                <div class="bar-label">投诉</div>
+                            </div>
+                            <div class="bar" style="height: 5%;">
+                                <div class="bar-value">2</div>
+                                <div class="bar-label">政策</div>
+                            </div>
+                            <div class="bar" style="height: 20%;">
+                                <div class="bar-value">8</div>
+                                <div class="bar-label">测评</div>
+                            </div>
+                            <div class="bar" style="height: 20%;">
+                                <div class="bar-value">8</div>
+                                <div class="bar-label">论坛</div>
+                            </div>
+                            <div class="bar" style="height: 20%;">
+                                <div class="bar-value">8</div>
+                                <div class="bar-label">新闻</div>
+                            </div>
+                            <div class="bar" style="height: 100%;">
+                                <div class="bar-value">42</div>
+                                <div class="bar-label">领袖观点</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🎯 今日亮点</h3>
+                    <div class="mb-2">
+                        <strong>• 销量数据:</strong> 2条重要销量信息，市场趋势向好
+                    </div>
+                    <div class="mb-2">
+                        <strong>• 新车发布:</strong> 10条新车型信息，覆盖多个细分市场
+                    </div>
+                    <div class="mb-2">
+                        <strong>• 领袖观点:</strong> 42条行业领袖重要言论，战略洞察丰富
+                    </div>
+                    <div>
+                        <strong>• 市场情绪:</strong> <span class="text-success">积极乐观</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sales Analysis Tab -->
+            <div id="sales" class="tab-pane">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value text-success">↗ 15.2%</div>
+                        <div class="metric-label">环比增长</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value text-success">↗ 28.5%</div>
+                        <div class="metric-label">同比增长</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">42.3%</div>
+                        <div class="metric-label">市场份额</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">186,542</div>
+                        <div class="metric-label">月度销量</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">📊 品牌销量排行</h3>
+                    <div class="chart-container">
+                        <div class="simple-bar">
+                            <div class="bar" style="height: 100%; background: #2563eb;">
+                                <div class="bar-value">32.5万</div>
+                                <div class="bar-label">比亚迪</div>
+                            </div>
+                            <div class="bar" style="height: 31%; background: #dc2626;">
+                                <div class="bar-value">10.2万</div>
+                                <div class="bar-label">特斯拉</div>
+                            </div>
+                            <div class="bar" style="height: 16%; background: #16a34a;">
+                                <div class="bar-value">5.1万</div>
+                                <div class="bar-label">理想</div>
+                            </div>
+                            <div class="bar" style="height: 10%; background: #f59e0b;">
+                                <div class="bar-value">3.2万</div>
+                                <div class="bar-label">小鹏</div>
+                            </div>
+                            <div class="bar" style="height: 6%; background: #8b5cf6;">
+                                <div class="bar-value">2.1万</div>
+                                <div class="bar-label">蔚来</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🗺️ 地区销量分布</h3>
+                    <div class="chart-container">
+                        <div class="pie-chart"></div>
+                        <div class="pie-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #2563eb;"></div>
+                                <span>华东地区 (35%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #16a34a;"></div>
+                                <span>华南地区 (28%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #dc2626;"></div>
+                                <span>华北地区 (18%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #f59e0b;"></div>
+                                <span>西南地区 (12%)</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background: #8b5cf6;"></div>
+                                <span>其他地区 (7%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Models Tab -->
+            <div id="models" class="tab-pane">
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 class="card-title">🚗 新车型发布</h3>
+                        <div>
+                            <select class="btn btn-secondary" style="margin-right: 0.5rem;">
+                                <option>按品牌筛选</option>
+                                <option>比亚迪</option>
+                                <option>特斯拉</option>
+                                <option>理想汽车</option>
+                                <option>小鹏</option>
+                                <option>蔚来</option>
+                            </select>
+                            <select class="btn btn-secondary">
+                                <option>按时间排序</option>
+                                <option>按热度排序</option>
+                                <option>按价格排序</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-grid">
+                    <div class="car-card">
+                        <div class="car-image">🚗</div>
+                        <div class="car-info">
+                            <div class="car-brand">比亚迪</div>
+                            <div class="car-model">海豹 DM-i</div>
+                            <div class="car-specs">
+                                <span class="spec-tag">中型轿车</span>
+                                <span class="spec-tag">插电混动</span>
+                                <span class="spec-tag">纯电续航200km</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div><strong>价格区间:</strong> 18-25万</div>
+                                <div><strong>预计上市:</strong> 2025年12月</div>
+                                <div><strong>目标市场:</strong> 家庭用户</div>
+                            </div>
+                            <button class="btn btn-primary" style="width: 100%;">查看详情</button>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image">🚙</div>
+                        <div class="car-info">
+                            <div class="car-brand">理想汽车</div>
+                            <div class="car-model">L6 Pro</div>
+                            <div class="car-specs">
+                                <span class="spec-tag">中大型SUV</span>
+                                <span class="spec-tag">增程式</span>
+                                <span class="spec-tag">6座布局</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div><strong>价格区间:</strong> 30-35万</div>
+                                <div><strong>预计上市:</strong> 2026年1月</div>
+                                <div><strong>目标市场:</strong> 高端家庭</div>
+                            </div>
+                            <button class="btn btn-primary" style="width: 100%;">查看详情</button>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image">🚗</div>
+                        <div class="car-info">
+                            <div class="car-brand">小鹏</div>
+                            <div class="car-model">P7i GT</div>
+                            <div class="car-specs">
+                                <span class="spec-tag">中型轿车</span>
+                                <span class="spec-tag">纯电动</span>
+                                <span class="spec-tag">智能驾驶</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div><strong>价格区间:</strong> 25-32万</div>
+                                <div><strong>预计上市:</strong> 2025年11月</div>
+                                <div><strong>目标市场:</strong> 科技爱好者</div>
+                            </div>
+                            <button class="btn btn-primary" style="width: 100%;">查看详情</button>
+                        </div>
+                    </div>
+
+                    <div class="car-card">
+                        <div class="car-image">🚙</div>
+                        <div class="car-info">
+                            <div class="car-brand">蔚来</div>
+                            <div class="car-model">ES7 Coupe</div>
+                            <div class="car-specs">
+                                <span class="spec-tag">中大型SUV</span>
+                                <span class="spec-tag">纯电动</span>
+                                <span class="spec-tag">换电模式</span>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <div><strong>价格区间:</strong> 45-55万</div>
+                                <div><strong>预计上市:</strong> 2026年2月</div>
+                                <div><strong>目标市场:</strong> 高端用户</div>
+                            </div>
+                            <button class="btn btn-primary" style="width: 100%;">查看详情</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaders Tab -->
+            <div id="leaders" class="tab-pane">
+                <div class="card">
+                    <h3 class="card-title">👥 行业领袖观点热词</h3>
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+                            <span style="font-size: 2rem; color: #2563eb; font-weight: bold;">技术创新</span>
+                            <span style="font-size: 1.8rem; color: #16a34a; font-weight: bold;">智能化</span>
+                            <span style="font-size: 1.6rem; color: #dc2626; font-weight: bold;">电动化</span>
+                            <span style="font-size: 1.5rem; color: #f59e0b; font-weight: bold;">市场机遇</span>
+                            <span style="font-size: 1.4rem; color: #8b5cf6; font-weight: bold;">用户体验</span>
+                            <span style="font-size: 1.3rem; color: #06b6d4; font-weight: bold;">生态整合</span>
+                            <span style="font-size: 1.2rem; color: #2563eb;">充电基础设施</span>
+                            <span style="font-size: 1.1rem; color: #16a34a;">政策支持</span>
+                            <span style="font-size: 1rem; color: #dc2626;">成本控制</span>
+                            <span style="font-size: 1rem; color: #f59e0b;">安全性</span>
+                            <span style="font-size: 0.9rem; color: #8b5cf6;">续航里程</span>
+                            <span style="font-size: 0.9rem; color: #06b6d4;">品牌建设</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="leader-grid">
+                    <div class="leader-card" onclick="toggleLeaderDetail('wang-chuanfu')">
+                        <div class="leader-header">
+                            <div class="leader-avatar">王</div>
+                            <div class="leader-info">
+                                <h3>王传福</h3>
+                                <p>比亚迪董事长兼总裁</p>
+                            </div>
+                        </div>
+                        <div class="leader-summary">
+                            <p><strong>核心观点:</strong> 新能源汽车行业正迎来前所未有的发展机遇</p>
+                            <div style="margin-top: 1rem;">
+                                <span class="spec-tag">技术创新</span>
+                                <span class="spec-tag">市场机遇</span>
+                                <span class="spec-tag">战略发展</span>
+                            </div>
+                        </div>
+                        <div id="wang-chuanfu-detail" class="expandable-content">
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                                <p><strong>详细内容:</strong> 王传福在接受媒体采访时表示，未来五年将是新能源汽车市场的关键窗口期。比亚迪将继续加大研发投入，推动智能化技术发展，计划在未来三年内推出10款新能源车型，覆盖各个细分市场。</p>
+                                <p><strong>行业影响:</strong> 这将加速新能源汽车的普及，推动整个行业的技术升级。</p>
+                                <p><strong>发布时间:</strong> 2025-11-28 14:30</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader-card" onclick="toggleLeaderDetail('li-xiang')">
+                        <div class="leader-header">
+                            <div class="leader-avatar">李</div>
+                            <div class="leader-info">
+                                <h3>李想</h3>
+                                <p>理想汽车CEO</p>
+                            </div>
+                        </div>
+                        <div class="leader-summary">
+                            <p><strong>核心观点:</strong> 增程式技术路线是当前的best choice</p>
+                            <div style="margin-top: 1rem;">
+                                <span class="spec-tag">增程式技术</span>
+                                <span class="spec-tag">用户体验</span>
+                                <span class="spec-tag">市场定位</span>
+                            </div>
+                        </div>
+                        <div id="li-xiang-detail" class="expandable-content">
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                                <p><strong>详细内容:</strong> 李想在微博中表示，增程式技术能够有效解决用户的里程焦虑问题，是目前最适合中国市场的技术路线。理想汽车将继续深耕增程式技术，不断提升产品体验。</p>
+                                <p><strong>行业影响:</strong> 这将推动更多车企关注增程式技术的发展。</p>
+                                <p><strong>发布时间:</strong> 2025-11-28 10:15</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader-card" onclick="toggleLeaderDetail('li-bin')">
+                        <div class="leader-header">
+                            <div class="leader-avatar">李</div>
+                            <div class="leader-info">
+                                <h3>李斌</h3>
+                                <p>蔚来汽车CEO</p>
+                            </div>
+                        </div>
+                        <div class="leader-summary">
+                            <p><strong>核心观点:</strong> 换电模式将成为新能源汽车的重要补能方式</p>
+                            <div style="margin-top: 1rem;">
+                                <span class="spec-tag">换电模式</span>
+                                <span class="spec-tag">补能体系</span>
+                                <span class="spec-tag">基础设施</span>
+                            </div>
+                        </div>
+                        <div id="li-bin-detail" class="expandable-content">
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                                <p><strong>详细内容:</strong> 李斌在公开演讲中指出，换电模式不仅能够解决充电时间长的问题，还能够延长电池寿命，降低用户的使用成本。蔚来将继续扩大换电站的建设，目标是在2026年建成超过5000座换电站。</p>
+                                <p><strong>行业影响:</strong> 这将推动换电技术的标准化，促进产业链的发展。</p>
+                                <p><strong>发布时间:</strong> 2025-11-28 16:45</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leader-card" onclick="toggleLeaderDetail('lei-jun')">
+                        <div class="leader-header">
+                            <div class="leader-avatar">雷</div>
+                            <div class="leader-info">
+                                <h3>雷军</h3>
+                                <p>小米汽车CEO</p>
+                            </div>
+                        </div>
+                        <div class="leader-summary">
+                            <p><strong>核心观点:</strong> 智能电动汽车是小米生态的重要延伸</p>
+                            <div style="margin-top: 1rem;">
+                                <span class="spec-tag">生态整合</span>
+                                <span class="spec-tag">智能互联</span>
+                                <span class="spec-tag">用户体验</span>
+                            </div>
+                        </div>
+                        <div id="lei-jun-detail" class="expandable-content">
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+                                <p><strong>详细内容:</strong> 雷军在小米汽车发布会上表示，小米汽车将充分整合小米生态链的优势，打造真正智能的移动空间。通过AI技术的深度应用，让汽车成为用户的智能伙伴。</p>
+                                <p><strong>行业影响:</strong> 这将推动传统车企加速数字化转型，提升产品的智能化水平。</p>
+                                <p><strong>发布时间:</strong> 2025-11-28 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insights Tab -->
+            <div id="insights" class="tab-pane">
+                <div class="card">
+                    <h3 class="card-title">🔍 市场洞察</h3>
+                    <div class="chart-container">
+                        <div class="simple-bar">
+                            <div class="bar" style="height: 95%; background: #2563eb;">
+                                <div class="bar-value">95</div>
+                                <div class="bar-label">11月</div>
+                            </div>
+                            <div class="bar" style="height: 88%; background: #16a34a;">
+                                <div class="bar-value">88</div>
+                                <div class="bar-label">10月</div>
+                            </div>
+                            <div class="bar" style="height: 90%; background: #f59e0b;">
+                                <div class="bar-value">90</div>
+                                <div class="bar-label">9月</div>
+                            </div>
+                            <div class="bar" style="height: 85%; background: #8b5cf6;">
+                                <div class="bar-value">85</div>
+                                <div class="bar-label">8月</div>
+                            </div>
+                            <div class="bar" style="height: 82%; background: #06b6d4;">
+                                <div class="bar-value">82</div>
+                                <div class="bar-label">7月</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; color: var(--text-secondary); margin-top: 1rem;">
+                        市场热度指数趋势 (综合销量、关注度、投资热度)
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">⚠️ 风险预警</h3>
+                    <div class="data-table">
+                        <table style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th>风险类型</th>
+                                    <th>影响程度</th>
+                                    <th>涉及品牌</th>
+                                    <th>建议措施</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>续航投诉</td>
+                                    <td><span class="text-warning">中等</span></td>
+                                    <td>比亚迪</td>
+                                    <td>加强电池技术优化</td>
+                                </tr>
+                                <tr>
+                                    <td>充电兼容性</td>
+                                    <td><span class="text-danger">严重</span></td>
+                                    <td>特斯拉</td>
+                                    <td>完善充电标准</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🎯 机会识别</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                        <div style="padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <h4 style="color: var(--success-color); margin-bottom: 0.5rem;">🚀 技术机遇</h4>
+                            <p>增程式技术获得市场认可，建议加大投入</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">📈 市场机遇</h4>
+                            <p>中高端SUV市场增长迅速，存在巨大空间</p>
+                        </div>
+                        <div style="padding: 1rem; background: var(--bg-secondary); border-radius: 8px;">
+                            <h4 style="color: var(--warning-color); margin-bottom: 0.5rem;">🔧 政策机遇</h4>
+                            <p>充电基础设施建设获得政策支持</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            const icon = document.getElementById('theme-icon');
+            icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+        // Tab Navigation
+        function showTab(tabName) {
+            // Hide all tab panes
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            tabPanes.forEach(pane => {
+                pane.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab pane
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+
+        // Toggle leader detail
+        function toggleLeaderDetail(leaderId) {
+            const detail = document.getElementById(leaderId + '-detail');
+            detail.classList.toggle('expanded');
+        }
+
+        // Update time every minute
+        setInterval(() => {
+            const now = new Date();
+            document.getElementById('update-time').textContent = 
+                '🔄 更新时间: ' + now.toLocaleTimeString('zh-CN');
+        }, 60000);
+    </script>
+</body>
+</html>

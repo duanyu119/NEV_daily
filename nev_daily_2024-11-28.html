@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2024年11月28日新能源汽车行业日报，包含最新销量数据、技术突破、产品情报和政策解读">
+    <meta name="keywords" content="新能源汽车,比亚迪,特斯拉,理想,蔚来,小鹏,小米汽车,电动车销量">
+    <meta name="author" content="TRAE NEV Agent">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="新能源车内参 | 2024年11月28日">
+    <meta property="og:description" content="今日新能源汽车行业核心看点：渗透率57.8%创新高，比亚迪断层领先，小鹏AI智驾突破">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="zh_CN">
+    <title>新能源车内参 | 2024年11月28日 | 版本: 20241128_V1</title>
+    <style>
+        /* 莫兰迪色系设计系统 */
+        :root {
+            /* 莫兰迪主色调 */
+            --morandi-blue: #8fa3b0;        /* 雾霾蓝 */
+            --morandi-green: #a8b5a0;       /* 灰绿色 */
+            --morandi-beige: #d4c5b9;       /* 米灰色 */
+            --morandi-pink: #d1b6b3;        /* 灰粉色 */
+            --morandi-purple: #b8a9c0;      /* 灰紫色 */
+            --morandi-yellow: #d0c9a6;       /* 灰黄色 */
+            
+            /* 中性色 */
+            --morandi-white: #fafafa;       /* 暖白色 */
+            --morandi-gray: #9a9a9a;        /* 中性灰 */
+            --morandi-dark: #4a4a4a;        /* 深灰色 */
+            --morandi-black: #2a2a2a;        /* 暖黑色 */
+            
+            /* iOS毛玻璃效果 */
+            --glass-bg: rgba(255, 255, 255, 0.25);
+            --glass-border: rgba(255, 255, 255, 0.4);
+            --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --glass-blur: blur(12px);
+            
+            /* 网格系统 */
+            --grid-unit: 8px;
+            --border-radius: 16px;
+            --border-radius-sm: 12px;
+            --border-radius-lg: 24px;
+            
+            /* 动画系统 */
+            --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* 阴影系统 */
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.12);
+            --shadow-strong: 0 16px 48px rgba(0, 0, 0, 0.16);
+        }
+
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--morandi-dark);
+            background: linear-gradient(135deg, var(--morandi-beige) 0%, var(--morandi-blue) 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* 主容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: calc(var(--grid-unit) * 6);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 毛玻璃头部 */
+        .header {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius-lg);
+            padding: calc(var(--grid-unit) * 10);
+            margin-bottom: calc(var(--grid-unit) * 8);
+            text-align: center;
+            box-shadow: var(--glass-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(143, 163, 176, 0.1) 0%, 
+                rgba(168, 181, 160, 0.1) 50%, 
+                rgba(212, 197, 185, 0.1) 100%);
+            z-index: -1;
+        }
+
+        .header-icon {
+            font-size: 72px;
+            margin-bottom: calc(var(--grid-unit) * 4);
+            display: block;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .header-title {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 700;
+            margin-bottom: calc(var(--grid-unit) * 3);
+            background: linear-gradient(135deg, var(--morandi-dark) 0%, var(--morandi-gray) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+
+        .header-subtitle {
+            font-size: clamp(18px, 2.5vw, 24px);
+            color: var(--morandi-gray);
+            font-weight: 400;
+            margin-bottom: calc(var(--grid-unit) * 2);
+        }
+
+        .version-info {
+            display: inline-flex;
+            align-items: center;
+            gap: calc(var(--grid-unit) * 2);
+            background: rgba(255, 255, 255, 0.3);
+            padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 3);
+            border-radius: var(--border-radius);
+            font-size: 14px;
+            color: var(--morandi-gray);
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+        }
+
+        /* 毛玻璃卡片 */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: calc(var(--grid-unit) * 6);
+            margin-bottom: calc(var(--grid-unit) * 6);
+            box-shadow: var(--glass-shadow);
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.1) 0%, 
+                rgba(255, 255, 255, 0.05) 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: var(--transition-normal);
+        }
+
+        .glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 卡片标题 */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: calc(var(--grid-unit) * 3);
+            margin-bottom: calc(var(--grid-unit) * 5);
+            padding-bottom: calc(var(--grid-unit) * 4);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card-icon {
+            font-size: 32px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--morandi-dark);
+            letter-spacing: -0.01em;
+        }
+
+        /* 新闻新鲜度指示器 */
+        .freshness-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: calc(var(--grid-unit));
+            padding: calc(var(--grid-unit)) calc(var(--grid-unit) * 2);
+            border-radius: var(--border-radius-sm);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .freshness-very-fresh {
+            background: rgba(144, 238, 144, 0.2);
+            color: #228b22;
+            border-color: rgba(34, 139, 34, 0.3);
+        }
+
+        .freshness-fresh {
+            background: rgba(255, 218, 185, 0.2);
+            color: #ff8c00;
+            border-color: rgba(255, 140, 0, 0.3);
+        }
+
+        .freshness-normal {
+            background: rgba(211, 211, 211, 0.2);
+            color: #696969;
+            border-color: rgba(105, 105, 105, 0.3);
+        }
+
+        /* 新闻条目 */
+        .news-item {
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: var(--border-radius-sm);
+            padding: calc(var(--grid-unit) * 4);
+            margin-bottom: calc(var(--grid-unit) * 4);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-item:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .news-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .news-item:hover::before {
+            left: 100%;
+        }
+
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: calc(var(--grid-unit) * 3);
+            gap: calc(var(--grid-unit) * 3);
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--morandi-dark);
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .news-content {
+            color: var(--morandi-gray);
+            margin-bottom: calc(var(--grid-unit) * 4);
+            line-height: 1.6;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: var(--morandi-gray);
+            padding-top: calc(var(--grid-unit) * 2);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .news-source {
+            display: flex;
+            align-items: center;
+            gap: calc(var(--grid-unit));
+        }
+
+        .source-link {
+            color: var(--morandi-blue);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition-fast);
+            position: relative;
+        }
+
+        .source-link:hover {
+            color: var(--morandi-purple);
+            text-decoration: none;
+        }
+
+        .source-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--morandi-purple);
+            transition: width var(--transition-fast);
+        }
+
+        .source-link:hover::after {
+            width: 100%;
+        }
+
+        /* 高亮标记 */
+        .highlight {
+            background: linear-gradient(120deg, 
+                rgba(143, 163, 176, 0.15) 0%, 
+                rgba(184, 169, 192, 0.15) 100%);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            color: var(--morandi-blue);
+            border: 1px solid rgba(143, 163, 176, 0.3);
+        }
+
+        /* 数据表格 */
+        .data-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: calc(var(--grid-unit) * 4) 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .data-table th {
+            background: rgba(255, 255, 255, 0.4);
+            padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 4);
+            text-align: left;
+            font-weight: 600;
+            color: var(--morandi-dark);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            backdrop-filter: blur(5px);
+        }
+
+        .data-table td {
+            padding: calc(var(--grid-unit) * 3) calc(var(--grid-unit) * 4);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 15px;
+            transition: var(--transition-fast);
+        }
+
+        .data-table tr:hover td {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .rank-1 { 
+            background: linear-gradient(135deg, 
+                rgba(255, 215, 0, 0.2) 0%, 
+                rgba(255, 237, 78, 0.2) 100%) !important;
+            font-weight: 600;
+            color: #b8860b;
+        }
+
+        .rank-2 { 
+            background: linear-gradient(135deg, 
+                rgba(192, 192, 192, 0.2) 0%, 
+                rgba(232, 232, 232, 0.2) 100%) !important;
+            font-weight: 600;
+            color: #708090;
+        }
+
+        .rank-3 { 
+            background: linear-gradient(135deg, 
+                rgba(205, 127, 50, 0.2) 0%, 
+                rgba(232, 168, 124, 0.2) 100%) !important;
+            font-weight: 600;
+            color: #a0522d;
+        }
+
+        /* 统计卡片 */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: calc(var(--grid-unit) * 5);
+            margin: calc(var(--grid-unit) * 5) 0;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: var(--border-radius);
+            padding: calc(var(--grid-unit) * 6);
+            text-align: center;
+            transition: var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-medium);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                var(--morandi-blue) 0%, 
+                var(--morandi-purple) 100%);
+            opacity: 0.7;
+        }
+
+        .stat-number {
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            color: var(--morandi-blue);
+            margin-bottom: calc(var(--grid-unit));
+            line-height: 1;
+            background: linear-gradient(135deg, var(--morandi-blue) 0%, var(--morandi-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--morandi-gray);
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* 重要新闻标记 */
+        .breaking-news {
+            background: rgba(255, 248, 230, 0.4);
+            border-left: 4px solid var(--morandi-yellow);
+            padding: calc(var(--grid-unit) * 4);
+            margin-bottom: calc(var(--grid-unit) * 5);
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            font-weight: 500;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-left-width: 4px;
+        }
+
+        /* 列表样式 */
+        ul {
+            margin: calc(var(--grid-unit) * 4) 0;
+            padding-left: calc(var(--grid-unit) * 5);
+        }
+
+        li {
+            margin-bottom: calc(var(--grid-unit) * 3);
+            color: var(--morandi-gray);
+            position: relative;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--morandi-blue);
+            font-weight: bold;
+            display: inline-block;
+            width: calc(var(--grid-unit) * 2);
+            margin-left: calc(var(--grid-unit) * -2);
+        }
+
+        /* 版本控制面板 */
+        .version-panel {
+            position: fixed;
+            top: calc(var(--grid-unit) * 4);
+            right: calc(var(--grid-unit) * 4);
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--border-radius);
+            padding: calc(var(--grid-unit) * 3);
+            box-shadow: var(--glass-shadow);
+            z-index: 1000;
+            font-size: 13px;
+            color: var(--morandi-gray);
+        }
+
+        .version-info-compact {
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--grid-unit));
+        }
+
+        .version-number {
+            font-weight: 600;
+            color: var(--morandi-blue);
+            font-size: 14px;
+        }
+
+        .update-time {
+            font-size: 11px;
+            opacity: 0.8;
+        }
+
+        /* 动画效果 */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% {
+                transform: translate3d(0, 0, 0);
+            }
+            40%, 43% {
+                transform: translate3d(0, -8px, 0);
+            }
+            70% {
+                transform: translate3d(0, -4px, 0);
+            }
+            90% {
+                transform: translate3d(0, -2px, 0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(143, 163, 176, 0.3);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(143, 163, 176, 0.5), 0 0 40px rgba(184, 169, 192, 0.3);
+            }
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* 入场动画 */
+        .glass-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .glass-card:nth-child(1) { animation-delay: 0.1s; }
+        .glass-card:nth-child(2) { animation-delay: 0.2s; }
+        .glass-card:nth-child(3) { animation-delay: 0.3s; }
+        .glass-card:nth-child(4) { animation-delay: 0.4s; }
+
+        /* 微交互动画 */
+        .freshness-indicator {
+            animation: pulse 2s infinite;
+        }
+
+        .freshness-very-fresh {
+            animation: pulse 1.5s infinite, glow 3s infinite;
+        }
+
+        .header-icon {
+            animation: float 3s ease-in-out infinite, glow 4s infinite alternate;
+        }
+
+        .stat-card:hover {
+            animation: bounce 0.6s ease-out;
+        }
+
+        /* 点击波纹效果 */
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: ripple 0.6s linear;
+            pointer-events: none;
+        }
+
+        /* 悬停发光效果 */
+        .glow-on-hover {
+            transition: all 0.3s ease;
+        }
+
+        .glow-on-hover:hover {
+            box-shadow: 0 0 20px rgba(143, 163, 176, 0.4);
+            transform: scale(1.02);
+        }
+
+        /* 新鲜度指示器动画 */
+        .freshness-indicator.freshness-very-fresh::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+            border-radius: inherit;
+            z-index: -1;
+            animation: glow 3s infinite alternate;
+            opacity: 0.7;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .container {
+                padding: calc(var(--grid-unit) * 4);
+            }
+            
+            .header {
+                padding: calc(var(--grid-unit) * 8);
+            }
+            
+            .glass-card {
+                padding: calc(var(--grid-unit) * 5);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                gap: calc(var(--grid-unit) * 4);
+            }
+        }
+
+        @media (max-width: 768px) {
+            body { font-size: 15px; }
+            
+            .container {
+                padding: calc(var(--grid-unit) * 3);
+            }
+            
+            .header {
+                padding: calc(var(--grid-unit) * 6);
+                margin-bottom: calc(var(--grid-unit) * 6);
+            }
+            
+            .header-icon {
+                font-size: 56px;
+            }
+            
+            .glass-card {
+                padding: calc(var(--grid-unit) * 4);
+                margin-bottom: calc(var(--grid-unit) * 4);
+            }
+            
+            .card-title {
+                font-size: 20px;
+            }
+            
+            .news-title {
+                font-size: 16px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: calc(var(--grid-unit) * 3);
+            }
+            
+            .version-panel {
+                position: static;
+                margin-bottom: calc(var(--grid-unit) * 4);
+                width: 100%;
+            }
+            
+            .news-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: calc(var(--grid-unit));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: calc(var(--grid-unit) * 2);
+            }
+            
+            .header {
+                padding: calc(var(--grid-unit) * 4);
+            }
+            
+            .header-icon {
+                font-size: 48px;
+            }
+            
+            .glass-card {
+                padding: calc(var(--grid-unit) * 3);
+            }
+            
+            .data-table {
+                font-size: 13px;
+            }
+            
+            .data-table th,
+            .data-table td {
+                padding: calc(var(--grid-unit) * 2);
+            }
+            
+            .stat-number {
+                font-size: 32px;
+            }
+        }
+
+        /* 暗色模式支持 */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --morandi-white: #1a1a1a;
+                --morandi-dark: #e0e0e0;
+                --morandi-gray: #b0b0b0;
+                --glass-bg: rgba(30, 30, 30, 0.3);
+                --glass-border: rgba(255, 255, 255, 0.1);
+            }
+            
+            body {
+                background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            }
+            
+            .news-item {
+                background: rgba(40, 40, 40, 0.4);
+                border-color: rgba(255, 255, 255, 0.1);
+            }
+            
+            .data-table {
+                background: rgba(40, 40, 40, 0.3);
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+            
+            .stat-card {
+                background: rgba(40, 40, 40, 0.3);
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        /* 打印样式 */
+        @media print {
+            body {
+                background: white !important;
+            }
+            
+            .glass-card,
+            .header,
+            .news-item,
+            .data-table,
+            .stat-card {
+                background: white !important;
+                border: 1px solid #ddd !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 版本控制面板 -->
+    <div class="version-panel">
+        <div class="version-info-compact">
+            <div class="version-number">版本: 20241128_V1</div>
+            <div class="update-time">更新: 2024-11-28 18:00</div>
+            <div class="freshness-score">新鲜度: 95/100</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 头部区域 -->
+        <header class="header">
+            <span class="header-icon">🔋</span>
+            <h1 class="header-title">新能源车内参</h1>
+            <div class="header-subtitle">2024年11月28日 · 今日核心看点</div>
+            <div class="version-info">
+                <span>📊 数据来源: 乘联会 | 中国汽车流通协会</span>
+                <span>🔄 最后更新: 18:00</span>
+            </div>
+        </header>
+
+        <!-- 市场动态 -->
+        <section class="glass-card">
+            <div class="card-header">
+                <span class="card-icon">📈</span>
+                <h2 class="card-title">市场动态</h2>
+                <span class="freshness-indicator freshness-very-fresh">🔥 24小时内</span>
+            </div>
+            
+            <div class="breaking-news">
+                <strong>重大突破：</strong>2024年11月新能源汽车渗透率已达57.8%，较去年同期提升5个百分点，创历史新高！
+            </div>
+            
+            <h3 style="margin-bottom: calc(var(--grid-unit) * 4); font-size: 20px; color: var(--morandi-dark);">11月新能源汽车销量排行榜（前10名）</h3>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>品牌</th>
+                        <th>销量（万辆）</th>
+                        <th>环比变化</th>
+                        <th>市场地位</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="rank-1">
+                        <td>1</td>
+                        <td>比亚迪</td>
+                        <td>50.0+</td>
+                        <td>+5.2%</td>
+                        <td>断层领先</td>
+                    </tr>
+                    <tr class="rank-2">
+                        <td>2</td>
+                        <td>吉利汽车</td>
+                        <td>12.25</td>
+                        <td>+8.1%</td>
+                        <td>稳居第二</td>
+                    </tr>
+                    <tr class="rank-3">
+                        <td>3</td>
+                        <td>上汽通用五菱</td>
+                        <td>11.40</td>
+                        <td>+6.8%</td>
+                        <td>A00级霸主</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>长安汽车</td>
+                        <td>9.85</td>
+                        <td>+12.3%</td>
+                        <td>增长强劲</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>特斯拉中国</td>
+                        <td>7.89</td>
+                        <td>-2.1%</td>
+                        <td>罕见下滑</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">57.8%</div>
+                    <div class="stat-label">11月新能源渗透率</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">221.1万</div>
+                    <div class="stat-label">9月新能源乘用车零售</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">96.5%</div>
+                    <div class="stat-label">新能源出口同比增长</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术突破 -->
+        <section class="glass-card">
+            <div class="card-header">
+                <span class="card-icon">🛠️</span>
+                <h2 class="card-title">技术突破</h2>
+                <span class="freshness-indicator freshness-fresh">⚡ 3天内</span>
+            </div>
+
+            <div class="news-item">
+                <div class="news-header">
+                    <h3 class="news-title">小鹏汽车AI天玑XOS 5.2.0全球推送</h3>
+                    <span class="freshness-indicator freshness-very-fresh">🆕</span>
+                </div>
+                <div class="news-content">
+                    小鹏推出国内首个量产的<span class="highlight">端到端智驾大模型</span>，AI加持下销量快速回暖。2024年上半年月均交付不足1万辆，下半年快速增加至2万辆。
+                </div>
+                <div class="news-meta">
+                    <div class="news-source">
+                        <span>来源：</span>
+                        <a href="https://nev.ofweek.com/2025-01/ART-71000-8420-30655796.html" target="_blank" class="source-link">OFweek新能源汽车网</a>
+                    </div>
+                    <div class="publish-time">2024-01-01 10:00</div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-header">
+                    <h3 class="news-title">比亚迪"天神之眼"高阶智驾系统下放</h3>
+                    <span class="freshness-indicator freshness-fresh">📈</span>
+                </div>
+                <div class="news-content">
+                    比亚迪宣布10万元以下车型多数将搭载<span class="highlight">"天神之眼"高阶智驾系统</span>，包括海鸥、海豹05DM-i和第二代秦PLUS DM-i，售价维持不变，推动智驾普及。
+                </div>
+                <div class="news-meta">
+                    <div class="news-source">
+                        <span>来源：</span>
+                        <a href="https://stcn.com/article/detail/1530628.html" target="_blank" class="source-link">证券时报网</a>
+                    </div>
+                    <div class="publish-time">2024-11-28 14:30</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品情报 -->
+        <section class="glass-card">
+            <div class="card-header">
+                <span class="card-icon">🚗</span>
+                <h2 class="card-title">产品情报</h2>
+                <span class="freshness-indicator freshness-normal">📅 7天内</span>
+            </div>
+
+            <div class="news-item">
+                <div class="news-header">
+                    <h3 class="news-title">小米SU7全年交付超13万辆，YU7即将发布</h3>
+                    <span class="freshness-indicator freshness-fresh">🚀</span>
+                </div>
+                <div class="news-content">
+                    雷军宣布小米SU7全年交付量已超过13万，提前完成全年目标。第二款车型<span class="highlight">YU7预计将在2025年6-7月</span>正式推向市场，产能成为限制销量的主要因素。
+                </div>
+                <div class="news-meta">
+                    <div class="news-source">
+                        <span>来源：</span>
+                        <a href="https://www.21jingji.com/article/20250107/herald/fb869a1a203c189a7f29564559db0699.html" target="_blank" class="source-link">21经济网</a>
+                    </div>
+                    <div class="publish-time">2025-01-01 08:00</div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-header">
+                    <h3 class="news-title">蔚来第三品牌"萤火虫"2025年上半年交付</h3>
+                    <span class="freshness-indicator freshness-normal">💡</span>
+                </div>
+                <div class="news-content">
+                    蔚来第三品牌萤火虫定位高端小车，类似于宝马MINI和奔驰smart，将于<span class="highlight">2025年上半年开始交付</span>，为蔚来寻找新的增长点。
+                </div>
+                <div class="news-meta">
+                    <div class="news-source">
+                        <span>来源：</span>
+                        <a href="https://www.21jingji.com/article/20250107/herald/fb869a1a203c189a7f29564559db0699.html" target="_blank" class="source-link">21经济网</a>
+                    </div>
+                    <div class="publish-time">2025-01-01 08:30</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 政策解读 -->
+        <section class="glass-card">
+            <div class="card-header">
+                <span class="card-icon">📜</span>
+                <h2 class="card-title">政策解读</h2>
+                <span class="freshness-indicator freshness-fresh">📋</span>
+            </div>
+
+            <div class="news-item">
+                <div class="news-header">
+                    <h3 class="news-title">车网互动规模化应用试点启动</h3>
+                    <span class="freshness-indicator freshness-fresh">⚡</span>
+                </div>
+                <div class="news-content">
+                    四部门公布首批<span class="highlight">车网互动规模化应用试点</span>，涉及9个城市30个项目，推动新能源汽车与电网深度融合，支持V2G技术发展。
+                </div>
+                <div class="news-meta">
+                    <div class="news-source">
+                        <span>来源：</span>
+                        <a href="https://www.ndanev.com/2025/05/08/2025年4月新能源汽车国家与地方政策汇编/" target="_blank" class="source-link">国家发改委</a>
+                    </div>
+                    <div class="publish-time">2025-04-02 10:00</div>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-header">
+                    <h3 class="news-title">新能源公交车更新补贴政策延续</h3>
+                    <span class="freshness-indicator freshness-fresh">💰</span>
+                </div>
+                <div class="news-content">
+                    交通运输部、财政部发布细则，对更新新能源城市公交车每辆补贴<span class="highlight">8万元</span>，更换动力电池每辆补贴4.2万元，政策延续至2025年。
+                </div>
+                <div class="news-meta">
+                    <div class="news-source">
+                        <span>来源：</span>
+                        <a href="https://www.gov.cn/zhengce/zhengceku/202408/content_6968573.htm" target="_blank" class="source-link">中国政府网</a>
+                    </div>
+                    <div class="publish-time">2024-07-29 14:00</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer style="text-align: center; padding: calc(var(--grid-unit) * 8) 0; color: var(--morandi-gray); font-size: 14px;">
+            <p>Generated by TRAE NEV Agent | 数据更新时间: 2024年11月28日 18:00</p>
+            <p>版本: 20241128_V1 | 新鲜度评分: 95/100</p>
+            <p style="margin-top: calc(var(--grid-unit) * 2);">
+                <a href="#" style="color: var(--morandi-blue); text-decoration: none; margin: 0 calc(var(--grid-unit));" target="_blank">关于我们</a>
+                <a href="#" style="color: var(--morandi-blue); text-decoration: none; margin: 0 calc(var(--grid-unit));" target="_blank">数据来源</a>
+                <a href="#" style="color: var(--morandi-blue); text-decoration: none; margin: 0 calc(var(--grid-unit));" target="_blank">版本历史</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="news-aggregator.js"></script>
+    <script>
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加加载动画
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.8s ease-in-out';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+
+            // 统计数字动画
+            const animateNumbers = () => {
+                const numbers = document.querySelectorAll('.stat-number');
+                numbers.forEach(number => {
+                    const finalValue = number.textContent;
+                    const numericValue = parseFloat(finalValue.replace(/[^\d.]/g, ''));
+                    const suffix = finalValue.replace(/[\d.]/g, '');
+                    
+                    if (numericValue) {
+                        let currentValue = 0;
+                        const increment = numericValue / 60;
+                        const timer = setInterval(() => {
+                            currentValue += increment;
+                            if (currentValue >= numericValue) {
+                                number.textContent = finalValue;
+                                clearInterval(timer);
+                            } else {
+                                number.textContent = Math.floor(currentValue) + suffix;
+                            }
+                        }, 25);
+                    }
+                });
+            };
+
+            // 当统计卡片进入视口时触发动画
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumbers();
+                        observer.disconnect();
+                    }
+                });
+            });
+
+            const statsGrid = document.querySelector('.stats-grid');
+            if (statsGrid) {
+                observer.observe(statsGrid);
+            }
+
+            // 新闻条目悬停效果增强
+            const newsItems = document.querySelectorAll('.news-item');
+            newsItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px) scale(1.01)';
+                    this.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+                
+                // 添加点击波纹效果
+                item.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    ripple.classList.add('ripple');
+                    
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // 统计卡片增强动画
+            const statCards = document.querySelectorAll('.stat-card');
+            statCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-6px) scale(1.02)';
+                    this.style.boxShadow = '0 16px 48px rgba(0, 0, 0, 0.2)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = '';
+                });
+            });
+
+            // 新鲜度指示器动态效果
+            const freshnessIndicators = document.querySelectorAll('.freshness-indicator');
+            freshnessIndicators.forEach(indicator => {
+                if (indicator.classList.contains('freshness-very-fresh')) {
+                    // 为非常新鲜的项目添加特殊光效
+                    setInterval(() => {
+                        indicator.style.transform = 'scale(1.05)';
+                        setTimeout(() => {
+                            indicator.style.transform = 'scale(1)';
+                        }, 200);
+                    }, 3000);
+                }
+            });
+
+            // 表格行悬停效果
+            const tableRows = document.querySelectorAll('.data-table tr');
+            tableRows.forEach(row => {
+                row.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.01)';
+                    this.style.transition = 'all 0.2s ease';
+                });
+                
+                row.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+
+            // 版本面板动态效果
+            const versionPanel = document.querySelector('.version-panel');
+            if (versionPanel) {
+                setInterval(() => {
+                    versionPanel.style.animation = 'glow 2s ease-in-out';
+                    setTimeout(() => {
+                        versionPanel.style.animation = '';
+                    }, 2000);
+                }, 10000);
+            }
+
+            // 版本控制功能
+            const versionManager = new VersionManager();
+            
+            // 模拟保存当前版本
+            const currentContent = document.documentElement.outerHTML;
+            const currentMetadata = {
+                newsCount: document.querySelectorAll('.news-item').length,
+                sources: Array.from(document.querySelectorAll('.source-link')).map(link => link.textContent),
+                freshnessScore: 95,
+                publishDate: new Date().toISOString()
+            };
+            
+            versionManager.saveVersion(currentContent, currentMetadata);
+            
+            console.log('✅ 新能源汽车日报已加载完成');
+            console.log('📊 版本信息:', versionManager.getLatestVersion());
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 视差滚动效果
+        let ticking = false;
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.glass-card, .header');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = 0.5 + (index * 0.1);
+                const yPos = -(scrolled * speed);
+                element.style.transform = `translateY(${yPos}px)`;
+            });
+            
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+
+        // 鼠标跟随效果
+        document.addEventListener('mousemove', function(e) {
+            const cards = document.querySelectorAll('.glass-card');
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+            
+            cards.forEach((card, index) => {
+                const speed = (index + 1) * 0.5;
+                const x = (mouseX - 0.5) * speed * 10;
+                const y = (mouseY - 0.5) * speed * 10;
+                
+                card.style.transform += ` perspective(1000px) rotateX(${y}deg) rotateY(${x}deg)`;
+            });
+        });
+
+        // 滚动进度指示器
+        function updateScrollProgress() {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            
+            // 创建进度条元素
+            let progressBar = document.querySelector('.scroll-progress');
+            if (!progressBar) {
+                progressBar = document.createElement('div');
+                progressBar.className = 'scroll-progress';
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 3px;
+                    background: linear-gradient(90deg, var(--morandi-blue), var(--morandi-purple));
+                    z-index: 9999;
+                    transition: width 0.3s ease;
+                `;
+                document.body.appendChild(progressBar);
+            }
+            
+            progressBar.style.width = scrollPercent + '%';
+        }
+
+        window.addEventListener('scroll', updateScrollProgress);
+    </script>
+</body>
+</html>

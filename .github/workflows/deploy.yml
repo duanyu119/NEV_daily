@@ -1,0 +1,82 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  test-and-deploy:
+    name: Test, Build and Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+      issues: write
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Node Dependencies
+        run: npm ci
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Test Suite
+        run: npm test
+        continue-on-error: false
+
+      - name: Verify Python Generation Logic
+        run: |
+          # Dry run to ensure script compiles and runs
+          export RUN_TAVILY_COLLECTION=0
+          python3 generate_daily_news.py
+
+      - name: Version Control & Tagging
+        run: |
+          # Simple versioning based on date and run number
+          VERSION="v$(date +'%Y.%m.%d').${{ github.run_number }}"
+          echo "Deploying version $VERSION"
+          # git tag $VERSION || true
+          # git push origin $VERSION || true
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./reports --project-name=nev-daily-news --branch=main
+
+      - name: Deployment Notification
+        if: always()
+        run: |
+          echo "::group::Deployment Log"
+          echo "Status: ${{ job.status }}"
+          echo "Version: ${{ env.VERSION }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "::endgroup::"
+          
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "✅ Deployment Successful! Report is live."
+          else
+            echo "❌ Deployment Failed. Please check logs."
+            exit 1
+          fi

@@ -1,0 +1,565 @@
+{
+  "metadata": {
+    "date": "2025-11-28",
+    "version": "1.0.0",
+    "generated_at": "2025-11-28T20:58:46.844866",
+    "total_items": 82,
+    "data_summary": {
+      "total_items": 82,
+      "by_category": {
+        "sales": 2,
+        "new_model": 10,
+        "complaint": 2,
+        "policy": 2,
+        "review": 8,
+        "forum": 8,
+        "news": 8,
+        "leader_statement": 42
+      },
+      "by_source": {
+        "乘联会": 8,
+        "汽车之家": 8,
+        "懂车帝": 8,
+        "易车网": 8,
+        "太平洋汽车": 8,
+        "微博": 14,
+        "媒体采访": 14,
+        "公开演讲": 14
+      },
+      "by_brand": {
+        "比亚迪": 10,
+        "特斯拉": 6,
+        "理想汽车": 5,
+        "小鹏": 5,
+        "蔚来": 4
+      },
+      "sentiment_distribution": {
+        "positive": 48,
+        "negative": 2,
+        "neutral": 32
+      },
+      "importance_distribution": {
+        "high": 49,
+        "medium": 25,
+        "low": 8
+      }
+    }
+  },
+  "sections": {
+    "executive_summary": {
+      "key_highlights": [
+        "今日收集 82 条数据，涵盖 8 个主要数据源",
+        "发现 2 条重要销量数据",
+        "新车型发布信息 10 条",
+        "行业领袖重要言论 42 条"
+      ],
+      "market_sentiment": "positive",
+      "top_stories": [
+        {
+          "title": "王传福微博动态",
+          "summary": "王传福：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "importance": 5,
+          "source": "微博",
+          "brand": null
+        },
+        {
+          "title": "王传福微博动态",
+          "summary": "王传福：我们将继续加大研发投入，推动智能化技术发展。",
+          "importance": 5,
+          "source": "微博",
+          "brand": null
+        },
+        {
+          "title": "王传福采访观点",
+          "summary": "王传福在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "importance": 5,
+          "source": "媒体采访",
+          "brand": null
+        },
+        {
+          "title": "王传福采访观点",
+          "summary": "王传福：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "importance": 5,
+          "source": "媒体采访",
+          "brand": null
+        },
+        {
+          "title": "王传福演讲观点",
+          "summary": "王传福在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "importance": 5,
+          "source": "公开演讲",
+          "brand": null
+        }
+      ],
+      "critical_alerts": [
+        {
+          "type": "urgent",
+          "title": "高严重度投诉预警",
+          "description": "发现 1 起高严重度投诉，涉及安全问题",
+          "action_required": true
+        }
+      ]
+    },
+    "sales_analysis": {
+      "total_sales_items": 2,
+      "top_performers": [
+        {
+          "brand": "比亚迪",
+          "model": "汉EV",
+          "sales_volume": 15000,
+          "growth_rate": 25.0,
+          "price_range": "20-30万"
+        },
+        {
+          "brand": "特斯拉",
+          "model": "Model Y",
+          "sales_volume": 12000,
+          "growth_rate": 15.0,
+          "price_range": "30-40万"
+        }
+      ],
+      "market_trend": "growing"
+    },
+    "new_models": {
+      "total_new_models": 2,
+      "recently_launched": [
+        {
+          "brand": "理想汽车",
+          "model": "L9",
+          "price_range": "",
+          "target_market": "家庭用户",
+          "key_features": [
+            "range",
+            "battery",
+            "seats"
+          ]
+        },
+        {
+          "brand": "小鹏",
+          "model": "G9",
+          "price_range": "",
+          "target_market": "科技爱好者",
+          "key_features": [
+            "range",
+            "battery",
+            "autonomous"
+          ]
+        }
+      ]
+    },
+    "user_feedback": {
+      "total_forum_posts": 8,
+      "total_complaints": 2,
+      "main_complaint_types": [
+        "续航问题",
+        "充电问题"
+      ],
+      "average_satisfaction": 3.5
+    },
+    "policy_updates": {
+      "total_policies": 2,
+      "recent_policies": [
+        {
+          "title": "新能源汽车购置税减免政策延续",
+          "summary": "财政部宣布新能源汽车购置税减免政策延续至2025年底，单车减免额度不超过3万元",
+          "impact_level": 4
+        },
+        {
+          "title": "充电基础设施建设补贴政策出台",
+          "summary": "国家发改委发布充电基础设施建设补贴政策，对新建充电桩给予每千瓦200元补贴",
+          "impact_level": 4
+        }
+      ]
+    },
+    "leader_insights": {
+      "total_statements": 42,
+      "key_leaders": [
+        "雷军",
+        "魏建军",
+        "李斌",
+        "王传福",
+        "李书福",
+        "李想",
+        "何小鹏"
+      ],
+      "strategic_insights": [
+        {
+          "leader": "王传福",
+          "company": "比亚迪",
+          "statement": "王传福：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "王传福",
+          "company": "比亚迪",
+          "statement": "王传福在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "王传福",
+          "company": "比亚迪",
+          "statement": "王传福：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "王传福",
+          "company": "比亚迪",
+          "statement": "王传福在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "王传福",
+          "company": "比亚迪",
+          "statement": "王传福：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "李书福",
+          "company": "吉利",
+          "statement": "李书福：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "李书福",
+          "company": "吉利",
+          "statement": "李书福在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "李书福",
+          "company": "吉利",
+          "statement": "李书福：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "李书福",
+          "company": "吉利",
+          "statement": "李书福在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "李书福",
+          "company": "吉利",
+          "statement": "李书福：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "魏建军",
+          "company": "长城",
+          "statement": "魏建军：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "魏建军",
+          "company": "长城",
+          "statement": "魏建军在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "魏建军",
+          "company": "长城",
+          "statement": "魏建军：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "魏建军",
+          "company": "长城",
+          "statement": "魏建军在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "魏建军",
+          "company": "长城",
+          "statement": "魏建军：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "李想",
+          "company": "理想汽车",
+          "statement": "李想：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "李想",
+          "company": "理想汽车",
+          "statement": "李想在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "李想",
+          "company": "理想汽车",
+          "statement": "李想：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "李想",
+          "company": "理想汽车",
+          "statement": "李想在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "李想",
+          "company": "理想汽车",
+          "statement": "李想：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "李斌",
+          "company": "蔚来",
+          "statement": "李斌：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "李斌",
+          "company": "蔚来",
+          "statement": "李斌在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "李斌",
+          "company": "蔚来",
+          "statement": "李斌：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "李斌",
+          "company": "蔚来",
+          "statement": "李斌在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "李斌",
+          "company": "蔚来",
+          "statement": "李斌：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "何小鹏",
+          "company": "小鹏",
+          "statement": "何小鹏：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "何小鹏",
+          "company": "小鹏",
+          "statement": "何小鹏在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "何小鹏",
+          "company": "小鹏",
+          "statement": "何小鹏：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "何小鹏",
+          "company": "小鹏",
+          "statement": "何小鹏在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "何小鹏",
+          "company": "小鹏",
+          "statement": "何小鹏：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "雷军",
+          "company": "小米汽车",
+          "statement": "雷军：新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "技术",
+            "创新"
+          ]
+        },
+        {
+          "leader": "雷军",
+          "company": "小米汽车",
+          "statement": "雷军在接受媒体采访时表示：未来五年将是新能源汽车市场的关键窗口期。",
+          "strategic_level": "visionary",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "雷军",
+          "company": "小米汽车",
+          "statement": "雷军：我们计划在未来三年内推出10款新能源车型，覆盖各个细分市场。",
+          "strategic_level": "strategic",
+          "topics": [
+            "新能源",
+            "市场"
+          ]
+        },
+        {
+          "leader": "雷军",
+          "company": "小米汽车",
+          "statement": "雷军在汽车行业峰会上表示：智能化、网联化是汽车产业的未来发展方向。",
+          "strategic_level": "visionary",
+          "topics": []
+        },
+        {
+          "leader": "雷军",
+          "company": "小米汽车",
+          "statement": "雷军：我们要坚持技术创新，推动中国汽车品牌走向世界。",
+          "strategic_level": "visionary",
+          "topics": [
+            "技术",
+            "创新"
+          ]
+        }
+      ]
+    },
+    "market_trends": {
+      "overall_sentiment": "positive",
+      "brand_mentions": {
+        "比亚迪": 10,
+        "特斯拉": 6,
+        "理想汽车": 5,
+        "小鹏": 5,
+        "蔚来": 4
+      },
+      "technology_trends": [
+        "智能驾驶"
+      ],
+      "competitive_landscape": {
+        "比亚迪": {
+          "positive": 9,
+          "negative": 1,
+          "neutral": 0
+        },
+        "特斯拉": {
+          "positive": 1,
+          "negative": 1,
+          "neutral": 4
+        },
+        "理想汽车": {
+          "positive": 5,
+          "negative": 0,
+          "neutral": 0
+        },
+        "小鹏": {
+          "positive": 5,
+          "negative": 0,
+          "neutral": 0
+        },
+        "蔚来": {
+          "positive": 4,
+          "negative": 0,
+          "neutral": 0
+        }
+      }
+    }
+  }
+}

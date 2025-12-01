@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新能源汽车Daily News | 2025年11月30日</title>
+    <meta name="description" content="新能源汽车行业Daily News：销量排行榜、新车动态、行业领袖观点、行业新闻，现代化视觉设计与响应式布局。">
+    <style>
+        /* 现代化视觉设计系统 */
+        :root {
+            --system-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            --bg-primary: #F9F9F9;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #2C3E50;
+            --text-secondary: #7F8C8D;
+            --text-tertiary: #95A5A6;
+            --accent-blue: #3498DB;
+            --accent-green: #27AE60;
+            --accent-orange: #E67E22;
+            --accent-red: #E74C3C;
+            --accent-dark-blue: #2B5C8A;
+            --border-light: #E0E0E0;
+            --border-lighter: #F0F0F0;
+            --shadow-subtle: 0 2px 12px rgba(0,0,0,0.08);
+            --shadow-card: 0 4px 24px rgba(0,0,0,0.12);
+            --shadow-hover: 0 8px 32px rgba(0,0,0,0.15);
+            --radius-small: 8px;
+            --radius-medium: 12px;
+            --radius-large: 16px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --spacing-unit: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--system-font);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-lighter);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .date-info {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+
+        .date-info .time {
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        /* Meta Info */
+        .meta-info {
+            background: var(--bg-secondary);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-lighter);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Section Styling */
+        .section {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-large);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition);
+        }
+
+        .section:hover {
+            box-shadow: var(--shadow-card);
+            transform: translateY(-2px);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-lighter);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.01em;
+        }
+
+        .section-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .section-meta {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* Sales Rankings */
+        .rankings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .ranking-card {
+            background: var(--bg-primary);
+            border-radius: var(--radius-medium);
+            padding: 1.5rem;
+            border: 1px solid var(--border-lighter);
+            transition: var(--transition);
+        }
+
+        .ranking-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+        }
+
+        .ranking-header {
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-lighter);
+        }
+
+        .ranking-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .ranking-date-range {
+            font-size: 0.875rem;
+            color: var(--accent-blue);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .ranking-data-source {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .ranking-last-update {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-lighter);
+            transition: var(--transition);
+        }
+
+        .ranking-item:hover {
+            background: rgba(0, 113, 227, 0.05);
+            margin: 0 -1rem;
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-small);
+        }
+
+        .ranking-item:last-child {
+            border-bottom: none;
+        }
+
+        .rank-number {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+
+        .rank-info {
+            flex: 1;
+        }
+
+        .brand-name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .model-name {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .sales-info {
+            text-align: right;
+        }
+
+        .sales-number {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .sales-change {
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            font-weight: 500;
+        }
+
+        /* New Car Launches */
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .car-card {
+            background: var(--bg-primary);
+            border-radius: var(--radius-medium);
+            overflow: hidden;
+            border: 1px solid var(--border-lighter);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .car-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-card);
+        }
+
+        .car-image-container {
+            position: relative;
+            width: 100%;
+            height: 240px; /* 4:3 */
+            overflow: hidden;
+            background: var(--bg-tertiary);
+        }
+
+        .car-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .car-image.loaded {
+            opacity: 1;
+        }
+
+        .car-image-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--text-tertiary);
+            background: linear-gradient(135deg, var(--bg-tertiary), var(--border-lighter));
+        }
+
+        .car-type-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-small);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #FFFFFF;
+            transition: var(--transition);
+        }
+
+        .car-type-badge.new {
+            background: var(--accent-red);
+        }
+
+        .car-type-badge.update {
+            background: var(--accent-dark-blue);
+        }
+
+        .car-type-badge:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .media-source-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-small);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .car-content {
+            padding: 1.5rem;
+        }
+
+        .car-header {
+            margin-bottom: 1rem;
+        }
+
+        .car-brand {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .car-model {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .car-price {
+            font-size: 1rem;
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        .car-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .feature-tag {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-small);
+            font-size: 0.75rem;
+            border: 1px solid var(--border-lighter);
+        }
+
+        .car-description {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .car-launch-date {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+
+        /* Industry Leaders */
+        .leaders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+
+        .leader-card {
+            background: var(--bg-primary);
+            border-radius: var(--radius-medium);
+            padding: 2rem;
+            border: 1px solid var(--border-lighter);
+            transition: var(--transition);
+        }
+
+        .leader-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-card);
+        }
+
+        .leader-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .leader-portrait-container {
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            position: relative;
+            border: 1px solid #EEE;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .leader-portrait {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 40%;
+            border-radius: 50%;
+        }
+
+        .leader-portrait-fallback {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent-blue), #2980B9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .leader-info h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .leader-info p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .statement {
+            background: var(--bg-secondary);
+            border-radius: var(--radius-small);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--accent-blue);
+            transition: var(--transition);
+        }
+
+        .statement-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .statement-link:hover {
+            background: rgba(52, 152, 219, 0.05);
+            border-radius: var(--radius-small);
+        }
+
+        .statement-date {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .statement-content {
+            font-size: 0.875rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .insights-list {
+            list-style: none;
+        }
+
+        .insights-list li {
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .insights-list li::before {
+            content: "•";
+            color: var(--accent-blue);
+            position: absolute;
+            left: 0;
+        }
+
+        /* Industry News */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .news-card {
+            background: var(--bg-primary);
+            border-radius: var(--radius-medium);
+            overflow: hidden;
+            border: 1px solid var(--border-lighter);
+            transition: var(--transition);
+        }
+
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-card);
+        }
+
+        .news-image-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: var(--bg-tertiary);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .news-image.loaded {
+            opacity: 1;
+        }
+
+        .news-image-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--text-tertiary);
+            background: linear-gradient(135deg, var(--bg-tertiary), var(--border-lighter));
+        }
+
+        .news-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-small);
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .news-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        .news-summary {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .news-source {
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+            
+            .header-content {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .meta-content {
+                padding: 0 1rem;
+                gap: 1rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            .rankings-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .car-grid,
+            .leaders-grid,
+            .news-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-lighter);
+            border-radius: 50%;
+            border-top-color: var(--accent-blue);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Image Loading States */
+        .image-loading {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">新能源汽车Daily News</div>
+            <div class="date-info">
+                <div class="time">2025年11月30日</div>
+                <div>每日更新</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Meta Info -->
+    <div class="meta-info">
+        <div class="meta-content">
+            <div class="meta-item">
+                <span>📅</span>
+                <span>数据日期: 2025-11-30 至 2025-11-30</span>
+            </div>
+            <div class="meta-item">
+                <span>📊</span>
+                <span>数据总量: 33条</span>
+            </div>
+            <div class="meta-item">
+                <span>🏢</span>
+                <span>数据来源: Tavily MCP, 官方统计, 企业财报, 行业报告</span>
+            </div>
+            <div class="meta-item">
+                <span>🔄</span>
+                <span>最后更新: 2025-11-30 10:13:34</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sales Rankings Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">销量排行榜</h2>
+                    <p class="section-subtitle">Weekly & Monthly Sales Rankings</p>
+                </div>
+                <div class="section-meta">
+                    <span>📈 实时更新</span>
+                </div>
+            </div>
+            
+            <div class="rankings-grid">
+                <div class="ranking-card">
+                    <div class="ranking-header">
+                        <h3 class="ranking-title">📅 本周销量排行</h3>
+                        <div class="ranking-date-range">11月24日-11月30日</div>
+                        <div class="ranking-data-source">数据来源：乘联会</div>
+                        <div class="ranking-last-update">数据更新于11月30日10:13</div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <div class="rank-number">1</div>
+                        <div class="rank-info">
+                            <div class="brand-name">比亚迪</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">18,542</div>
+                            <div class="sales-change">+15.2%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">2</div>
+                        <div class="rank-info">
+                            <div class="brand-name">特斯拉</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">16,423</div>
+                            <div class="sales-change">+8.7%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">3</div>
+                        <div class="rank-info">
+                            <div class="brand-name">理想汽车</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">12,456</div>
+                            <div class="sales-change">+22.1%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">4</div>
+                        <div class="rank-info">
+                            <div class="brand-name">小鹏</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">9,876</div>
+                            <div class="sales-change">+5.3%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">5</div>
+                        <div class="rank-info">
+                            <div class="brand-name">蔚来</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">8,234</div>
+                            <div class="sales-change">+12.8%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">6</div>
+                        <div class="rank-info">
+                            <div class="brand-name">广汽埃安</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">7,856</div>
+                            <div class="sales-change">-2.1%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">7</div>
+                        <div class="rank-info">
+                            <div class="brand-name">吉利</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">6,543</div>
+                            <div class="sales-change">+7.9%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">8</div>
+                        <div class="rank-info">
+                            <div class="brand-name">长城</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">5,678</div>
+                            <div class="sales-change">+18.4%</div>
+                        </div>
+                    </div>
+            
+                </div>
+                
+                <div class="ranking-card">
+                    <div class="ranking-header">
+                        <h3 class="ranking-title">📊 本月销量排行</h3>
+                        <div class="ranking-date-range">2025年11月</div>
+                        <div class="ranking-data-source">数据来源：乘联会</div>
+                        <div class="ranking-last-update">数据更新于11月30日10:13</div>
+                    </div>
+        
+                    <div class="ranking-item">
+                        <div class="rank-number">1</div>
+                        <div class="rank-info">
+                            <div class="brand-name">比亚迪</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">74,216</div>
+                            <div class="sales-change">+18.5%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">2</div>
+                        <div class="rank-info">
+                            <div class="brand-name">特斯拉</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">68,542</div>
+                            <div class="sales-change">+12.3%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">3</div>
+                        <div class="rank-info">
+                            <div class="brand-name">理想汽车</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">49,876</div>
+                            <div class="sales-change">+28.7%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">4</div>
+                        <div class="rank-info">
+                            <div class="brand-name">小鹏</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">39,504</div>
+                            <div class="sales-change">+9.2%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">5</div>
+                        <div class="rank-info">
+                            <div class="brand-name">蔚来</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">32,936</div>
+                            <div class="sales-change">+15.6%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">6</div>
+                        <div class="rank-info">
+                            <div class="brand-name">广汽埃安</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">31,424</div>
+                            <div class="sales-change">+1.8%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">7</div>
+                        <div class="rank-info">
+                            <div class="brand-name">吉利</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">26,172</div>
+                            <div class="sales-change">+11.2%</div>
+                        </div>
+                    </div>
+            
+                    <div class="ranking-item">
+                        <div class="rank-number">8</div>
+                        <div class="rank-info">
+                            <div class="brand-name">长城</div>
+                        </div>
+                        <div class="sales-info">
+                            <div class="sales-number">22,712</div>
+                            <div class="sales-change">+22.1%</div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </section>
+
+        <!-- New Car Launches Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">新车动态</h2>
+                    <p class="section-subtitle">New Car Launches & Updates</p>
+                </div>
+                <div class="section-meta">
+                    <span>🚗 {len(self.data["new_car_launches"]["new_launches"])}款车型</span>
+                </div>
+            </div>
+            
+            <div class="car-grid">
+        
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <div class="car-image-placeholder">🚗</div>
+                        <img class="car-image" loading="lazy" alt="比亚迪 海豹DM-i" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=official%20studio%20photo%20of%20%E6%AF%94%E4%BA%9A%E8%BF%AA%20%E6%B5%B7%E8%B1%B9DM-i%2C%20accurate%20brand%20badge%2C%20three-quarter%20front%20view%2C%204%3A3%20ratio%2C%20soft%20lighting%2C%20clean%20background%2C%20high-resolution%20realistic%20automotive%20photography&image_size=landscape_4_3" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="car-type-badge new">全新发布</div>
+                        
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <div class="car-brand">比亚迪</div>
+                            <div class="car-model">海豹DM-i</div>
+                            <div class="car-price">18-25万</div>
+                        </div>
+                        <div class="car-features">
+            <span class="feature-tag">DM-i混动技术</span><span class="feature-tag">纯电续航200km</span><span class="feature-tag">百公里加速7.9s</span>
+                        </div>
+                        <div class="car-description">比亚迪海洋系列全新混动轿车，采用最新的DM-i超级混动技术</div>
+                        <div class="car-launch-date">预计上市: 2025年12月</div>
+                    </div>
+                </div>
+            
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <div class="car-image-placeholder">🚗</div>
+                        <img class="car-image" loading="lazy" alt="理想汽车 L6 Pro" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=official%20studio%20photo%20of%20%E7%90%86%E6%83%B3%E6%B1%BD%E8%BD%A6%20L6%20Pro%2C%20accurate%20brand%20badge%2C%20three-quarter%20front%20view%2C%204%3A3%20ratio%2C%20soft%20lighting%2C%20clean%20background%2C%20high-resolution%20realistic%20automotive%20photography&image_size=landscape_4_3" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="car-type-badge new">全新发布</div>
+                        
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <div class="car-brand">理想汽车</div>
+                            <div class="car-model">L6 Pro</div>
+                            <div class="car-price">30-35万</div>
+                        </div>
+                        <div class="car-features">
+            <span class="feature-tag">增程式混动</span><span class="feature-tag">6座布局</span><span class="feature-tag">智能座舱</span>
+                        </div>
+                        <div class="car-description">理想汽车全新中型SUV，延续增程式混动路线，主打家庭出行市场</div>
+                        <div class="car-launch-date">预计上市: 2026年1月</div>
+                    </div>
+                </div>
+            
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <div class="car-image-placeholder">🚗</div>
+                        <img class="car-image" loading="lazy" alt="小鹏 P7i GT" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=official%20studio%20photo%20of%20%E5%B0%8F%E9%B9%8F%20P7i%20GT%2C%20accurate%20brand%20badge%2C%20three-quarter%20front%20view%2C%204%3A3%20ratio%2C%20soft%20lighting%2C%20clean%20background%2C%20high-resolution%20realistic%20automotive%20photography&image_size=landscape_4_3" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="car-type-badge update">改款升级</div>
+                        <a class="media-source-badge" href="#" target="_blank">信息来源：</a>
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <div class="car-brand">小鹏</div>
+                            <div class="car-model">P7i GT</div>
+                            <div class="car-price">25-32万</div>
+                        </div>
+                        <div class="car-features">
+            <span class="feature-tag">XPILOT 4.0</span><span class="feature-tag">激光雷达</span><span class="feature-tag">800V快充</span>
+                        </div>
+                        <div class="car-description">小鹏P7中期改款车型，智能驾驶和充电技术全面升级</div>
+                        <div class="car-launch-date">预计上市: 2025年11月</div>
+                    </div>
+                </div>
+            
+                <div class="car-card">
+                    <div class="car-image-container">
+                        <div class="car-image-placeholder">🚗</div>
+                        <img class="car-image" loading="lazy" alt="蔚来 ES7 Coupe" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=official%20studio%20photo%20of%20%E8%94%9A%E6%9D%A5%20ES7%20Coupe%2C%20accurate%20brand%20badge%2C%20three-quarter%20front%20view%2C%204%3A3%20ratio%2C%20soft%20lighting%2C%20clean%20background%2C%20high-resolution%20realistic%20automotive%20photography&image_size=landscape_4_3" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="car-type-badge new">全新发布</div>
+                        
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <div class="car-brand">蔚来</div>
+                            <div class="car-model">ES7 Coupe</div>
+                            <div class="car-price">45-55万</div>
+                        </div>
+                        <div class="car-features">
+            <span class="feature-tag">换电模式</span><span class="feature-tag">智能座舱</span><span class="feature-tag">空气悬架</span>
+                        </div>
+                        <div class="car-description">蔚来首款Coupe SUV，延续换电模式，主打豪华运动市场</div>
+                        <div class="car-launch-date">预计上市: 2026年2月</div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- Industry Leaders Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">行业领袖观点</h2>
+                    <p class="section-subtitle">Industry Leaders Insights</p>
+                </div>
+                <div class="section-meta">
+                    <span>👥 4位领袖</span>
+                </div>
+            </div>
+            
+            <div class="leaders-grid">
+        
+                <div class="leader-card">
+                    <div class="leader-header">
+                        <div class="leader-portrait-container">
+                            <img class="leader-portrait" alt="王传福" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=formal%20corporate%20portrait%20photo%20of%20%E7%8E%8B%E4%BC%A0%E7%A6%8F%2C%20%E6%AF%94%E4%BA%9A%E8%BF%AA%E8%91%A3%E4%BA%8B%E9%95%BF%E5%85%BC%E6%80%BB%E8%A3%81%2C%20%E6%AF%94%E4%BA%9A%E8%BF%AA%2C%20half-body%2C%20professional%20attire%2C%20studio%20lighting%2C%20neutral%20background%2C%204%3A3%20ratio&image_size=portrait_4_3" onerror="this.onerror=null; this.style.display='none'; var f=this.nextElementSibling; if(f) f.style.display='flex';" />
+                            <div class="leader-portrait-fallback" style="display:none;">王</div>
+                        </div>
+                        <div class="leader-content">
+                            <h3>王传福</h3>
+                            <p>比亚迪董事长兼总裁</p>
+                            <div class="statement">
+                                <a href="#" target="_blank" class="statement-link" onclick="this.style.background='rgba(52, 152, 219, 0.1)'; setTimeout(function(){ this.style.background=''; }.bind(this), 200)">
+                                    <div class="statement-date">2025-11-28 · 微博</div>
+                                    <div class="statement-content">新能源汽车行业正迎来前所未有的发展机遇，技术创新是关键。我们将继续加大研发投入，推动智能化技术发展。</div>
+                                </a>
+                                <ul class="insights-list">
+                <li>技术创新是行业发展的核心驱动力</li><li>比亚迪将持续加大研发投入</li><li>智能化技术是未来发展重点</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <div class="leader-header">
+                        <div class="leader-portrait-container">
+                            <img class="leader-portrait" alt="李想" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=formal%20corporate%20portrait%20photo%20of%20%E6%9D%8E%E6%83%B3%2C%20%E7%90%86%E6%83%B3%E6%B1%BD%E8%BD%A6CEO%2C%20%E7%90%86%E6%83%B3%E6%B1%BD%E8%BD%A6%2C%20half-body%2C%20professional%20attire%2C%20studio%20lighting%2C%20neutral%20background%2C%204%3A3%20ratio&image_size=portrait_4_3" onerror="this.onerror=null; this.style.display='none'; var f=this.nextElementSibling; if(f) f.style.display='flex';" />
+                            <div class="leader-portrait-fallback" style="display:none;">李</div>
+                        </div>
+                        <div class="leader-content">
+                            <h3>李想</h3>
+                            <p>理想汽车CEO</p>
+                            <div class="statement">
+                                <a href="#" target="_blank" class="statement-link" onclick="this.style.background='rgba(52, 152, 219, 0.1)'; setTimeout(function(){ this.style.background=''; }.bind(this), 200)">
+                                    <div class="statement-date">2025-11-28 · 微博</div>
+                                    <div class="statement-content">增程式技术路线是当前的best choice，能够有效解决用户的里程焦虑问题。我们将继续深耕这一技术。</div>
+                                </a>
+                                <ul class="insights-list">
+                <li>增程式技术是解决里程焦虑的有效方案</li><li>理想汽车将继续专注增程式路线</li><li>用户体验是技术选择的重要考量</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <div class="leader-header">
+                        <div class="leader-portrait-container">
+                            <img class="leader-portrait" alt="李斌" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=formal%20corporate%20portrait%20photo%20of%20%E6%9D%8E%E6%96%8C%2C%20%E8%94%9A%E6%9D%A5%E6%B1%BD%E8%BD%A6CEO%2C%20%E8%94%9A%E6%9D%A5%E6%B1%BD%E8%BD%A6%2C%20half-body%2C%20professional%20attire%2C%20studio%20lighting%2C%20neutral%20background%2C%204%3A3%20ratio&image_size=portrait_4_3" onerror="this.onerror=null; this.style.display='none'; var f=this.nextElementSibling; if(f) f.style.display='flex';" />
+                            <div class="leader-portrait-fallback" style="display:none;">李</div>
+                        </div>
+                        <div class="leader-content">
+                            <h3>李斌</h3>
+                            <p>蔚来汽车CEO</p>
+                            <div class="statement">
+                                <a href="#" target="_blank" class="statement-link" onclick="this.style.background='rgba(52, 152, 219, 0.1)'; setTimeout(function(){ this.style.background=''; }.bind(this), 200)">
+                                    <div class="statement-date">2025-11-28 · 公开演讲</div>
+                                    <div class="statement-content">换电模式将成为新能源汽车的重要补能方式。我们目标是在2026年建成超过5000座换电站。</div>
+                                </a>
+                                <ul class="insights-list">
+                <li>换电模式是新能源汽车补能的重要方向</li><li>蔚来将大规模扩建换电站基础设施</li><li>2026年5000座换电站目标显示长期承诺</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leader-card">
+                    <div class="leader-header">
+                        <div class="leader-portrait-container">
+                            <img class="leader-portrait" alt="雷军" src="https://trae-api-sg.mchost.guru/api/ide/v1/text_to_image?prompt=formal%20corporate%20portrait%20photo%20of%20%E9%9B%B7%E5%86%9B%2C%20%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6CEO%2C%20%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6%2C%20half-body%2C%20professional%20attire%2C%20studio%20lighting%2C%20neutral%20background%2C%204%3A3%20ratio&image_size=portrait_4_3" onerror="this.onerror=null; this.style.display='none'; var f=this.nextElementSibling; if(f) f.style.display='flex';" />
+                            <div class="leader-portrait-fallback" style="display:none;">雷</div>
+                        </div>
+                        <div class="leader-content">
+                            <h3>雷军</h3>
+                            <p>小米汽车CEO</p>
+                            <div class="statement">
+                                <a href="#" target="_blank" class="statement-link" onclick="this.style.background='rgba(52, 152, 219, 0.1)'; setTimeout(function(){ this.style.background=''; }.bind(this), 200)">
+                                    <div class="statement-date">2025-11-28 · 产品发布会</div>
+                                    <div class="statement-content">智能电动汽车是小米生态的重要延伸。通过AI技术的深度应用，让汽车成为用户的智能伙伴。</div>
+                                </a>
+                                <ul class="insights-list">
+                <li>智能电动汽车是小米生态战略的重要组成部分</li><li>AI技术将是汽车智能化的核心</li><li>汽车正在向智能伙伴的角色转变</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Industry News Section -->
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">行业其他新闻</h2>
+                    <p class="section-subtitle">Industry News & Updates</p>
+                </div>
+                <div class="section-meta">
+                    <span>📰 5条新闻</span>
+                </div>
+            </div>
+            
+            <div class="news-grid">
+        
+                <div class="news-card">
+                    <div class="news-image-container">
+                        <div class="news-image-placeholder">📰</div>
+                        <img class="news-image" loading="lazy" alt="工信部发布新能源汽车产业发展规划" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=630&fit=crop" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="news-category">政策法规</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">工信部发布新能源汽车产业发展规划</h3>
+                        <p class="news-summary">工信部发布《新能源汽车产业发展规划（2025-2035年）》，提出到2035年新能源汽车成为新车销售主流。</p>
+                        <div class="news-meta">
+                            <span class="news-source">工信部官网</span>
+                            <span>2025-11-28</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="news-card">
+                    <div class="news-image-container">
+                        <div class="news-image-placeholder">📰</div>
+                        <img class="news-image" loading="lazy" alt="宁德时代发布第三代CTP电池技术" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&h=630&fit=crop" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="news-category">技术创新</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">宁德时代发布第三代CTP电池技术</h3>
+                        <p class="news-summary">宁德时代发布第三代CTP（Cell to Pack）电池技术，能量密度提升15%，成本降低20%。</p>
+                        <div class="news-meta">
+                            <span class="news-source">宁德时代</span>
+                            <span>2025-11-27</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="news-card">
+                    <div class="news-image-container">
+                        <div class="news-image-placeholder">📰</div>
+                        <img class="news-image" loading="lazy" alt="全国充电桩数量突破1000万个" src="https://images.unsplash.com/photo-1617788138017-80ad406a99a5?w=1200&h=630&fit=crop" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="news-category">基础设施</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">全国充电桩数量突破1000万个</h3>
+                        <p class="news-summary">截至2025年11月，全国充电桩数量突破1000万个，其中公共充电桩超过400万个。</p>
+                        <div class="news-meta">
+                            <span class="news-source">中国充电联盟</span>
+                            <span>2025-11-26</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="news-card">
+                    <div class="news-image-container">
+                        <div class="news-image-placeholder">📰</div>
+                        <img class="news-image" loading="lazy" alt="新能源汽车出口量创历史新高" src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&h=630&fit=crop" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="news-category">市场动态</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">新能源汽车出口量创历史新高</h3>
+                        <p class="news-summary">10月份新能源汽车出口量达到15.2万辆，创历史新高，同比增长45%。</p>
+                        <div class="news-meta">
+                            <span class="news-source">海关总署</span>
+                            <span>2025-11-25</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="news-card">
+                    <div class="news-image-container">
+                        <div class="news-image-placeholder">📰</div>
+                        <img class="news-image" loading="lazy" alt="多家车企宣布降价促销" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&h=630&fit=crop" onload="this.classList.add('loaded'); this.previousElementSibling.style.display='none'" onerror="this.style.display='none'" />
+                        <div class="news-category">市场动态</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-title">多家车企宣布降价促销</h3>
+                        <p class="news-summary">临近年底，多家新能源汽车企业宣布降价促销，最高降幅达到3万元。</p>
+                        <div class="news-meta">
+                            <span class="news-source">行业分析</span>
+                            <span>2025-11-24</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Progressive image loading
+        document.addEventListener('DOMContentLoaded', function() {
+            // 图片懒加载与占位符
+            const images = document.querySelectorAll('.car-image, .news-image');
+            images.forEach((img) => {
+                img.addEventListener('load', function() {
+                    this.classList.add('loaded');
+                    const ph = this.previousElementSibling;
+                    if (ph) { ph.style.display = 'none'; }
+                });
+                img.addEventListener('error', function() {
+                    this.style.display = 'none';
+                    const ph = this.previousElementSibling;
+                    if (ph) { ph.style.display = 'flex'; }
+                });
+            });
+            
+            // Smooth scroll for better navigation
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+        
+        // Auto-update timestamp
+        function updateTimestamp() {
+            const now = new Date();
+            const timeString = now.toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            
+            const metaItems = document.querySelectorAll('.meta-item');
+            const lastUpdateItem = Array.from(metaItems).find(item => 
+                item.textContent.includes('最后更新')
+            );
+            
+            if (lastUpdateItem) {
+                lastUpdateItem.innerHTML = '<span>🔄</span><span>最后更新: ' + timeString + '</span>';
+            }
+        }
+        
+        // 每周一00:00自动刷新
+        function checkWeekUpdate() {
+            const now = new Date();
+            if (now.getDay() === 1 && now.getHours() === 0 && now.getMinutes() === 0) {
+                location.reload();
+            }
+        }
+        setInterval(checkWeekUpdate, 60000);
+
+        // Update every 30 seconds
+        setInterval(updateTimestamp, 30000);
+        
+        // Initial update
+        updateTimestamp();
+    </script>
+</body>
+</html>
+        

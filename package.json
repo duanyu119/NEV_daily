@@ -1,0 +1,65 @@
+{
+  "name": "nev-intelligence-system",
+  "version": "1.0.0",
+  "description": "新能源汽车行业情报收集与分析系统",
+  "main": "dist/controller/nev_intelligence_controller.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/controller/nev_intelligence_controller.js",
+    "dev": "ts-node src/controller/nev_intelligence_controller.ts",
+    "test": "jest",
+    "test:cpca": "ts-node src/collectors/cpca_collector.ts",
+    "test:platform": "ts-node src/collectors/vertical_platform_monitor.ts",
+    "test:leader": "ts-node src/collectors/industry_leader_tracker.ts",
+    "test:template": "ts-node src/templates/data_standardization_template.ts",
+    "lint": "eslint src/**/*.ts",
+    "check": "tsc --noEmit",
+    "deploy": "wrangler pages deploy ./reports --project-name nev-daily-news --branch main"
+  },
+  "keywords": [
+    "新能源汽车",
+    "数据收集",
+    "行业分析",
+    "情报系统",
+    "汽车垂直平台"
+  ],
+  "author": "NEV Intelligence Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "date-fns": "^2.30.0",
+    "mysql2": "^3.6.0",
+    "puppeteer": "^21.5.0",
+    "natural": "^6.10.0",
+    "sentiment": "^5.0.2",
+    "winston": "^3.11.0",
+    "dotenv": "^16.3.0",
+    "bull": "^4.11.0",
+    "redis": "^4.6.0",
+    "cron": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.0",
+    "@types/mysql": "^2.15.0",
+    "@types/puppeteer": "^7.0.0",
+    "@types/natural": "^5.1.0",
+    "@types/sentiment": "^5.0.0",
+    "@types/winston": "^2.4.0",
+    "@types/cron": "^2.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.2.0",
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
