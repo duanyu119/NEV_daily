@@ -56,22 +56,23 @@ jobs:
         run: |
           # Simple versioning based on date and run number
           VERSION="v$(date +'%Y.%m.%d').${{ github.run_number }}"
-          echo "Deploying version $VERSION"
-          # git tag $VERSION || true
-          # git push origin $VERSION || true
+          echo "Validating version $VERSION"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./reports --project-name=nev-daily-news --branch=main
+      # Since user has linked GitHub repository to Cloudflare Pages,
+      # Cloudflare will automatically deploy on push.
+      # We do not need to use wrangler-action here, which requires tokens.
+      # - name: Deploy to Cloudflare Pages
+      #   uses: cloudflare/wrangler-action@v3
+      #   with:
+      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      #     command: pages deploy ./reports --project-name=nev-daily-news --branch=main
 
-      - name: Deployment Notification
+      - name: Validation Notification
         if: always()
         run: |
-          echo "::group::Deployment Log"
+          echo "::group::Validation Log"
           echo "Status: ${{ job.status }}"
           echo "Version: ${{ env.VERSION }}"
           echo "Commit: ${{ github.sha }}"
@@ -79,8 +80,8 @@ jobs:
           echo "::endgroup::"
           
           if [ "${{ job.status }}" == "success" ]; then
-            echo "✅ Deployment Successful! Report is live."
+            echo "✅ Validation Successful! Cloudflare should pick up the changes shortly."
           else
-            echo "❌ Deployment Failed. Please check logs."
+            echo "❌ Validation Failed. Please check logs."
             exit 1
           fi
