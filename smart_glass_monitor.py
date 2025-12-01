@@ -140,7 +140,7 @@ class SmartGlassMonitor:
         for query_obj in search_queries:
             print(f"   Searching: {query_obj['q']}...")
             # Get max results possible per query
-            results = self._tavily_search(query_obj['q'], days=30) # 30 days covers Nov 1 - Dec 1
+            results = self._tavily_search(query_obj['q'], days=30)
             
             for item in results:
                 item["content"] = self._clean_content(item.get("content", ""))

@@ -552,8 +552,8 @@ class DailyNewsGenerator:
             })
         return list(leaders_map.values())
 
-    # Tavily 搜索采集（最近一周，至少100条）
-    def collect_leader_statements(self, span_days: int = 7, min_items: int = 20) -> Dict[str, Any]:
+    # Tavily 搜索采集（最近30天，至少200条）
+    def collect_leader_statements(self, span_days: int = 30, min_items: int = 200) -> Dict[str, Any]:
         api_key = os.environ.get("TAVILY_API_KEY", "")
         leaders = [
             "王传福 比亚迪 讲话", "雷军 小米 发言", "李想 理想汽车 公开演讲", "李斌 蔚来 采访",
@@ -563,6 +563,7 @@ class DailyNewsGenerator:
 
         end_time = datetime.now()
         start_time = end_time - timedelta(days=span_days)
+        # Ensure coverage from Nov 1, 2025 if needed, but 30 days from Dec 1 is Nov 1.
         time_range = f"{start_time.strftime('%Y-%m-%d')} to {end_time.strftime('%Y-%m-%d')}"
 
         run_logs: List[str] = []
@@ -2029,11 +2030,13 @@ def main():
     print("🚀 开始生成新能源汽车Daily News页面...")
     
     # 可选：运行Tavily采集（需要TAVILY_API_KEY）
-    if os.environ.get("RUN_TAVILY_COLLECTION") == "1":
+    # 默认开启采集，除非显式禁用
+    if os.environ.get("RUN_TAVILY_COLLECTION") != "0":
         try:
             collector = DailyNewsGenerator()
-            print("🔎 运行Tavily采集（最近一周，至少100条）...")
-            out = collector.collect_leader_statements(span_days=7, min_items=100)
+            print("🔎 运行Tavily采集（最近30天，至少200条）...")
+            # Set span_days=30 to cover Nov 1 - Dec 1
+            out = collector.collect_leader_statements(span_days=30, min_items=200)
             print(f"✅ 采集完成：{out['status']['collected']} 条，时间窗 {out['status']['time_range']}")
         except Exception as e:
             print(f"⚠️ Tavily采集失败: {e}")
